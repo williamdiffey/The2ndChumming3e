@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:foundryvtt.com)",
+      "WebSearch",
+      "WebFetch(domain:foundryvtt.wiki)",
+      "Bash(node _replace_tabMatrix.js)",
+      "Bash(node _patch_slots.js)"
+    ]
+  }
+}

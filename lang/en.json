@@ -1,0 +1,21 @@
+{
+  "SR3E.Sheet.Character": "SR3E Character Sheet",
+  "SR3E.Sheet.Item": "SR3E Item Sheet",
+
+  "SR3E.Attributes.body":         "Body",
+  "SR3E.Attributes.quickness":    "Quickness",
+  "SR3E.Attributes.strength":     "Strength",
+  "SR3E.Attributes.charisma":     "Charisma",
+  "SR3E.Attributes.intelligence": "Intelligence",
+  "SR3E.Attributes.willpower":    "Willpower",
+  "SR3E.Attributes.essence":      "Essence",
+  "SR3E.Attributes.magic":        "Magic",
+  "SR3E.Attributes.reaction":     "Reaction",
+
+  "SR3E.Metatype.human": "Human",
+  "SR3E.Metatype.elf":   "Elf",
+  "SR3E.Metatype.dwarf": "Dwarf",
+  "SR3E.Metatype.ork":   "Ork",
+  "SR3E.Metatype.troll": "Troll",
+  "SR3E.Metatype.other": "Other"
+}

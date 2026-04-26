@@ -1,0 +1,635 @@
+/**
+ * SR3E system configuration constants.
+ *
+ * SR3ESkills is sourced from ActiveSkills.json (rawdata/).
+ * Structure: { "Category Name": [ { name, linkedAttribute, specializations[] } ] }
+ *
+ * Attribute codes from the source data:
+ *   STR → strength, QCK → quickness, INT → intelligence,
+ *   WIL → willpower, CHA → charisma, BOD → body, REA → reaction
+ *
+ * Specializations ending in "->" are open-ended (free-text entry in the sheet).
+ * Knowledge skills (KNO attribute) use linkedAttribute: "intelligence" by convention.
+ */
+
+export const SR3ESkills = {
+
+  "Combat skills": [
+    { name: "Unarmed Combat",       linkedAttribute: "strength",      specializations: ["Subduing Combat", "Martial Arts Technique", "Fists", "Head", "Kicks"] },
+    { name: "Cyber Implant Combat", linkedAttribute: "strength",      specializations: ["implant->"] },
+    { name: "Clubs",                linkedAttribute: "strength",      specializations: ["weapon->"] },
+    { name: "Whips",                linkedAttribute: "quickness",     specializations: ["weapon->"] },
+    { name: "Edged Weapons",        linkedAttribute: "strength",      specializations: ["weapon->"] },
+    { name: "Pole Arms",            linkedAttribute: "strength",      specializations: ["weapon->"] },
+    { name: "Throwing Weapons",     linkedAttribute: "strength",      specializations: ["Darts", "Grenades", "Shuriken", "Knives"] },
+    { name: "Projectile Weapons",   linkedAttribute: "strength",      specializations: ["Bows", "Crossbows"] },
+    { name: "Pistols",              linkedAttribute: "quickness",     specializations: ["weapon->"] },
+    { name: "Rifles",               linkedAttribute: "quickness",     specializations: ["weapon->"] },
+    { name: "Shotguns",             linkedAttribute: "quickness",     specializations: ["weapon->"] },
+    { name: "Spray Weapons",        linkedAttribute: "strength",      specializations: ["weapon->"] },
+    { name: "Submachine Guns",      linkedAttribute: "quickness",     specializations: ["weapon->"] },
+    { name: "Assault Rifles",       linkedAttribute: "quickness",     specializations: ["weapon->"] },
+    { name: "Heavy Weapons",        linkedAttribute: "strength",      specializations: ["weapon->"] },
+    { name: "Laser Weapons",        linkedAttribute: "quickness",     specializations: ["weapon->"] },
+    { name: "Launch Weapons",       linkedAttribute: "intelligence",  specializations: ["weapon->"] },
+    { name: "Gunnery",              linkedAttribute: "intelligence",  specializations: ["weapon->"] },
+    { name: "Underwater Combat",    linkedAttribute: "strength",      specializations: ["Unarmed Attack", "Armed Attack"] },
+  ],
+
+  "Martial Arts": [
+    { name: "MA:Aikido",        linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Disorient", "MN:Evasion", "MN:Focus Will", "MN:Ground Fighting", "MN:Herding", "MN:Sweep", "MN:Throw", "MN:Whirling"] },
+    { name: "MA:Arnis De Mano", linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Focus Strength", "MN:Ground Fighting", "MN:Kick Attack", "MN:Kip Up", "MN:Multi-Strike", "MN:Sweep", "MN:Throw", "MN:Zoning"] },
+    { name: "MA:Boxing",        linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Disorient", "MN:Evasion", "MN:Full Offense", "MN:Ground Fighting", "MN:Herding", "MN:Kick Attack", "MN:Vicious Blow", "MN:Zoning"] },
+    { name: "MA:Brawling",      linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Disorient", "MN:Evasion", "MN:Full Offense", "MN:Ground Fighting", "MN:Herding", "MN:Kick Attack", "MN:Vicious Blow", "MN:Zoning"] },
+    { name: "MA:Capoeira",      linkedAttribute: "strength", specializations: ["MN:Disorient", "MN:Evasion", "MN:Ground Fighting", "MN:Herding", "MN:Kick Attack", "MN:Kip Up", "MN:Multi-Strike", "MN:Sweep", "MN:Whirling"] },
+    { name: "MA:Carromeleg",    linkedAttribute: "strength", specializations: ["MN:Disorient", "MN:Evasion", "MN:Ground Fighting", "MN:Focus Will", "MN:Kick Attack", "MN:Kip Up", "MN:Multi-Strike", "MN:Sweep", "MN:Whirling"] },
+    { name: "MA:Escrima",       linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Focus Strength", "MN:Ground Fighting", "MN:Kick Attack", "MN:Kip Up", "MN:Multi-Strike", "MN:Sweep", "MN:Throw", "MN:Zoning"] },
+    { name: "MA:Hapkido",       linkedAttribute: "strength", specializations: ["MN:Focus Strength", "MN:Full Offense", "MN:Herding", "MN:Kick Attack", "MN:Kip Up", "MN:Multi-Strike", "MN:Sweep", "MN:Throw", "MN:Whirling"] },
+    { name: "MA:Hwarang-do",    linkedAttribute: "strength", specializations: ["MN:Blind Fighting", "MN:Focus Strength", "MN:Full Offense", "MN:Ground Fighting", "MN:Kick Attack", "MN:Kip Up", "MN:Multi-Strike", "MN:Vicious Blow", "MN:Whirling"] },
+    { name: "MA:Juijitsu",      linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Disorient", "MN:Evasion", "MN:Focus Will", "MN:Ground Fighting", "MN:Herding", "MN:Sweep", "MN:Whirling"] },
+    { name: "MA:Jujitsu",       linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Focus Strength", "MN:Full Offense", "MN:Ground Fighting", "MN:Herding", "MN:Kick Attack", "MN:Kip Up", "MN:Sweep", "MN:Zoning"] },
+    { name: "MA:Kali",          linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Focus Strength", "MN:Ground Fighting", "MN:Kick Attack", "MN:Kip Up", "MN:Multi-Strike", "MN:Sweep", "MN:Throw", "MN:Zoning"] },
+    { name: "MA:Karate",        linkedAttribute: "strength", specializations: ["MN:Blind Fighting", "MN:Focus Strength", "MN:Focus Will", "MN:Full Offense", "MN:Kick Attack", "MN:Vicious Blow", "MN:Sweep", "MN:Throw", "MN:Whirling"] },
+    { name: "MA:Kenpo",         linkedAttribute: "strength", specializations: ["MN:Blind Fighting", "MN:Focus Strength", "MN:Focus Will", "MN:Full Offense", "MN:Kick Attack", "MN:Vicious Blow", "MN:Sweep", "MN:Throw", "MN:Whirling"] },
+    { name: "MA:Kick Boxing",   linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Focus Strength", "MN:Full Offense", "MN:Ground Fighting", "MN:Herding", "MN:Kick Attack", "MN:Kip Up", "MN:Sweep", "MN:Zoning"] },
+    { name: "MA:Kickboxing",    linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Focus Strength", "MN:Full Offense", "MN:Ground Fighting", "MN:Herding", "MN:Kick Attack", "MN:Kip Up", "MN:Sweep", "MN:Zoning"] },
+    { name: "MA:Kung Fu",       linkedAttribute: "strength", specializations: ["MN:Blind Fighting", "MN:Focus Strength", "MN:Full Offense", "MN:Ground Fighting", "MN:Kick Attack", "MN:Kip Up", "MN:Multi-Strike", "MN:Vicious Blow", "MN:Whirling"] },
+    { name: "MA:Muay Thai",     linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Focus Strength", "MN:Full Offense", "MN:Ground Fighting", "MN:Herding", "MN:Kick Attack", "MN:Kip Up", "MN:Sweep", "MN:Zoning"] },
+    { name: "MA:Ninjutsu",      linkedAttribute: "strength", specializations: ["MN:Blind Fighting", "MN:Close Combat", "MN:Disorient", "MN:Evasion", "MN:Ground Fighting", "MN:Herding", "MN:Kick Attack", "MN:Sweep", "MN:Zoning"] },
+    { name: "MA:Pentjak-Silat", linkedAttribute: "strength", specializations: ["MN:Blind Fighting", "MN:Close Combat", "MN:Evasion", "MN:Focus Will", "MN:Ground Fighting", "MN:Vicious Blow", "MN:Multi-Strike", "MN:Sweep", "MN:Whirling"] },
+    { name: "MA:Pitfighting",   linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Disorient", "MN:Evasion", "MN:Full Offense", "MN:Ground Fighting", "MN:Herding", "MN:Kick Attack", "MN:Vicious Blow", "MN:Zoning"] },
+    { name: "MA:Sambo",         linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Disorient", "MN:Evasion", "MN:Focus Will", "MN:Ground Fighting", "MN:Herding", "MN:Sweep", "MN:Whirling"] },
+    { name: "MA:Savate",        linkedAttribute: "strength", specializations: ["MN:Close Combat", "MN:Focus Strength", "MN:Full Offense", "MN:Ground Fighting", "MN:Herding", "MN:Kick Attack", "MN:Kip Up", "MN:Sweep", "MN:Zoning"] },
+    { name: "MA:Tae Kwon Do",   linkedAttribute: "strength", specializations: ["MN:Focus Strength", "MN:Full Offense", "MN:Herding", "MN:Kick Attack", "MN:Kip Up", "MN:Multi-Strike", "MN:Sweep", "MN:Throw", "MN:Whirling"] },
+    { name: "MA:Tai Chi Ch'uan",linkedAttribute: "strength", specializations: ["MN:Blind Fighting", "MN:Evasion", "MN:Focus Strength", "MN:Focus Will", "MN:Herding", "MN:Kip Up", "MN:Sweep", "MN:Throw", "MN:Whirling"] },
+    { name: "MA:Tai Chi Wu",    linkedAttribute: "strength", specializations: ["MN:Blind Fighting", "MN:Evasion", "MN:Focus Strength", "MN:Focus Will", "MN:Herding", "MN:Kip Up", "MN:Sweep", "MN:Throw", "MN:Whirling"] },
+    { name: "MA:Tai Chi Chen",  linkedAttribute: "strength", specializations: ["MN:Blind Fighting", "MN:Evasion", "MN:Focus Strength", "MN:Focus Will", "MN:Herding", "MN:Kip Up", "MN:Sweep", "MN:Throw", "MN:Whirling"] },
+    { name: "MA:Wildcat",       linkedAttribute: "strength", specializations: ["MN:Blind Fighting", "MN:Close Combat", "MN:Full Offense", "MN:Ground Fighting", "MN:Kick Attack", "MN:Multi-Strike", "MN:Sweep", "MN:Vicious Blow", "MN:Zoning"] },
+    { name: "MA:Wushu",         linkedAttribute: "strength", specializations: ["MN:Blind Fighting", "MN:Focus Strength", "MN:Full Offense", "MN:Ground Fighting", "MN:Kick Attack", "MN:Kip Up", "MN:Multi-Strike", "MN:Vicious Blow", "MN:Whirling"] },
+  ],
+
+  "Magical skills": [
+    { name: "Aura Reading", linkedAttribute: "intelligence", specializations: ["Auras", "Signatures", "Sorcery", "Conjuring"] },
+    { name: "Sorcery",      linkedAttribute: "willpower",    specializations: ["Spellcasting", "Spell Defense", "Dispelling", "Astral Combat", "Ritual Sorcery", "Spell Category->"] },
+    { name: "Centering",    linkedAttribute: "willpower",    specializations: [] },
+    { name: "Conjuring",    linkedAttribute: "willpower",    specializations: ["Summoning", "Banishing", "Controlling"] },
+    { name: "Divining",     linkedAttribute: "willpower",    specializations: [] },
+    { name: "Enchanting",   linkedAttribute: "willpower",    specializations: ["Alchemy", "Artificing"] },
+  ],
+
+  "Physical skills": [
+    { name: "Athletics",  linkedAttribute: "body",      specializations: ["Climbing", "Jumping", "Lifting", "Running", "Swimming", "Escape Artist", "specific sport->"] },
+    { name: "Diving",     linkedAttribute: "body",      specializations: ["Deep-water Diving", "Mixed-gas Diving"] },
+    { name: "Parachuting",linkedAttribute: "body",      specializations: ["Standard Jump", "HALO Jump", "Low-Altitude Jump"] },
+    { name: "Stealth",    linkedAttribute: "quickness", specializations: ["Alertness", "Hiding", "Sneaking", "Theft"] },
+  ],
+
+  "Social skills": [
+    { name: "Acting",        linkedAttribute: "charisma",      specializations: ["Improvisation", "Method Acting"] },
+    { name: "Artisan",       linkedAttribute: "intelligence",  specializations: ["Cinematography", "Drawing", "Painting", "Photography", "Sculpture"] },
+    { name: "Etiquette",     linkedAttribute: "charisma",      specializations: ["Corporate", "Magical", "Matrix", "Media", "Street", "Tribal", "Specialized Group->"] },
+    { name: "Hypnotism",     linkedAttribute: "willpower",     specializations: ["Subject Control", "Memory Regression", "Personality Modification"] },
+    { name: "Instruction",   linkedAttribute: "charisma",      specializations: ["specific subject->"] },
+    { name: "Interrogation", linkedAttribute: "charisma",      specializations: ["Verbal", "Lie Detector", "Voice Stress Analysis", "Torture", "Drug Aided"] },
+    { name: "Intimidation",  linkedAttribute: "charisma",      specializations: ["Physical", "Mental"] },
+    { name: "Leadership",    linkedAttribute: "charisma",      specializations: ["Political", "Military", "Commercial", "Strategy", "Tactics", "Morale"] },
+    { name: "Legerdemain",   linkedAttribute: "quickness",     specializations: ["Sleight of Hand", "Light Fingers", "Card Tricks"] },
+    { name: "Negotiation",   linkedAttribute: "charisma",      specializations: ["Bargain", "Bribe", "Con", "Fast talk"] },
+    { name: "Performance",   linkedAttribute: "charisma",      specializations: ["Acting", "Dancing", "Reporting", "Singing"] },
+  ],
+
+  "Survival skills": [
+    { name: "Riding",              linkedAttribute: "reaction",  specializations: ["Animal->"] },
+    { name: "Wilderness Survival", linkedAttribute: "willpower", specializations: ["Forest", "Mountain", "Desert", "Jungle", "Polar"] },
+  ],
+
+  "Technical skills": [
+    { name: "Biotech",           linkedAttribute: "intelligence", specializations: ["Cybermancy", "Cybertechnology Implantation", "Extended Care", "First Aid", "Magical Health", "Organ Culture & Growth", "Surgery", "Transplant Surgery"] },
+    { name: "Computer",          linkedAttribute: "intelligence", specializations: ["Hardware", "Decking", "Programming", "Cybernetics", "Search Operations"] },
+    { name: "Demolitions",       linkedAttribute: "intelligence", specializations: ["Commercial Explosives", "Plastic Explosives", "Improvised Explosives"] },
+    { name: "Disguise",          linkedAttribute: "intelligence", specializations: ["Cosmetic", "Theatrical", "Trideo"] },
+    { name: "Electronics",       linkedAttribute: "intelligence", specializations: ["Control Systems", "Electronic Warfare", "Maglocks", "Linking between devices", "Diagnostics", "Cybertechnology", "Security Systems"] },
+    { name: "Forgery",           linkedAttribute: "intelligence", specializations: ["File Editing", "Image Manipulation", "Audio Manipulation", "Physical Forgery"] },
+    { name: "Lock Picking",      linkedAttribute: "quickness",   specializations: ["Cam", "Dimple-Cylinder", "Pin Tumbler", "Safecracking", "Wafer", "Water"] },
+    { name: "Small Unit Tactics",linkedAttribute: "intelligence", specializations: ["BattleTac Systems", "Vehicle Tactics", "Matrix Tactics"] },
+  ],
+
+  "Vehicle skills": [
+    { name: "Bike",                    linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Car",                     linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Fixed-Wing Aircraft",     linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Hovercraft",              linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "LTA Aircraft",            linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Mechanical Arm Operation",linkedAttribute: "reaction", specializations: ["specific->"] },
+    { name: "Motorboat",               linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Rotor Aircraft",          linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Sailboat",                linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Semiballistic",           linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Ship",                    linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Submarine",               linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Suborbital",              linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Tracks",                  linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Vector Thrust Aircraft",  linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+    { name: "Walkers",                 linkedAttribute: "reaction", specializations: ["Remote Operations", "specific->"] },
+  ],
+
+  "Matrix skills": [
+    { name: "Computer",     linkedAttribute: "intelligence", specializations: ["Cybernetics", "Decking", "Hardware", "Search Operations"] },
+    { name: "Cybercombat",  linkedAttribute: "intelligence", specializations: ["Agent", "Persona", "Device"] },
+    { name: "Hacking",      linkedAttribute: "intelligence", specializations: ["Data Store", "Slave Node", "CPU", "SPU", "SAN", "Device"] },
+    { name: "Programming",  linkedAttribute: "intelligence", specializations: ["Bogart", "HoloLISP", "InterMod", "MATCom", "Oblong"] },
+  ],
+
+  "Build/Repair skills": [
+    { name: "Armor B/R",                linkedAttribute: "intelligence", specializations: [] },
+    { name: "Assault Rifles B/R",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Clubs Weapons B/R",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Computer B/R",             linkedAttribute: "intelligence", specializations: ["Cybernetics B/R"] },
+    { name: "Cyber Implant Weapons B/R",linkedAttribute: "intelligence", specializations: [] },
+    { name: "Diving B/R",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Edged Weapons B/R",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Electronics B/R",          linkedAttribute: "intelligence", specializations: ["Cybertechnology B/R", "Security Systems B/R"] },
+    { name: "Gunnery B/R",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Heavy Weapons B/R",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Laser Weapons B/R",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Launch Weapons B/R",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Pistols B/R",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Pole Arms/Staffs B/R",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Projectile Weapons B/R",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Rifles B/R",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Shotguns B/R",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Spray Weapons B/R",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Submachine Guns B/R",      linkedAttribute: "intelligence", specializations: [] },
+    { name: "Throwing Weapons B/R",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Whips B/R",                linkedAttribute: "intelligence", specializations: [] },
+    { name: "Bike B/R",                 linkedAttribute: "intelligence", specializations: [] },
+    { name: "Car B/R",                  linkedAttribute: "intelligence", specializations: [] },
+    { name: "Fixed Wing Aircraft B/R",  linkedAttribute: "intelligence", specializations: [] },
+    { name: "Hovercraft B/R",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "LTA Aircraft B/R",         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Motorboat B/R",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Rotor Aircraft B/R",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Sailboat B/R",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Ship B/R",                 linkedAttribute: "intelligence", specializations: [] },
+    { name: "Submarine B/R",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Vector Thrust Aircraft B/R",linkedAttribute: "intelligence", specializations: [] },
+    { name: "Handyman",                 linkedAttribute: "reaction",     specializations: ["Carpentry", "Plumbing", "Mechanisms"] },
+  ],
+
+  "Street knowledge": [
+    { name: "Arms Dealers",                  linkedAttribute: "intelligence", specializations: [] },
+    { name: "BTL Production",                linkedAttribute: "intelligence", specializations: [] },
+    { name: "Criminal Organizations",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Current Affairs",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Fences",                        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Fringe Cults",                  linkedAttribute: "intelligence", specializations: [] },
+    { name: "Gang Identification",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Gang Turf",                     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Local Neighborhood",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Lone Star Tactics",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Mafia Politics",                linkedAttribute: "intelligence", specializations: [] },
+    { name: "Mafia Controlled Establishments", linkedAttribute: "intelligence", specializations: [] },
+    { name: "NAN Border Patrol Tactics",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Police Procedures",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Prison Operations",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Prostitution Rackets",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Safehouse Locations",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Scrounging",                    linkedAttribute: "intelligence", specializations: [] },
+    { name: "Seattle Junkyards",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Seattle Ork Underground",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Security Companies",            linkedAttribute: "intelligence", specializations: ["company->"] },
+    { name: "Security Procedures",           linkedAttribute: "intelligence", specializations: ["Government", "Military", "company->"] },
+    { name: "Shadowrunner Haunts",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Smuggler Havens",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Smuggling Routes",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "SWAT Team Tactics",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Triad Society",                 linkedAttribute: "intelligence", specializations: [] },
+    { name: "Underworld Politics",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Yakuza Politics",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Yakuza Territory",              linkedAttribute: "intelligence", specializations: [] },
+  ],
+
+  "Academic skills": [
+    { name: "Accounting",            linkedAttribute: "intelligence", specializations: ["Embezzling", "Fraud Control", "Cost-Cutting"] },
+    { name: "Anthropology",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Archeology",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Architecture",          linkedAttribute: "intelligence", specializations: ["Office", "Mall", "Residential", "Ork", "Human", "Dwarven", "Specified->"] },
+    { name: "Art",                   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Biology",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Body Armor Fabrication",linkedAttribute: "intelligence", specializations: [] },
+    { name: "Botany",                linkedAttribute: "intelligence", specializations: [] },
+    { name: "Chemistry",             linkedAttribute: "intelligence", specializations: ["Specialty->"] },
+    { name: "Civil Engineering",     linkedAttribute: "intelligence", specializations: ["Tunneling", "Commercial Construction", "Home Construction", "Industrial Construction", "Excavation"] },
+    { name: "Cybertechnology",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Economics",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Electronic Intelligence", linkedAttribute: "intelligence", specializations: ["Audio", "Image/Video", "Matrix Surveillance", "Tracking"] },
+    { name: "Engineering",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Forensic Medicine",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Forensics",             linkedAttribute: "intelligence", specializations: ["Forensic Medicine", "Ballistics", "Scene of Crime", "Forensic Magic"] },
+    { name: "Geology",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Gunsmithing",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "History",               linkedAttribute: "intelligence", specializations: ["American", "European", "Japanese", "Religious", "Roman", "Specified->"] },
+    { name: "Journalism",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Judicial Procedures",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Law",                   linkedAttribute: "intelligence", specializations: ["Corporate Law", "Criminal Law", "Environmental Law", "Jurisdiction->", "Historical Period->"] },
+    { name: "Linguistics",           linkedAttribute: "intelligence", specializations: ["Algonkian", "Armenian", "Athabascan", "Baltic", "Basque", "Celtic", "Creole", "Dravidian", "Egyptian", "Eskimo", "Esperanto", "Finnic", "Germanic", "Greek", "Hamitic", "Indic", "Indo-Iranian", "Iroquoian", "Italic", "Interlingua", "Japanese and Korean", "Khoisan", "Malayo-Polynesian", "Mayan", "Mon-Khmer", "Mongolian", "Muskogean", "Niger-Kordofanian", "Nilotic", "Oto-Manguan", "Papuan Family", "Romance", "Salish", "Semitic", "Sino-Tibetan", "Siouan", "Slavic", "South American Indian", "Sperethiel", "Tlinglit", "Tsimshian", "Tungus", "Turkic", "Ugrian", "Uto-Aztecan", "Zuni", "Specified->"] },
+    { name: "Literature",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Mechanical Traps",      linkedAttribute: "intelligence", specializations: [] },
+    { name: "Medicine",              linkedAttribute: "intelligence", specializations: ["Traumatology", "Pathology", "Toxicology", "Specialty->"] },
+    { name: "Metallurgy",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Military Theory",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Music",                 linkedAttribute: "intelligence", specializations: [] },
+    { name: "Mythos & Folklore",     linkedAttribute: "intelligence", specializations: ["Period/region/culture->"] },
+    { name: "Parabotany",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Parazoology",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Pharmacology",          linkedAttribute: "intelligence", specializations: ["Medicinal Drugs", "Illegal Narcotics", "Improvised Manufacture"] },
+    { name: "Philosophy",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Physics",               linkedAttribute: "intelligence", specializations: ["Specialty->"] },
+    { name: "Politics",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Political Science",     linkedAttribute: "intelligence", specializations: ["Specified->"] },
+    { name: "Psychology",            linkedAttribute: "intelligence", specializations: ["Applied Psychology", "Clinical Psychology", "Group Psychology"] },
+    { name: "Security Devices",      linkedAttribute: "intelligence", specializations: ["Detection Measures", "Weapons Emplacements"] },
+    { name: "Security Design",       linkedAttribute: "intelligence", specializations: ["Closed Circuit Simsense", "Matrix", "Magical", "Physical", "Corporate", "Military", "Private Home"] },
+    { name: "Security Systems",      linkedAttribute: "intelligence", specializations: ["Sensor Nets", "Two-stage Defenses", "Passive Systems", "Active Systems", "Weapons Systems", "Vehicle Security"] },
+    { name: "Spell Design",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Stockbroking",          linkedAttribute: "intelligence", specializations: ["Stock Type->", "Market->"] },
+    { name: "Structural Engineering",linkedAttribute: "intelligence", specializations: ["Specified->"] },
+    { name: "Vehicle Security",      linkedAttribute: "intelligence", specializations: [] },
+    { name: "Zoology",               linkedAttribute: "intelligence", specializations: [] },
+  ],
+
+  "System familiarity": [
+    { name: "Automated Factory Familiarity",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Cellular Network Familiarity",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Chat Room Familiarity",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Chokepoint Familiarity",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Communication Satellite Familiarity", linkedAttribute: "intelligence", specializations: [] },
+    { name: "Data Archive Familiarity",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Game Host Familiarity",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "LTG Familiarity",                     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Matrix Bank Familiarity",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "RTG Familiarity",                     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Security Network Familiarity",        linkedAttribute: "intelligence", specializations: [] },
+  ],
+
+  "Program design": [
+    { name: "Application Design",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Black IC Design",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Cyberterminal Code Design",  linkedAttribute: "intelligence", specializations: [] },
+    { name: "Defensive Utility Design",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Frame Core Design",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Grey IC Design",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "IC Construct Design",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Offensive Utility Design",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Operational Utility Design", linkedAttribute: "intelligence", specializations: [] },
+    { name: "Otaku: Info Sortilege",      linkedAttribute: "intelligence", specializations: [] },
+    { name: "Programming Suite Design",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Special Utility Design",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Trace IC Design",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Trace Utility Design",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "White IC Design",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Worm Design",                linkedAttribute: "intelligence", specializations: [] },
+  ],
+
+  "6th World knowledge": [
+    { name: "Artificial Intelligence",    linkedAttribute: "intelligence", specializations: [] },
+    { name: "Atlantis Research",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Chat Rooms",                 linkedAttribute: "intelligence", specializations: [] },
+    { name: "Corporate Finance",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Corporate Hosts",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Corporate Politics",         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Corporate Procedures",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Corporate Security",         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Cybertechnology",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Cyberterminal Design",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Data Brokerage",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Databases",                  linkedAttribute: "intelligence", specializations: [] },
+    { name: "Data Havens",                linkedAttribute: "intelligence", specializations: [] },
+    { name: "Deckmeisters",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Dowsing",                    linkedAttribute: "intelligence", specializations: ["Compass", "Pendulum", "L-rod", "Y-rod", "Bobber"] },
+    { name: "Dragons",                    linkedAttribute: "intelligence", specializations: [] },
+    { name: "Elven Society",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Entertainment Politics",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Humanis Policlub",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Iconography",                linkedAttribute: "intelligence", specializations: [] },
+    { name: "Insect Spirits",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Jackpoint Locations",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Legendary Deckers",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Magic",                      linkedAttribute: "intelligence", specializations: [] },
+    { name: "Matrix Gangs",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Matrix Security Procedures", linkedAttribute: "intelligence", specializations: [] },
+    { name: "Matrix Topography",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Megacorporate Operations",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Megacorporate Policies",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Megacorporate Politics",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Megacorporate Research",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Megacorporate Security",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Metahuman Politics",         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Metahumanity",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Miltech Manufacturers",      linkedAttribute: "intelligence", specializations: [] },
+    { name: "Otaku",                      linkedAttribute: "intelligence", specializations: [] },
+    { name: "Parabotany",                 linkedAttribute: "intelligence", specializations: [] },
+    { name: "Paranormal Animals",         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Satellite Networks",         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Seattle LTG",                linkedAttribute: "intelligence", specializations: [] },
+    { name: "Tribal Politics",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Virtual Meeting Spots",      linkedAttribute: "intelligence", specializations: [] },
+  ],
+
+  "Survival knowledge": [
+    { name: "Navigation", linkedAttribute: "intelligence", specializations: ["Land", "Sea", "Flight"] },
+  ],
+
+  "Background knowledge": [
+    { name: "Assault Rifles",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Blowgun",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Bracer",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Clubs (background)",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Cyber Implant Combat", linkedAttribute: "intelligence", specializations: [] },
+    { name: "Edged Weapons",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Eye Gun",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Gunnery",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Gun Cane",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Gyrojet Pistol",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Heavy Weapons",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Laser Weapons",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Launch Weapons",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Oral Gun",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Oral Strike",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Pistols",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Pole Arms & Staffs",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Projectile Weapons",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Rifles",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Shotguns",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Spray Weapons",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Submachine Guns",      linkedAttribute: "intelligence", specializations: [] },
+    { name: "Throwing Weapons",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Unarmed Combat",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Underwater Combat",    linkedAttribute: "intelligence", specializations: [] },
+    { name: "Whips",                linkedAttribute: "intelligence", specializations: [] },
+    { name: "Aura Reading",         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Centering",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Conjuring",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Divining",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Sorcery (background)", linkedAttribute: "intelligence", specializations: [] },
+    { name: "Magic Background",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Talismongering",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Athletics",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Diving",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Parachuting",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Stealth",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Acting",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Artisan",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Etiquette",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Hypnotism",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Instruction",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Interrogation",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Intimidation",         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Leadership",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Leadership-Tactics",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Legerdemain",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Negotiation",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Performance",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Riding",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Wilderness Survival",  linkedAttribute: "intelligence", specializations: [] },
+    { name: "Biotech",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Computer",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Demolitions",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Disguise",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Electronics",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Forgery",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Handyman",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Lock Picking",         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Small Unit Tactics",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Bike",                 linkedAttribute: "intelligence", specializations: [] },
+    { name: "Car",                  linkedAttribute: "intelligence", specializations: [] },
+    { name: "Fixed Wing",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Hovercraft",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Lighter Than Air",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Motorboat",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Rotor Aircraft",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Sailboat",             linkedAttribute: "intelligence", specializations: [] },
+    { name: "Ship",                 linkedAttribute: "intelligence", specializations: [] },
+    { name: "Submarines",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Vectored Thrust Aircraft", linkedAttribute: "intelligence", specializations: [] },
+  ],
+
+  "Interests": [
+    { name: "20th Century Comic Books",      linkedAttribute: "intelligence", specializations: [] },
+    { name: "Astrology",                     linkedAttribute: "intelligence", specializations: ["Chinese", "Mayan", "Native American", "Vedic", "Western"] },
+    { name: "Bushido Philosophy",            linkedAttribute: "intelligence", specializations: [] },
+    { name: "Champagne",                     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Classical Music",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Combat Biking",                 linkedAttribute: "intelligence", specializations: [] },
+    { name: "Conspiracy Theories",           linkedAttribute: "intelligence", specializations: ["Corporate", "Government", "Policlub", "Magical", "Region->", "Group->"] },
+    { name: "Cooking",                       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Cuisine",                       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Desert Wars",                   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Elven Wines",                   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Fashion",                       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Flatvid Movies",                linkedAttribute: "intelligence", specializations: [] },
+    { name: "Folklore and Mythology",        linkedAttribute: "intelligence", specializations: ["Historical Period->", "Region->"] },
+    { name: "Gambling Card Games",           linkedAttribute: "intelligence", specializations: [] },
+    { name: "Investing",                     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Japanese Culture",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Japanese Society",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Legendary Martial Artists",     linkedAttribute: "intelligence", specializations: [] },
+    { name: "Meditation",                    linkedAttribute: "intelligence", specializations: [] },
+    { name: "Occult Knowledge",              linkedAttribute: "intelligence", specializations: [] },
+    { name: "Opera",                         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Pirate Trid Broadcasters",      linkedAttribute: "intelligence", specializations: [] },
+    { name: "Poetry",                        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Popular Culture",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Pornography",                   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Roleplaying Games of 20th Cen.",linkedAttribute: "intelligence", specializations: [] },
+    { name: "Sci-Fi Simchips",               linkedAttribute: "intelligence", specializations: [] },
+    { name: "Seattle High Society",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Sim Starlets",                  linkedAttribute: "intelligence", specializations: [] },
+    { name: "Tir Tairngire Politics",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Tourist Trivia",                linkedAttribute: "intelligence", specializations: [] },
+    { name: "Troll Thrash Metal Bands",      linkedAttribute: "intelligence", specializations: [] },
+    { name: "Urban Brawl",                   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Weightlifting",                 linkedAttribute: "intelligence", specializations: [] },
+    { name: "Woodworking",                   linkedAttribute: "intelligence", specializations: [] },
+  ],
+
+  "Area knowledge": [
+    { name: "Auburn",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Bellevue",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Council Island",  linkedAttribute: "intelligence", specializations: [] },
+    { name: "Downtown Seattle",linkedAttribute: "intelligence", specializations: [] },
+    { name: "Everett",         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Ft. Lewis",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Greater Seattle", linkedAttribute: "intelligence", specializations: [] },
+    { name: "Puyallup",        linkedAttribute: "intelligence", specializations: [] },
+    { name: "Redmond",         linkedAttribute: "intelligence", specializations: [] },
+    { name: "Renton",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Salish-Shidhe",   linkedAttribute: "intelligence", specializations: [] },
+    { name: "Seattle Matrix",  linkedAttribute: "intelligence", specializations: [] },
+    { name: "Seattle Sewers",  linkedAttribute: "intelligence", specializations: [] },
+    { name: "Snohomish",       linkedAttribute: "intelligence", specializations: [] },
+    { name: "Tacoma",          linkedAttribute: "intelligence", specializations: [] },
+    { name: "Tir Tairngire",   linkedAttribute: "intelligence", specializations: [] },
+  ],
+
+};
+
+// ---------------------------------------------------------------------------
+// Helper functions
+// ---------------------------------------------------------------------------
+
+/** All category names, in definition order. */
+export function getSkillCategories() {
+  return Object.keys(SR3ESkills);
+}
+
+/** Skill names within a category. */
+export function getSkillsForCategory(category) {
+  return (SR3ESkills[category] ?? []).map(s => s.name);
+}
+
+/** Linked attribute for a specific skill within a category. */
+export function getLinkedAttributeForSkill(category, skillName) {
+  return SR3ESkills[category]?.find(s => s.name === skillName)?.linkedAttribute ?? 'quickness';
+}
+
+/**
+ * Linked attribute for a category (used when category is selected but no skill yet).
+ * Returns the attribute of the first skill in the category as a sensible default.
+ */
+export function getLinkedAttributeForCategory(category) {
+  return SR3ESkills[category]?.[0]?.linkedAttribute ?? 'quickness';
+}
+
+/** Display name for a skill (just the skill name — categories are groupings only). */
+export function getFullSkillName(_category, skillName) {
+  return skillName || _category;
+}
+
+/** Specializations for a specific skill. */
+export function getSpecializationsForSkill(category, skillName) {
+  return SR3ESkills[category]?.find(s => s.name === skillName)?.specializations ?? [];
+}
+
+// ---------------------------------------------------------------------------
+// Main SR3E config export
+// ---------------------------------------------------------------------------
+
+export const SR3E = {
+  metatypes: [
+    { value: 'human', label: 'Human' },
+    { value: 'elf',   label: 'Elf'   },
+    { value: 'dwarf', label: 'Dwarf' },
+    { value: 'ork',   label: 'Ork'   },
+    { value: 'troll', label: 'Troll' },
+    { value: 'other', label: 'Other' },
+  ],
+
+  attributes: [
+    'body', 'quickness', 'strength', 'charisma', 'intelligence', 'willpower', 'reaction',
+  ],
+
+  fireModes:      ['SS', 'SA', 'BF', 'FA'],
+  spellCategories: ['Combat', 'Detection', 'Health', 'Illusion', 'Manipulation'],
+  spellTypes:      ['Physical', 'Mana'],
+  spellRanges:     ['Touch', 'LOS', 'LOS (A)'],
+  spellDurations:  ['Instant', 'Sustained', 'Permanent'],
+  cyberwareGrades: ['Standard', 'Alpha', 'Beta', 'Delta', 'Used'],
+
+  programTypes:      ['Program', 'Protocol'],
+  programCategories: ['Defensive', 'Combat', 'Operational', 'Offensive'],
+
+  matrixUserModes: [
+    {
+      name: 'Terminal',
+      abbreviation: 'TRM',
+      initiative: 'default',
+      responseBenefit: false,
+      hackingPool: true,
+      biofeedbackImmune: true,
+      tnModifier: '+2 to all Matrix tests',
+      description: 'Classic computer terminal or device interface.'
+    },
+    {
+      name: 'Augmented Reality',
+      abbreviation: 'AR',
+      initiative: 'default',
+      responseBenefit: false,
+      hackingPool: true,
+      biofeedbackImmune: true,
+      tnModifier: null,
+      description: 'Holographic overlay on real world. Icons appear as AROs.'
+    },
+    {
+      name: 'Virtual Reality Cold Sim',
+      abbreviation: 'VR-Cold',
+      initiative: 'default',
+      responseBenefit: false,
+      hackingPool: true,
+      biofeedbackImmune: false,
+      biofeedbackType: 'Stun',
+      tnModifier: null,
+      description: 'Full immersion via standard datajack or trodes. Body falls unconscious.'
+    },
+    {
+      name: 'Virtual Reality Hot Sim',
+      abbreviation: 'VR-Hot',
+      initiative: 'matrix',
+      responseBenefit: true,
+      hackingPool: true,
+      biofeedbackImmune: false,
+      biofeedbackType: 'Physical',
+      tnModifier: null,
+      description: 'Full immersion with heightened reflexes. Disables Matrix guardrails. Body falls unconscious.'
+    },
+  ],
+
+  // ── Magic identity ──────────────────────────────────────────────────────────
+  magicTraditions: ['Shamanic', 'Hermetic', 'Somatic'],
+
+  // astral: 'projection' = project + perceive, 'perception' = perceive only, '' = none
+  magicTypes: [
+    { name: 'Full Magician', traditions: ['Shamanic', 'Hermetic'], astral: 'projection' },
+    { name: 'Conjurer',      traditions: ['Shamanic', 'Hermetic'], astral: 'perception' },
+    { name: 'Sorcerer',      traditions: ['Shamanic', 'Hermetic'], astral: 'perception' },
+    { name: 'Elementalist',  traditions: ['Hermetic'],             astral: 'perception' },
+    { name: 'Shamanist',     traditions: ['Shamanic'],             astral: 'perception' },
+    { name: 'Adept',         traditions: ['Somatic'],              astral: 'perception' },
+  ],
+
+  // Full TOTEMS list (core + expanded/MITS), sorted alphabetically
+  magicTotems: [
+    'Adversary', 'Bacchus', 'Badger', 'Bat', 'Bear', 'Boar', 'Buffalo', 'Bull',
+    'Cat', 'Cheetah', 'Cobra', 'Coyote', 'Crab', 'Creator', 'Crocodile',
+    'Dark King', 'Dog', 'Dolphin', 'Dove', 'Dragonslayer',
+    'Eagle', 'Elk',
+    'Fenrir', 'Fire-Bringer', 'Fish', 'Fox',
+    'Gargoyle', 'Gator', 'Gecko', 'Goose', 'Great Mother', 'Griffin',
+    'Horse', 'Horned Man', 'Hyena',
+    'Jackal', 'Jaguar',
+    'Leopard', 'Leviathan', 'Lion', 'Lizard', 'Lover',
+    'Monkey', 'Moon', 'Moon Maiden', 'Mountain', 'Mouse',
+    'Oak', 'Otter', 'Owl',
+    'Parrot', 'Pegasus', 'Phoenix', 'Plumed Serpent', 'Polecat', 'Prairie Dog', 'Puma', 'Python',
+    'Raccoon', 'Rat', 'Raven',
+    'Scorpion', 'Sea', 'Sea King', 'Seductress', 'Shark', 'Siren', 'Sky Father', 'Snake', 'Spider', 'Stag', 'Stream', 'Sun',
+    'Thunderbird', 'Trickster', 'Turtle',
+    'Unicorn',
+    'Whale', 'Wild Huntsman', 'Wind', 'Wise Warrior', 'Wolf', 'Wyrm',
+  ],
+
+  // Voodoo loa (kept separate for flavour, combined under one dropdown with optgroup)
+  magicLoa: [
+    'Agwe', 'Azaca', 'Damballah', 'Erzulie', 'Ghede', 'Legba', 'Obatala', 'Ogoun', 'Shango',
+  ],
+
+  magicElements: ['Earth', 'Air', 'Fire', 'Water'],
+
+  skills:                    SR3ESkills,
+  getSkillCategories,
+  getSkillsForCategory,
+  getLinkedAttributeForSkill,
+  getLinkedAttributeForCategory,
+  getFullSkillName,
+  getSpecializationsForSkill,
+};

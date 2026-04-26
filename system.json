@@ -1,0 +1,128 @@
+  {
+  "id": "The2ndChumming3e",
+"title": "The 2nd Chumming — Shadowrun 3rd Edition",
+  "description": "An unofficial implementation of Shadowrun 3rd Edition for Foundry VTT.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "William Diffey"
+    }
+  ],
+  "esmodules": [
+    "scripts/sr3e.js"
+  ],
+  "styles": [
+    "styles/sr3e.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlFields": [
+          "biography",
+          "notes"
+        ]
+      },
+      "npc": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "vehicle": {
+        "htmlFields": ["notes"]
+      }
+    },
+    "Item": {
+      "melee": {
+        "htmlFields": ["notes"]
+      },
+      "thrown": {
+        "htmlFields": ["notes"]
+      },
+      "projectile": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "firearm": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "ammunition": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "armor": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "gear": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "skill": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "quality": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "cyberware": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "bioware": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "spell": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "complex_form": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "summoning": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
+      "program": {
+        "htmlFields": [
+          "description",
+          "effect"
+        ]
+      },
+      "cyberdeck": {
+        "htmlFields": [
+          "notes"
+        ]
+      }
+    }
+  },
+      "url": "https://github.com/williamdiffey/The2ndChumming3e",
+  "manifest": "https://raw.githubusercontent.com/williamdiffey/The2ndChumming3e/main/system.json",
+  "download": "https://github.com/williamdiffey/The2ndChumming3e/archive/refs/heads/main.zip"
+}

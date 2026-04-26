@@ -1,0 +1,3342 @@
+[
+  {
+    "_id": "sr3e-melee-0000",
+    "name": "Axe",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR)S",
+      "weight": "2.5",
+      "availability": "2/4hrs",
+      "cost": 60,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.2",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0001",
+    "name": "Ares Monosword",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "3",
+      "reach": "1",
+      "damage": "(STR+3)M",
+      "weight": "2",
+      "availability": "4/24hrs",
+      "cost": 1000,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cc.8",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0002",
+    "name": "Bayonet",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "0",
+      "damage": "(STR)L",
+      "weight": ".25",
+      "availability": "2/8hrs",
+      "cost": 35,
+      "streetIndex": ".8",
+      "legal": true,
+      "bookPage": "cb1.2",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0003",
+    "name": "Bear-Knife",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "3",
+      "reach": "0",
+      "damage": "(STR+2)M",
+      "weight": "1",
+      "availability": "6/48hrs",
+      "cost": 2000,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0004",
+    "name": "Black Whistle Butterfly Knife",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "3/4",
+      "reach": "0",
+      "damage": "(STR+2)L",
+      "weight": ".75",
+      "availability": "7/65ays",
+      "cost": 350,
+      "streetIndex": "1.5",
+      "legal": true,
+      "bookPage": "tss.2",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0005",
+    "name": "Bowie Knife",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "6",
+      "reach": "0",
+      "damage": "(STR+2)L",
+      "weight": "1",
+      "availability": "3/24hrs",
+      "cost": 50,
+      "streetIndex": ".8",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0006",
+    "name": "Broadsword",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "1",
+      "damage": "(STR+1)M",
+      "weight": "2",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0007",
+    "name": "Cane Knife",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR+1)M",
+      "weight": "1",
+      "availability": "10/7days",
+      "cost": 600,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0008",
+    "name": "Cane Sword",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR+1)M",
+      "weight": "1",
+      "availability": "10/7days",
+      "cost": 600,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0009",
+    "name": "Centurion Laser Axe",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR)S",
+      "weight": "5.2",
+      "availability": "6/48hrs",
+      "cost": 3500,
+      "streetIndex": ".5",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0010",
+    "name": "Combat Axe",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "2",
+      "damage": "(STR)S",
+      "weight": "2",
+      "availability": "3/24hrs",
+      "cost": 750,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0011",
+    "name": "Combat Axe Thrusting Point",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "-",
+      "damage": "(STR+2)L",
+      "weight": "0",
+      "availability": "0",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0012",
+    "name": "CougarFineBladeKnife-Shrt",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "-",
+      "damage": "(STR)M",
+      "weight": ".5",
+      "availability": "5/72hrs",
+      "cost": 800,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "cc.8",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0013",
+    "name": "CougarFineBladeKnife-Long",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "-",
+      "damage": "(STR+1)M",
+      "weight": ".75",
+      "availability": "8/72hrs",
+      "cost": 1500,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "cc.8",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0014",
+    "name": "Decapitator battleaxe",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "2",
+      "damage": "(STR+4)S",
+      "weight": "11",
+      "availability": "6/48hrs",
+      "cost": 2000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0015",
+    "name": "Forearm Snap Blades",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "7",
+      "reach": "-",
+      "damage": "(STR)M",
+      "weight": "1.5",
+      "availability": "4/48hrs",
+      "cost": 850,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0016",
+    "name": "Gasher battleaxe",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR)S",
+      "weight": "2",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0017",
+    "name": "Gutter dagger",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "0",
+      "damage": "(STR)M",
+      "weight": ".5",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0018",
+    "name": "IMI Chainknife",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "6",
+      "reach": "0",
+      "damage": "(STR+5)L",
+      "weight": ".75",
+      "availability": "6/48hrs",
+      "cost": 120,
+      "streetIndex": "1.2",
+      "legal": true,
+      "bookPage": "cb1.3",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0019",
+    "name": "Katana",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "3",
+      "reach": "1",
+      "damage": "(STR+3)M",
+      "weight": "1",
+      "availability": "4/48hrs",
+      "cost": 1000,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0020",
+    "name": "Katar",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "7",
+      "reach": "-",
+      "damage": "(STR+3)L",
+      "weight": ".75",
+      "availability": "5/72hrs",
+      "cost": 800,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.8",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0021",
+    "name": "Kris",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "7",
+      "reach": "-",
+      "damage": "(STR)M",
+      "weight": ".75",
+      "availability": "8/72hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "cc.8",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0022",
+    "name": "Kendachi M-33 Powersword",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "1",
+      "damage": "(STR+1)S",
+      "weight": "3",
+      "availability": "8/14days",
+      "cost": 1860,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "cb1.36",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0023",
+    "name": "Kendachi Monokatana",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "3",
+      "reach": "1",
+      "damage": "(STR+4)M",
+      "weight": "1",
+      "availability": "8/5days",
+      "cost": 1200,
+      "streetIndex": "2.5",
+      "legal": true,
+      "bookPage": "cb1.3",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0024",
+    "name": "Kendachi Monoknife",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "7",
+      "reach": "-",
+      "damage": "(STR+1)L",
+      "weight": ".5",
+      "availability": "6/60hrs",
+      "cost": 200,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.3",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0025",
+    "name": "Kendachi Mononaginata",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR+2)L",
+      "weight": ".5",
+      "availability": "6/60hrs",
+      "cost": 300,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0026",
+    "name": "Kendachi Monosword Cane",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "2/10",
+      "reach": "-",
+      "damage": "(STR+1)M",
+      "weight": ".75",
+      "availability": "8/72hrs",
+      "cost": 1020,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.3",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0027",
+    "name": "Kendachi Mono-Two Long",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "3",
+      "reach": "1",
+      "damage": "(STR+3)M",
+      "weight": "1",
+      "availability": "5/48hrs",
+      "cost": 1650,
+      "streetIndex": "2.1",
+      "legal": true,
+      "bookPage": "cb1.36",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0028",
+    "name": "Kendachi Mono-Two Short",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "0",
+      "damage": "(STR+1)M",
+      "weight": ".75",
+      "availability": "5/48hrs",
+      "cost": 1650,
+      "streetIndex": "2.1",
+      "legal": true,
+      "bookPage": "cb1.36",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0029",
+    "name": "Knife",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "-",
+      "damage": "(STR)L",
+      "weight": ".5",
+      "availability": "2/4hrs",
+      "cost": 30,
+      "streetIndex": ".75",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0030",
+    "name": "Laser Cresent Axe",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR)S",
+      "weight": "5.2",
+      "availability": "6/48hrs",
+      "cost": 3500,
+      "streetIndex": ".5",
+      "legal": true,
+      "bookPage": "cc.8",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0031",
+    "name": "Longsword",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "1",
+      "damage": "(STR+2)M",
+      "weight": "2",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0032",
+    "name": "Macauitl",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "3",
+      "reach": "1",
+      "damage": "(STR+2)M",
+      "weight": "1",
+      "availability": "18/7days",
+      "cost": 3000,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.8",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0033",
+    "name": "Mystic Tech. Spring Knife",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "0",
+      "damage": "(STR+2)L",
+      "weight": ".75",
+      "availability": "4/12hrs",
+      "cost": 125,
+      "streetIndex": "1.2",
+      "legal": true,
+      "bookPage": "cb1.3",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0034",
+    "name": "Mystic Tech. Sword",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "1",
+      "damage": "(STR+3)M",
+      "weight": "-",
+      "availability": "-",
+      "cost": 0,
+      "streetIndex": "-",
+      "legal": true,
+      "bookPage": "cb1.3",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0035",
+    "name": "Rapier",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "1",
+      "damage": "(STR+2)M",
+      "weight": "2",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0036",
+    "name": "Switchblade",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "9",
+      "reach": "-",
+      "damage": "(STR-1)L",
+      "weight": ".1",
+      "availability": "2/6hrs",
+      "cost": 25,
+      "streetIndex": ".75",
+      "legal": true,
+      "bookPage": "cb1.2",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0037",
+    "name": "Scimitar",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "1",
+      "damage": "(STR+2)M",
+      "weight": "1.5",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0038",
+    "name": "Shortsword",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "1",
+      "damage": "(STR)M",
+      "weight": "2",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0039",
+    "name": "Slamdance Inc. Spawnblade",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "0",
+      "damage": "(STR)L",
+      "weight": ".5",
+      "availability": "4/72hrs",
+      "cost": 100,
+      "streetIndex": "1.1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0040",
+    "name": "Stiletto",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "10",
+      "reach": "0",
+      "damage": "(STR)L",
+      "weight": ".3",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0041",
+    "name": "Stiletto",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "14",
+      "reach": "0",
+      "damage": "(STR-1)L",
+      "weight": ".1",
+      "availability": "2/24hrs",
+      "cost": 10,
+      "streetIndex": ".5",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0042",
+    "name": "Survival Knife",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "6",
+      "reach": "-",
+      "damage": "(STR+2)L",
+      "weight": ".75",
+      "availability": "3/6hrs",
+      "cost": 450,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0043",
+    "name": "Sword",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "1",
+      "damage": "(STR+2)M",
+      "weight": "1",
+      "availability": "3/24hrs",
+      "cost": 500,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0044",
+    "name": "Tomahawk",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "6",
+      "reach": "1",
+      "damage": "(STR)M",
+      "weight": ".5",
+      "availability": "4/48hrs",
+      "cost": 200,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cc.8",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0045",
+    "name": "Two-Handed Sword",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR+3)S",
+      "weight": "5",
+      "availability": "6/48hrs",
+      "cost": 3000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0046",
+    "name": "Utility Sword",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "1",
+      "damage": "(STR+2)M",
+      "weight": ".75",
+      "availability": "4/72hrs",
+      "cost": 60,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.4",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0047",
+    "name": "Vibro Knife",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "7",
+      "reach": "-",
+      "damage": "(STR)M",
+      "weight": "1",
+      "availability": "5/72hrs",
+      "cost": 1000,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.8",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0048",
+    "name": "Vibro Sword",
+    "type": "melee",
+    "system": {
+      "category": "EDG",
+      "skill": "Edged Weapons",
+      "attribute": "strength",
+      "concealability": "3",
+      "reach": "1",
+      "damage": "(STR)S",
+      "weight": "2",
+      "availability": "5/72hrs",
+      "cost": 2000,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.8",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0049",
+    "name": "ACB Harmony Telescoping Staff",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "8/-",
+      "reach": "0/2",
+      "damage": "(STR+3)M Stun",
+      "weight": "2",
+      "availability": "20/60days",
+      "cost": 14000,
+      "streetIndex": "3.6",
+      "legal": true,
+      "bookPage": "tss.3",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0050",
+    "name": "AZ-150 Stun Baton",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "1",
+      "damage": "8S Stun",
+      "weight": "1",
+      "availability": "3/36hrs",
+      "cost": 1500,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0051",
+    "name": "Bo Staff",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "2",
+      "damage": "(STR+3)M Stun",
+      "weight": "2",
+      "availability": "4/48hrs",
+      "cost": 50,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0052",
+    "name": "Claymore",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "2",
+      "damage": "(STR+1)S",
+      "weight": "6",
+      "availability": "4/48hrs",
+      "cost": 1000,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0053",
+    "name": "Club",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "1",
+      "damage": "(STR+1)M Stun",
+      "weight": "1",
+      "availability": "2/6hrs",
+      "cost": 10,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0054",
+    "name": "Devil",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "2",
+      "damage": "(STR)S",
+      "weight": "10",
+      "availability": "6/48hrs",
+      "cost": 1500,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0055",
+    "name": "Excalibur Nightstick Mace",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR)M stun",
+      "weight": "5",
+      "availability": "6/48hrs",
+      "cost": 700,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "cb1.2",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0056",
+    "name": "Extendable Baton",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "9/5",
+      "reach": "1",
+      "damage": "(STR+1)M Stun",
+      "weight": "1",
+      "availability": "3/24hrs",
+      "cost": 25,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0057",
+    "name": "Harpoon",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "2",
+      "damage": "(STR+2)M",
+      "weight": "4",
+      "availability": "4/48hrs",
+      "cost": 500,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0058",
+    "name": "Halberd",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "2",
+      "damage": "(STR)S",
+      "weight": "6",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0059",
+    "name": "Lance",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "2",
+      "damage": "(kph/5)M",
+      "weight": "2",
+      "availability": "4/12hrs",
+      "cost": 60,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0060",
+    "name": "Long Spear",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "2",
+      "damage": "(STR)S",
+      "weight": "4",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0061",
+    "name": "Javelin",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "3",
+      "reach": "2",
+      "damage": "(STR+2)L",
+      "weight": "2",
+      "availability": "4/48hrs",
+      "cost": 100,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0062",
+    "name": "Mace",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "1",
+      "damage": "(STR+3)M Stun",
+      "weight": "2",
+      "availability": "5/48hrs",
+      "cost": 150,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0063",
+    "name": "Mersch MX-23 Stunlance",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "2",
+      "damage": "(STR+2)L/9S Stun",
+      "weight": "3",
+      "availability": "5/48hrs",
+      "cost": 2500,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0064",
+    "name": "Mjolnir warhammer",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "2",
+      "damage": "(STR+4)D",
+      "weight": "15",
+      "availability": "6/48hrs",
+      "cost": 2000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0065",
+    "name": "Morning Star",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR+1)M",
+      "weight": "7",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0066",
+    "name": "Mystic Tech. Nunchaku",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "1",
+      "damage": "(STR+2)M stun",
+      "weight": ".5",
+      "availability": "3/8hrs",
+      "cost": 800,
+      "streetIndex": ".75",
+      "legal": true,
+      "bookPage": "cb1.3",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0067",
+    "name": "No-Dachi",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "2",
+      "damage": "(STR+1)S",
+      "weight": "5",
+      "availability": "8/72hrs",
+      "cost": 3000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0068",
+    "name": "Pipe",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "1",
+      "damage": "(STR+1)M Stun",
+      "weight": "5",
+      "availability": "2/6hrs",
+      "cost": 10,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.328",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0069",
+    "name": "Pole Arm",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "2",
+      "damage": "(STR+3)S",
+      "weight": "4",
+      "availability": "4/48hrs",
+      "cost": 500,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0070",
+    "name": "Rattan Stick",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "1",
+      "damage": "(STR+1)M Stun",
+      "weight": ".2",
+      "availability": "2/6hrs",
+      "cost": 10,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0071",
+    "name": "Sai",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "6",
+      "reach": "-",
+      "damage": "(STR+2)L Stun",
+      "weight": "1",
+      "availability": "4/48hrs",
+      "cost": 100,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0072",
+    "name": "Nunchaku",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "7",
+      "reach": "1",
+      "damage": "(STR+2)M stun",
+      "weight": ".5",
+      "availability": "3/8hrs",
+      "cost": 40,
+      "streetIndex": ".75",
+      "legal": true,
+      "bookPage": "cb1.2",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0073",
+    "name": "Nagagita",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR+1)",
+      "weight": "1.5",
+      "availability": "4/12hrs",
+      "cost": 50,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.2",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0074",
+    "name": "Sap",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "-",
+      "damage": "(STR+1)M Stun",
+      "weight": "0",
+      "availability": "2/6hrs",
+      "cost": 10,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0075",
+    "name": "Scythe",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "2",
+      "damage": "(STR+1)S",
+      "weight": "7",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0076",
+    "name": "Skull Crusher warhammer",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "1",
+      "damage": "(STR)S",
+      "weight": "5",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0077",
+    "name": "Sledgehammer",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "1",
+      "reach": "1",
+      "damage": "(STR+2)S stun",
+      "weight": "3",
+      "availability": "2/4hrs",
+      "cost": 50,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.2",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0078",
+    "name": "Spear",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "2",
+      "damage": "(STR+4)L",
+      "weight": "2",
+      "availability": "4/48hrs",
+      "cost": 200,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0079",
+    "name": "Spiked Mace",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "3",
+      "reach": "1",
+      "damage": "(STR+1)M",
+      "weight": "2",
+      "availability": "5/48hrs",
+      "cost": 150,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0080",
+    "name": "Staff",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "2",
+      "reach": "2",
+      "damage": "(STR+2)M Stun",
+      "weight": "2",
+      "availability": "3/24hrs",
+      "cost": 50,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0081",
+    "name": "Stun Baton",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "1",
+      "damage": "6S Stun",
+      "weight": "1",
+      "availability": "3/36hrs",
+      "cost": 750,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0082",
+    "name": "Telescoping Staff",
+    "type": "melee",
+    "system": {
+      "category": "POL",
+      "skill": "Pole Arms/Staff",
+      "attribute": "strength",
+      "concealability": "5/2",
+      "reach": "2",
+      "damage": "(STR+2)M Stun",
+      "weight": "3",
+      "availability": "4/48hrs",
+      "cost": 100,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cc.10",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0083",
+    "name": "Tetsubo",
+    "type": "melee",
+    "system": {
+      "category": "CLB",
+      "skill": "Clubs",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "2",
+      "damage": "(STR+3)S",
+      "weight": "3",
+      "availability": "5/24hrs",
+      "cost": 500,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0084",
+    "name": "Bullwhip",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "2",
+      "damage": "(STR)L",
+      "weight": "1",
+      "availability": "6/48hrs",
+      "cost": 100,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0085",
+    "name": "Cat With Nine Tails",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "2",
+      "damage": "(STR+2)M",
+      "weight": "3",
+      "availability": "6/48hrs",
+      "cost": 1000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0086",
+    "name": "Chain",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "10",
+      "reach": "1",
+      "damage": "(STR+2)M Stun",
+      "weight": "5",
+      "availability": "2/6hrs",
+      "cost": 10,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cc.11",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0087",
+    "name": "Flail",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "3",
+      "reach": "2",
+      "damage": "(STR+1)M Stun",
+      "weight": ".75",
+      "availability": "4/12hrs",
+      "cost": 50,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0088",
+    "name": "Flogger whip",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "6",
+      "reach": "2",
+      "damage": "(STR)M",
+      "weight": "1",
+      "availability": "6/48hrs",
+      "cost": 500,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0089",
+    "name": "Kendachi Monowhip",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "9",
+      "reach": "3",
+      "damage": "10S",
+      "weight": "-",
+      "availability": "26/14 days",
+      "cost": 3500,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "cb1.3",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0090",
+    "name": "Kusarigama",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "2",
+      "damage": "(STR+1)M",
+      "weight": "1",
+      "availability": "6/48hrs",
+      "cost": 200,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.11",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0091",
+    "name": "Manriki-gusari",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "10",
+      "reach": "2",
+      "damage": "(STR+2)L Stun",
+      "weight": "1",
+      "availability": "6/48hrs",
+      "cost": 150,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.11",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0092",
+    "name": "Monofilament Whip",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "10",
+      "reach": "1",
+      "damage": "10S",
+      "weight": "0",
+      "availability": "24/14days",
+      "cost": 3000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0093",
+    "name": "Nomad Smartwhip",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "6",
+      "reach": "2",
+      "damage": "(STR+3)L Datajack required",
+      "weight": "1",
+      "availability": "6/72hrs",
+      "cost": 600,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.3",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0094",
+    "name": "Morning Star",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "2",
+      "damage": "(STR+2)M",
+      "weight": "2",
+      "availability": "5/48hrs",
+      "cost": 250,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.11",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0095",
+    "name": "Nunchaku",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "7",
+      "reach": "1",
+      "damage": "(STR+1)M Stun",
+      "weight": ".75",
+      "availability": "4/48hrs",
+      "cost": 100,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cc.11",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0096",
+    "name": "Three-section Staff",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "2",
+      "damage": "(STR+2)M Stun",
+      "weight": "2",
+      "availability": "5/72hrs",
+      "cost": 200,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cc.11",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0097",
+    "name": "Whip",
+    "type": "melee",
+    "system": {
+      "category": "WHP",
+      "skill": "Whips/Flails",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "2",
+      "damage": "(STR)L",
+      "weight": ".5",
+      "availability": "5/24hrs",
+      "cost": 300,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0098",
+    "name": "Bio-Injector",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "0",
+      "damage": "5L",
+      "weight": "-",
+      "availability": "14/7 days",
+      "cost": 15000,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "cp.29",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0099",
+    "name": "Bio-Injector",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "0",
+      "damage": "5L + drug",
+      "weight": ".5",
+      "availability": "10/96hrs",
+      "cost": 15000,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0100",
+    "name": "Brass Knuckles",
+    "type": "melee",
+    "system": {
+      "category": "UNA",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "16/4",
+      "reach": "0",
+      "damage": "(STR+1)M Stun",
+      "weight": ".2",
+      "availability": "2/24hrs",
+      "cost": 20,
+      "streetIndex": ".75",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0101",
+    "name": "Chainsaw",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "1",
+      "damage": "(STR+2)S",
+      "weight": "4",
+      "availability": "3/6hrs",
+      "cost": 500,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cc.11",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0102",
+    "name": "DinaTech F5C",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "0",
+      "damage": "(STR/2)L/(STR)L",
+      "weight": "-",
+      "availability": "10/14 days",
+      "cost": 350,
+      "streetIndex": "3",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0103",
+    "name": "Drug-A-Thug",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "6",
+      "reach": "0",
+      "damage": "drug",
+      "weight": ".5",
+      "availability": "3/8hrs",
+      "cost": 150,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0104",
+    "name": "Entrenching Tool",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "3",
+      "reach": "-",
+      "damage": "(STR)M",
+      "weight": ".75",
+      "availability": "3/16hrs",
+      "cost": 50,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.2",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0105",
+    "name": "Fashion Gloves",
+    "type": "melee",
+    "system": {
+      "category": "UNA",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "0",
+      "damage": "(STR+1)M Stun",
+      "weight": ".2",
+      "availability": "4/36hrs",
+      "cost": 350,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0106",
+    "name": "Hardliner Gloves",
+    "type": "melee",
+    "system": {
+      "category": "UNA",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "9",
+      "reach": "-",
+      "damage": "(STR+1)M Stun",
+      "weight": ".5",
+      "availability": "2/24hrs",
+      "cost": 300,
+      "streetIndex": ".75",
+      "legal": true,
+      "bookPage": "cc.49",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0107",
+    "name": "IMI",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "6",
+      "reach": "0",
+      "damage": "(STR+5)L",
+      "weight": ".75",
+      "availability": "6/48hrs",
+      "cost": 120,
+      "streetIndex": "1.2",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0108",
+    "name": "Kitchen Sink",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "0",
+      "damage": "((2x STR)-6)S Stun",
+      "weight": "10",
+      "availability": "always",
+      "cost": 100,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0109",
+    "name": "Shock Glove",
+    "type": "melee",
+    "system": {
+      "category": "UNA",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "9",
+      "reach": "-",
+      "damage": "7S Stun",
+      "weight": ".5",
+      "availability": "5/48hrs",
+      "cost": 950,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "sr3.275",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0110",
+    "name": "SMP-1 Battleglove",
+    "type": "melee",
+    "system": {
+      "category": "UNA",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "-",
+      "damage": "(STR+3)M",
+      "weight": "1.5",
+      "availability": "10/7 days",
+      "cost": 900,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cb1.4",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0111",
+    "name": "Techtronica Black-Zap Glove",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "4",
+      "reach": "0",
+      "damage": "9S Stun",
+      "weight": "1",
+      "availability": "6/48hrs",
+      "cost": 1200,
+      "streetIndex": "2.2",
+      "legal": true,
+      "bookPage": "cb1.34",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0112",
+    "name": "Excalibur Nightstick",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "1",
+      "damage": "8S stun",
+      "weight": "1",
+      "availability": "4/48hrs",
+      "cost": 1800,
+      "streetIndex": "2",
+      "legal": true,
+      "bookPage": "cb1.2",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0113",
+    "name": "Taser II",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "7",
+      "reach": "0",
+      "damage": "5S Stun",
+      "weight": ".5",
+      "availability": "4/24hrs",
+      "cost": 300,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr2.???",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0114",
+    "name": "BigKnucks",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR+1)M Stun",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cp.15",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0115",
+    "name": "BigRipp",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR+2)M",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb4.136",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0116",
+    "name": "Arc Thrower(CYB)   1",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "10S Stun",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb4.136",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0117",
+    "name": "Chainripp",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR)S",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb3.99",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0118",
+    "name": "Cutting Torch",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "8S",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.27",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0119",
+    "name": "Fangs",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "-1",
+      "damage": "(STR+1)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "mm.43",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0120",
+    "name": "Fangs",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "9",
+      "reach": "-1",
+      "damage": "(STR+1)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "mm.43",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0121",
+    "name": "Finger",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb4.134",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0122",
+    "name": "Finger",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.25",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0123",
+    "name": "Finger",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.25",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0124",
+    "name": "Finger",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.25",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0125",
+    "name": "Finger",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb4.134",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0126",
+    "name": "Flashbulb",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.26",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0127",
+    "name": "Gang Jazzler",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "9D Stun Spec.",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.29",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0128",
+    "name": "Gas Jet",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.26",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0129",
+    "name": "Hand Blade",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR+3)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.302",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0130",
+    "name": "Hand Blade",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR+3)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.302",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0131",
+    "name": "Hand Razors",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.302",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0132",
+    "name": "H.Razor",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.302",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0133",
+    "name": "Razors(CYB)  1",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR+2)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.302",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0134",
+    "name": "Hand",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.27",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0135",
+    "name": "Hand",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "9M",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb4.136",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0136",
+    "name": "Hand",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "9S",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb4.136",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0137",
+    "name": "Hand",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR+1)M Stun",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cp.11",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0138",
+    "name": "Hand",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR+1)M Stun",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cp.11",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0139",
+    "name": "Horn Implants",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "-",
+      "reach": "-1",
+      "damage": "(STR)M",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "mm.43",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0140",
+    "name": "Horn Implants",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "8",
+      "reach": "-1",
+      "damage": "(STR)M",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "mm.43",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0141",
+    "name": "Malorian Arms Sliver Gun",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.7",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0142",
+    "name": "Micromissile Launcher",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cp.15",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0143",
+    "name": "Icer",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.27",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0144",
+    "name": "LimbLink",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.26",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0145",
+    "name": "Oral Dart",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "mm.17",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0146",
+    "name": "Oral Gun",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "4L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "mm.17",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0147",
+    "name": "Oral Slasher",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "6M",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "mm.17",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0148",
+    "name": "Oral Whip",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "ct.25",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0149",
+    "name": "Powerjaw",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR+2)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb4.135",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0150",
+    "name": "Retract. Climbing Claws",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR-1)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "mm.31",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0151",
+    "name": "Rippers",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR/2)M",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cp.16",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0152",
+    "name": "Scratchers",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR+1)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cp.17",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0153",
+    "name": "Shock Hand",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "5",
+      "reach": "0",
+      "damage": "8S Stun",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "mm.43",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0154",
+    "name": "Cobra",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "DAM",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb3.98",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0155",
+    "name": "Spur",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR)M",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.302",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0156",
+    "name": "Spur",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR)M",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "sr3.302",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0157",
+    "name": "Taser Grip",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "6S Stun",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.28",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0158",
+    "name": "Teeth",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(str/2)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb2.48",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0159",
+    "name": "Teeth",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(str-1)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb2.48",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0160",
+    "name": "Teeth",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(str)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb4.135",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0161",
+    "name": "Teeth",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(str)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb2.48",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0162",
+    "name": "Teeth",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(str+1)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb2.48",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0163",
+    "name": "Tri-Dart Launcher",
+    "type": "melee",
+    "system": {
+      "category": "other",
+      "skill": "Armed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR)M",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb2.47",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0164",
+    "name": "Venom Sack",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR)M",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "mm.42",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0165",
+    "name": "Whip",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR)L",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cb1.26",
+      "notes": ""
+    }
+  },
+  {
+    "_id": "sr3e-melee-0166",
+    "name": "Wolvers",
+    "type": "melee",
+    "system": {
+      "category": "CYB",
+      "skill": "Unarmed Combat",
+      "attribute": "strength",
+      "concealability": "",
+      "reach": "0",
+      "damage": "(STR)M",
+      "weight": "",
+      "availability": "",
+      "cost": 0,
+      "streetIndex": "1",
+      "legal": true,
+      "bookPage": "cp.17",
+      "notes": ""
+    }
+  }
+]

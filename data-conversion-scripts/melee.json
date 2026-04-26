@@ -1,0 +1,1639 @@
+[
+      {
+        "Name": "Axe(EDG)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR)S",
+        "Weight": "2.5",
+        "Availability": "2/4hrs",
+        "Cost": "60",
+        "Street Index": "1",
+        "BookPage": "cb1.2"
+      },
+      {
+        "Name": "Ares Monosword(EDG)",
+        "Concealability": "3",
+        "Reach": "1",
+        "Damage": "(STR+3)M",
+        "Weight": "2",
+        "Availability": "4/24hrs",
+        "Cost": "1000",
+        "Street Index": "1",
+        "BookPage": "cc.8"
+      },
+      {
+        "Name": "Bayonet(EDG)",
+        "Concealability": "8",
+        "Reach": "0",
+        "Damage": "(STR)L",
+        "Weight": ".25",
+        "Availability": "2/8hrs",
+        "Cost": "35",
+        "Street Index": ".8",
+        "BookPage": "cb1.2"
+      },
+      {
+        "Name": "Bear-Knife(EDG)",
+        "Concealability": "3",
+        "Reach": "0",
+        "Damage": "(STR+2)M",
+        "Weight": "1",
+        "Availability": "6/48hrs",
+        "Cost": "2000",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Black Whistle Butterfly Knife",
+        "Concealability": "3/4",
+        "Reach": "0",
+        "Damage": "(STR+2)L",
+        "Weight": ".75",
+        "Availability": "7/65ays",
+        "Cost": "350",
+        "Street Index": "1.5",
+        "BookPage": "tss.2"
+      },
+      {
+        "Name": "Bowie Knife(EDG)",
+        "Concealability": "6",
+        "Reach": "0",
+        "Damage": "(STR+2)L",
+        "Weight": "1",
+        "Availability": "3/24hrs",
+        "Cost": "50",
+        "Street Index": ".8",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Broadsword(EDG)",
+        "Concealability": "4",
+        "Reach": "1",
+        "Damage": "(STR+1)M",
+        "Weight": "2",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Cane Knife(EDG)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR+1)M",
+        "Weight": "1",
+        "Availability": "10/7days",
+        "Cost": "600",
+        "Street Index": "2",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Cane Sword(EDG)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR+1)M",
+        "Weight": "1",
+        "Availability": "10/7days",
+        "Cost": "600",
+        "Street Index": "2",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Centurion Laser Axe(EDG)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR)S",
+        "Weight": "5.2",
+        "Availability": "6/48hrs",
+        "Cost": "3500",
+        "Street Index": ".5",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Combat Axe(EDG)",
+        "Concealability": "2",
+        "Reach": "2",
+        "Damage": "(STR)S",
+        "Weight": "2",
+        "Availability": "3/24hrs",
+        "Cost": "750",
+        "Street Index": "2",
+        "BookPage": "sr3.275",
+        "Legal": "legal",
+        "Notes": "notes here"
+      },
+      {
+        "Name": "Combat Axe Thrusting Point",
+        "Concealability": "-",
+        "Reach": "-",
+        "Damage": "(STR+2)L",
+        "Weight": "0",
+        "Availability": "0",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "CougarFineBladeKnife-Shrt(EDG)",
+        "Concealability": "8",
+        "Reach": "-",
+        "Damage": "(STR)M",
+        "Weight": ".5",
+        "Availability": "5/72hrs",
+        "Cost": "800",
+        "Street Index": "3",
+        "BookPage": "cc.8"
+      },
+      {
+        "Name": "CougarFineBladeKnife-Long(EDG)",
+        "Concealability": "5",
+        "Reach": "-",
+        "Damage": "(STR+1)M",
+        "Weight": ".75",
+        "Availability": "8/72hrs",
+        "Cost": "1500",
+        "Street Index": "3",
+        "BookPage": "cc.8"
+      },
+      {
+        "Name": "Decapitator battleaxe(EDG)",
+        "Concealability": "-",
+        "Reach": "2",
+        "Damage": "(STR+4)S",
+        "Weight": "11",
+        "Availability": "6/48hrs",
+        "Cost": "2000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Forearm Snap Blades(EDG)",
+        "Concealability": "7",
+        "Reach": "-",
+        "Damage": "(STR)M",
+        "Weight": "1.5",
+        "Availability": "4/48hrs",
+        "Cost": "850",
+        "Street Index": "2",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Gasher battleaxe(EDG)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR)S",
+        "Weight": "2",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Gutter dagger(EDG)",
+        "Concealability": "8",
+        "Reach": "0",
+        "Damage": "(STR)M",
+        "Weight": ".5",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "IMI Chainknife(EDG)",
+        "Concealability": "6",
+        "Reach": "0",
+        "Damage": "(STR+5)L",
+        "Weight": ".75",
+        "Availability": "6/48hrs",
+        "Cost": "120",
+        "Street Index": "1.2",
+        "BookPage": "cb1.3"
+      },
+      {
+        "Name": "Katana(EDG)",
+        "Concealability": "3",
+        "Reach": "1",
+        "Damage": "(STR+3)M",
+        "Weight": "1",
+        "Availability": "4/48hrs",
+        "Cost": "1000",
+        "Street Index": "2",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Katar(EDG)",
+        "Concealability": "7",
+        "Reach": "-",
+        "Damage": "(STR+3)L",
+        "Weight": ".75",
+        "Availability": "5/72hrs",
+        "Cost": "800",
+        "Street Index": "2",
+        "BookPage": "cc.8"
+      },
+      {
+        "Name": "Kris(EDG)",
+        "Concealability": "7",
+        "Reach": "-",
+        "Damage": "(STR)M",
+        "Weight": ".75",
+        "Availability": "8/72hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "cc.8"
+      },
+      {
+        "Name": "Kendachi M-33 Powersword(EDG)",
+        "Concealability": "4",
+        "Reach": "1",
+        "Damage": "(STR+1)S",
+        "Weight": "3",
+        "Availability": "8/14days",
+        "Cost": "1860",
+        "Street Index": "3",
+        "BookPage": "cb1.36"
+      },
+      {
+        "Name": "Kendachi Monokatana(EDG)",
+        "Concealability": "3",
+        "Reach": "1",
+        "Damage": "(STR+4)M",
+        "Weight": "1",
+        "Availability": "8/5days",
+        "Cost": "1200",
+        "Street Index": "2.5",
+        "BookPage": "cb1.3"
+      },
+      {
+        "Name": "Kendachi Monoknife(EDG)",
+        "Concealability": "7",
+        "Reach": "-",
+        "Damage": "(STR+1)L",
+        "Weight": ".5",
+        "Availability": "6/60hrs",
+        "Cost": "200",
+        "Street Index": "1",
+        "BookPage": "cb1.3"
+      },
+      {
+        "Name": "Kendachi Mononaginata(EDG)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR+2)L",
+        "Weight": ".5",
+        "Availability": "6/60hrs",
+        "Cost": "300",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Kendachi Monosword Cane(EDG)",
+        "Concealability": "2/10",
+        "Reach": "-",
+        "Damage": "(STR+1)M",
+        "Weight": ".75",
+        "Availability": "8/72hrs",
+        "Cost": "1020",
+        "Street Index": "1",
+        "BookPage": "cb1.3"
+      },
+      {
+        "Name": "Kendachi Mono-Two Long(EDG)",
+        "Concealability": "3",
+        "Reach": "1",
+        "Damage": "(STR+3)M",
+        "Weight": "1",
+        "Availability": "5/48hrs",
+        "Cost": "1650",
+        "Street Index": "2.1",
+        "BookPage": "cb1.36"
+      },
+      {
+        "Name": "Kendachi Mono-Two Short(EDG)",
+        "Concealability": "5",
+        "Reach": "0",
+        "Damage": "(STR+1)M",
+        "Weight": ".75",
+        "Availability": "5/48hrs",
+        "Cost": "1650",
+        "Street Index": "2.1",
+        "BookPage": "cb1.36"
+      },
+      {
+        "Name": "Knife(EDG)",
+        "Concealability": "8",
+        "Reach": "-",
+        "Damage": "(STR)L",
+        "Weight": ".5",
+        "Availability": "2/4hrs",
+        "Cost": "30",
+        "Street Index": ".75",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Laser Cresent Axe(EDG)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR)S",
+        "Weight": "5.2",
+        "Availability": "6/48hrs",
+        "Cost": "3500",
+        "Street Index": ".5",
+        "BookPage": "cc.8"
+      },
+      {
+        "Name": "Longsword(EDG)",
+        "Concealability": "4",
+        "Reach": "1",
+        "Damage": "(STR+2)M",
+        "Weight": "2",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Macauitl(EDG)",
+        "Concealability": "3",
+        "Reach": "1",
+        "Damage": "(STR+2)M",
+        "Weight": "1",
+        "Availability": "18/7days",
+        "Cost": "3000",
+        "Street Index": "2",
+        "BookPage": "cc.8"
+      },
+      {
+        "Name": "Mystic Tech. Spring Knife(EDG)",
+        "Concealability": "8",
+        "Reach": "0",
+        "Damage": "(STR+2)L",
+        "Weight": ".75",
+        "Availability": "4/12hrs",
+        "Cost": "125",
+        "Street Index": "1.2",
+        "BookPage": "cb1.3"
+      },
+      {
+        "Name": "Mystic Tech. Sword(EDG)",
+        "Concealability": "4",
+        "Reach": "1",
+        "Damage": "(STR+3)M",
+        "Weight": "-",
+        "Availability": "-",
+        "Cost": "-",
+        "Street Index": "-",
+        "BookPage": "cb1.3"
+      },
+      {
+        "Name": "Rapier(EDG)",
+        "Concealability": "5",
+        "Reach": "1",
+        "Damage": "(STR+2)M",
+        "Weight": "2",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Switchblade(EDG)",
+        "Concealability": "9",
+        "Reach": "-",
+        "Damage": "(STR-1)L",
+        "Weight": ".1",
+        "Availability": "2/6hrs",
+        "Cost": "25",
+        "Street Index": ".75",
+        "BookPage": "cb1.2"
+      },
+      {
+        "Name": "Scimitar(EDG)",
+        "Concealability": "4",
+        "Reach": "1",
+        "Damage": "(STR+2)M",
+        "Weight": "1.5",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Shortsword(EDG)",
+        "Concealability": "5",
+        "Reach": "1",
+        "Damage": "(STR)M",
+        "Weight": "2",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Slamdance Inc. Spawnblade(EDG)",
+        "Concealability": "8",
+        "Reach": "0",
+        "Damage": "(STR)L",
+        "Weight": ".5",
+        "Availability": "4/72hrs",
+        "Cost": "100",
+        "Street Index": "1.1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Stiletto(EDG)",
+        "Concealability": "10",
+        "Reach": "0",
+        "Damage": "(STR)L",
+        "Weight": ".3",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Stiletto(EDG)",
+        "Concealability": "14",
+        "Reach": "0",
+        "Damage": "(STR-1)L",
+        "Weight": ".1",
+        "Availability": "2/24hrs",
+        "Cost": "10",
+        "Street Index": ".5",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Survival Knife(EDG)",
+        "Concealability": "6",
+        "Reach": "-",
+        "Damage": "(STR+2)L",
+        "Weight": ".75",
+        "Availability": "3/6hrs",
+        "Cost": "450",
+        "Street Index": "1",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Sword(EDG)",
+        "Concealability": "4",
+        "Reach": "1",
+        "Damage": "(STR+2)M",
+        "Weight": "1",
+        "Availability": "3/24hrs",
+        "Cost": "500",
+        "Street Index": "1",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Tomahawk(EDG)",
+        "Concealability": "6",
+        "Reach": "1",
+        "Damage": "(STR)M",
+        "Weight": ".5",
+        "Availability": "4/48hrs",
+        "Cost": "200",
+        "Street Index": "1",
+        "BookPage": "cc.8"
+      },
+      {
+        "Name": "Two-Handed Sword(EDG)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR+3)S",
+        "Weight": "5",
+        "Availability": "6/48hrs",
+        "Cost": "3000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Utility Sword",
+        "Concealability": "4",
+        "Reach": "1",
+        "Damage": "(STR+2)M",
+        "Weight": ".75",
+        "Availability": "4/72hrs",
+        "Cost": "60",
+        "Street Index": "1",
+        "BookPage": "cb1.4"
+      },
+      {
+        "Name": "Vibro Knife(EDG)",
+        "Concealability": "7",
+        "Reach": "-",
+        "Damage": "(STR)M",
+        "Weight": "1",
+        "Availability": "5/72hrs",
+        "Cost": "1000",
+        "Street Index": "2",
+        "BookPage": "cc.8"
+      },
+      {
+        "Name": "Vibro Sword(EDG)",
+        "Concealability": "3",
+        "Reach": "1",
+        "Damage": "(STR)S",
+        "Weight": "2",
+        "Availability": "5/72hrs",
+        "Cost": "2000",
+        "Street Index": "2",
+        "BookPage": "cc.8"
+      },
+      {
+        "Name": "ACB Harmony Telescoping Staff",
+        "Concealability": "8/-",
+        "Reach": "0/2",
+        "Damage": "(STR+3)M Stun",
+        "Weight": "2",
+        "Availability": "20/60days",
+        "Cost": "14000",
+        "Street Index": "3.6",
+        "BookPage": "tss.3"
+      },
+      {
+        "Name": "AZ-150 Stun Baton(CLB)",
+        "Concealability": "5",
+        "Reach": "1",
+        "Damage": "8S Stun",
+        "Weight": "1",
+        "Availability": "3/36hrs",
+        "Cost": "1500",
+        "Street Index": "2",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Bo Staff(POL)",
+        "Concealability": "2",
+        "Reach": "2",
+        "Damage": "(STR+3)M Stun",
+        "Weight": "2",
+        "Availability": "4/48hrs",
+        "Cost": "50",
+        "Street Index": "1",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Claymore(POL)",
+        "Concealability": "-",
+        "Reach": "2",
+        "Damage": "(STR+1)S",
+        "Weight": "6",
+        "Availability": "4/48hrs",
+        "Cost": "1000",
+        "Street Index": "2",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Club(CLB)",
+        "Concealability": "5",
+        "Reach": "1",
+        "Damage": "(STR+1)M Stun",
+        "Weight": "1",
+        "Availability": "2/6hrs",
+        "Cost": "10",
+        "Street Index": "1",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Devil",
+        "Concealability": "-",
+        "Reach": "2",
+        "Damage": "(STR)S",
+        "Weight": "10",
+        "Availability": "6/48hrs",
+        "Cost": "1500",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Excalibur Nightstick Mace(CLB)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR)M stun",
+        "Weight": "5",
+        "Availability": "6/48hrs",
+        "Cost": "700",
+        "Street Index": "3",
+        "BookPage": "cb1.2"
+      },
+      {
+        "Name": "Extendable Baton(CLB)",
+        "Concealability": "9/5",
+        "Reach": "1",
+        "Damage": "(STR+1)M Stun",
+        "Weight": "1",
+        "Availability": "3/24hrs",
+        "Cost": "25",
+        "Street Index": "1",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Harpoon(POL)",
+        "Concealability": "2",
+        "Reach": "2",
+        "Damage": "(STR+2)M",
+        "Weight": "4",
+        "Availability": "4/48hrs",
+        "Cost": "500",
+        "Street Index": "2",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Halberd(POL)",
+        "Concealability": "2",
+        "Reach": "2",
+        "Damage": "(STR)S",
+        "Weight": "6",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Lance(POL)",
+        "Concealability": "-",
+        "Reach": "2",
+        "Damage": "(kph/5)M",
+        "Weight": "2",
+        "Availability": "4/12hrs",
+        "Cost": "60",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Long Spear(POL)",
+        "Concealability": "2",
+        "Reach": "2",
+        "Damage": "(STR)S",
+        "Weight": "4",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Javelin(POL)",
+        "Concealability": "3",
+        "Reach": "2",
+        "Damage": "(STR+2)L",
+        "Weight": "2",
+        "Availability": "4/48hrs",
+        "Cost": "100",
+        "Street Index": "2",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Mace(CLB)",
+        "Concealability": "4",
+        "Reach": "1",
+        "Damage": "(STR+3)M Stun",
+        "Weight": "2",
+        "Availability": "5/48hrs",
+        "Cost": "150",
+        "Street Index": "2",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Mersch MX-23 Stunlance(POL)",
+        "Concealability": "2",
+        "Reach": "2",
+        "Damage": "(STR+2)L/9S Stun",
+        "Weight": "3",
+        "Availability": "5/48hrs",
+        "Cost": "2500",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Mjolnir warhammer(CLB)",
+        "Concealability": "-",
+        "Reach": "2",
+        "Damage": "(STR+4)D",
+        "Weight": "15",
+        "Availability": "6/48hrs",
+        "Cost": "2000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Morning Star(CLB)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR+1)M",
+        "Weight": "7",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Mystic Tech. Nunchaku(CLB)",
+        "Concealability": "4",
+        "Reach": "1",
+        "Damage": "(STR+2)M stun",
+        "Weight": ".5",
+        "Availability": "3/8hrs",
+        "Cost": "800",
+        "Street Index": ".75",
+        "BookPage": "cb1.3"
+      },
+      {
+        "Name": "No-Dachi(POL)",
+        "Concealability": "-",
+        "Reach": "2",
+        "Damage": "(STR+1)S",
+        "Weight": "5",
+        "Availability": "8/72hrs",
+        "Cost": "3000",
+        "Street Index": "3",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Pipe",
+        "Concealability": "5",
+        "Reach": "1",
+        "Damage": "(STR+1)M Stun",
+        "Weight": "5",
+        "Availability": "2/6hrs",
+        "Cost": "10",
+        "Street Index": "1",
+        "BookPage": "sr3.328"
+      },
+      {
+        "Name": "Pole Arm(POL)",
+        "Concealability": "2",
+        "Reach": "2",
+        "Damage": "(STR+3)S",
+        "Weight": "4",
+        "Availability": "4/48hrs",
+        "Cost": "500",
+        "Street Index": "2",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Rattan Stick(CLB)",
+        "Concealability": "5",
+        "Reach": "1",
+        "Damage": "(STR+1)M Stun",
+        "Weight": ".2",
+        "Availability": "2/6hrs",
+        "Cost": "10",
+        "Street Index": "1",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Sai(CLB)",
+        "Concealability": "6",
+        "Reach": "-",
+        "Damage": "(STR+2)L Stun",
+        "Weight": "1",
+        "Availability": "4/48hrs",
+        "Cost": "100",
+        "Street Index": "2",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Nunchaku",
+        "Concealability": "7",
+        "Reach": "1",
+        "Damage": "(STR+2)M stun",
+        "Weight": ".5",
+        "Availability": "3/8hrs",
+        "Cost": "40",
+        "Street Index": ".75",
+        "BookPage": "cb1.2"
+      },
+      {
+        "Name": "Nagagita(POL)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR+1)",
+        "Weight": "1.5",
+        "Availability": "4/12hrs",
+        "Cost": "50",
+        "Street Index": "1",
+        "BookPage": "cb1.2"
+      },
+      {
+        "Name": "Sap(CLB)",
+        "Concealability": "8",
+        "Reach": "-",
+        "Damage": "(STR+1)M Stun",
+        "Weight": "0",
+        "Availability": "2/6hrs",
+        "Cost": "10",
+        "Street Index": "1",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Scythe(POL)",
+        "Concealability": "-",
+        "Reach": "2",
+        "Damage": "(STR+1)S",
+        "Weight": "7",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Skull Crusher warhammer(CLB)",
+        "Concealability": "2",
+        "Reach": "1",
+        "Damage": "(STR)S",
+        "Weight": "5",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Sledgehammer(CLB)",
+        "Concealability": "1",
+        "Reach": "1",
+        "Damage": "(STR+2)S stun",
+        "Weight": "3",
+        "Availability": "2/4hrs",
+        "Cost": "50",
+        "Street Index": "1",
+        "BookPage": "cb1.2"
+      },
+      {
+        "Name": "Spear(POL)",
+        "Concealability": "2",
+        "Reach": "2",
+        "Damage": "(STR+4)L",
+        "Weight": "2",
+        "Availability": "4/48hrs",
+        "Cost": "200",
+        "Street Index": "2",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Spiked Mace(CLB)",
+        "Concealability": "3",
+        "Reach": "1",
+        "Damage": "(STR+1)M",
+        "Weight": "2",
+        "Availability": "5/48hrs",
+        "Cost": "150",
+        "Street Index": "2",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Staff(POL)",
+        "Concealability": "2",
+        "Reach": "2",
+        "Damage": "(STR+2)M Stun",
+        "Weight": "2",
+        "Availability": "3/24hrs",
+        "Cost": "50",
+        "Street Index": "1",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Stun Baton(CLB)",
+        "Concealability": "4",
+        "Reach": "1",
+        "Damage": "6S Stun",
+        "Weight": "1",
+        "Availability": "3/36hrs",
+        "Cost": "750",
+        "Street Index": "1",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Telescoping Staff(POL)",
+        "Concealability": "5/2",
+        "Reach": "2",
+        "Damage": "(STR+2)M Stun",
+        "Weight": "3",
+        "Availability": "4/48hrs",
+        "Cost": "100",
+        "Street Index": "1",
+        "BookPage": "cc.10"
+      },
+      {
+        "Name": "Tetsubo(CLB)",
+        "Concealability": "-",
+        "Reach": "2",
+        "Damage": "(STR+3)S",
+        "Weight": "3",
+        "Availability": "5/24hrs",
+        "Cost": "500",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Bullwhip(WHP)",
+        "Concealability": "8",
+        "Reach": "2",
+        "Damage": "(STR)L",
+        "Weight": "1",
+        "Availability": "6/48hrs",
+        "Cost": "100",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Cat With Nine Tails(WHP)",
+        "Concealability": "5",
+        "Reach": "2",
+        "Damage": "(STR+2)M",
+        "Weight": "3",
+        "Availability": "6/48hrs",
+        "Cost": "1000",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Chain(WHP)",
+        "Concealability": "10",
+        "Reach": "1",
+        "Damage": "(STR+2)M Stun",
+        "Weight": "5",
+        "Availability": "2/6hrs",
+        "Cost": "10",
+        "Street Index": "1",
+        "BookPage": "cc.11"
+      },
+      {
+        "Name": "Flail(WHP)",
+        "Concealability": "3",
+        "Reach": "2",
+        "Damage": "(STR+1)M Stun",
+        "Weight": ".75",
+        "Availability": "4/12hrs",
+        "Cost": "50",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Flogger whip(WHP)",
+        "Concealability": "6",
+        "Reach": "2",
+        "Damage": "(STR)M",
+        "Weight": "1",
+        "Availability": "6/48hrs",
+        "Cost": "500",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Kendachi Monowhip(WHP)",
+        "Concealability": "9",
+        "Reach": "3",
+        "Damage": "10S",
+        "Weight": "-",
+        "Availability": "26/14 days",
+        "Cost": "3500",
+        "Street Index": "3",
+        "BookPage": "cb1.3"
+      },
+      {
+        "Name": "Kusarigama(WHP)",
+        "Concealability": "8",
+        "Reach": "2",
+        "Damage": "(STR+1)M",
+        "Weight": "1",
+        "Availability": "6/48hrs",
+        "Cost": "200",
+        "Street Index": "2",
+        "BookPage": "cc.11"
+      },
+      {
+        "Name": "Manriki-gusari(WHP)",
+        "Concealability": "10",
+        "Reach": "2",
+        "Damage": "(STR+2)L Stun",
+        "Weight": "1",
+        "Availability": "6/48hrs",
+        "Cost": "150",
+        "Street Index": "2",
+        "BookPage": "cc.11"
+      },
+      {
+        "Name": "Monofilament Whip(WHP)",
+        "Concealability": "10",
+        "Reach": "1",
+        "Damage": "10S",
+        "Weight": "0",
+        "Availability": "24/14days",
+        "Cost": "3000",
+        "Street Index": "3",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Nomad Smartwhip(WHP)",
+        "Concealability": "6",
+        "Reach": "2",
+        "Damage": "(STR+3)L Datajack required",
+        "Weight": "1",
+        "Availability": "6/72hrs",
+        "Cost": "600",
+        "Street Index": "1",
+        "BookPage": "cb1.3"
+      },
+      {
+        "Name": "Morning Star(WHP)",
+        "Concealability": "4",
+        "Reach": "2",
+        "Damage": "(STR+2)M",
+        "Weight": "2",
+        "Availability": "5/48hrs",
+        "Cost": "250",
+        "Street Index": "2",
+        "BookPage": "cc.11"
+      },
+      {
+        "Name": "Nunchaku(WHP)",
+        "Concealability": "7",
+        "Reach": "1",
+        "Damage": "(STR+1)M Stun",
+        "Weight": ".75",
+        "Availability": "4/48hrs",
+        "Cost": "100",
+        "Street Index": "1",
+        "BookPage": "cc.11"
+      },
+      {
+        "Name": "Three-section Staff(WHP)",
+        "Concealability": "4",
+        "Reach": "2",
+        "Damage": "(STR+2)M Stun",
+        "Weight": "2",
+        "Availability": "5/72hrs",
+        "Cost": "200",
+        "Street Index": "2",
+        "BookPage": "cc.11"
+      },
+      {
+        "Name": "Whip(WHP)",
+        "Concealability": "5",
+        "Reach": "2",
+        "Damage": "(STR)L",
+        "Weight": ".5",
+        "Availability": "5/24hrs",
+        "Cost": "300",
+        "Street Index": "2",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "Bio-Injector",
+        "Concealability": "8",
+        "Reach": "0",
+        "Damage": "5L",
+        "Weight": "-",
+        "Availability": "14/7 days",
+        "Cost": "15000",
+        "Street Index": "3",
+        "BookPage": "cp.29"
+      },
+      {
+        "Name": "Bio-Injector",
+        "Concealability": "8",
+        "Reach": "0",
+        "Damage": "5L + drug",
+        "Weight": ".5",
+        "Availability": "10/96hrs",
+        "Cost": "15000",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Brass Knuckles(UNA)",
+        "Concealability": "16/4",
+        "Reach": "0",
+        "Damage": "(STR+1)M Stun",
+        "Weight": ".2",
+        "Availability": "2/24hrs",
+        "Cost": "20",
+        "Street Index": ".75",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Chainsaw(Chainsaw)",
+        "Concealability": "-",
+        "Reach": "1",
+        "Damage": "(STR+2)S",
+        "Weight": "4",
+        "Availability": "3/6hrs",
+        "Cost": "500",
+        "Street Index": "1",
+        "BookPage": "cc.11"
+      },
+      {
+        "Name": "DinaTech F5C",
+        "Concealability": "8",
+        "Reach": "0",
+        "Damage": "(STR/2)L/(STR)L",
+        "Weight": "-",
+        "Availability": "10/14 days",
+        "Cost": "350",
+        "Street Index": "3",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Drug-A-Thug",
+        "Concealability": "6",
+        "Reach": "0",
+        "Damage": "drug",
+        "Weight": ".5",
+        "Availability": "3/8hrs",
+        "Cost": "150",
+        "Street Index": "2",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Entrenching Tool",
+        "Concealability": "3",
+        "Reach": "-",
+        "Damage": "(STR)M",
+        "Weight": ".75",
+        "Availability": "3/16hrs",
+        "Cost": "50",
+        "Street Index": "1",
+        "BookPage": "cb1.2"
+      },
+      {
+        "Name": "Fashion Gloves(UNA)",
+        "Concealability": "-",
+        "Reach": "0",
+        "Damage": "(STR+1)M Stun",
+        "Weight": ".2",
+        "Availability": "4/36hrs",
+        "Cost": "350",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Hardliner Gloves(UNA)",
+        "Concealability": "9",
+        "Reach": "-",
+        "Damage": "(STR+1)M Stun",
+        "Weight": ".5",
+        "Availability": "2/24hrs",
+        "Cost": "300",
+        "Street Index": ".75",
+        "BookPage": "cc.49"
+      },
+      {
+        "Name": "IMI",
+        "Concealability": "6",
+        "Reach": "0",
+        "Damage": "(STR+5)L",
+        "Weight": ".75",
+        "Availability": "6/48hrs",
+        "Cost": "120",
+        "Street Index": "1.2",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Kitchen Sink",
+        "Concealability": "-",
+        "Reach": "0",
+        "Damage": "((2x STR)-6)S Stun",
+        "Weight": "10",
+        "Availability": "always",
+        "Cost": "100",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "Shock Glove(UNA)",
+        "Concealability": "9",
+        "Reach": "-",
+        "Damage": "7S Stun",
+        "Weight": ".5",
+        "Availability": "5/48hrs",
+        "Cost": "950",
+        "Street Index": "2",
+        "BookPage": "sr3.275"
+      },
+      {
+        "Name": "SMP-1 Battleglove(UNA)",
+        "Concealability": "-",
+        "Reach": "-",
+        "Damage": "(STR+3)M",
+        "Weight": "1.5",
+        "Availability": "10/7 days",
+        "Cost": "900",
+        "Street Index": "2",
+        "BookPage": "cb1.4"
+      },
+      {
+        "Name": "Techtronica Black-Zap Glove",
+        "Concealability": "4",
+        "Reach": "0",
+        "Damage": "9S Stun",
+        "Weight": "1",
+        "Availability": "6/48hrs",
+        "Cost": "1200",
+        "Street Index": "2.2",
+        "BookPage": "cb1.34"
+      },
+      {
+        "Name": "Excalibur Nightstick(Tasr)",
+        "Concealability": "5",
+        "Reach": "1",
+        "Damage": "8S stun",
+        "Weight": "1",
+        "Availability": "4/48hrs",
+        "Cost": "1800",
+        "Street Index": "2",
+        "BookPage": "cb1.2"
+      },
+      {
+        "Name": "Taser II(Tasr)",
+        "Concealability": "7",
+        "Reach": "0",
+        "Damage": "5S Stun",
+        "Weight": ".5",
+        "Availability": "4/24hrs",
+        "Cost": "300",
+        "Street Index": "1",
+        "BookPage": "sr2.???"
+      },
+      {
+        "Name": "BigKnucks(CYB)",
+        "Damage": "(STR+1)M Stun",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cp.15"
+      },
+      {
+        "Name": "BigRipp(CYB)",
+        "Damage": "(STR+2)M",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb4.136"
+      },
+      {
+        "Name": "Arc Thrower(CYB)   1",
+        "Damage": "10S Stun",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb4.136"
+      },
+      {
+        "Name": "Chainripp",
+        "Damage": "(STR)S",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb3.99"
+      },
+      {
+        "Name": "Cutting Torch(CYB)",
+        "Damage": "8S",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.27"
+      },
+      {
+        "Name": "Fangs(CYB)",
+        "Concealability": "5",
+        "Reach": "-1",
+        "Damage": "(STR+1)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "mm.43"
+      },
+      {
+        "Name": "Fangs",
+        "Concealability": "9",
+        "Reach": "-1",
+        "Damage": "(STR+1)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "mm.43"
+      },
+      {
+        "Name": "Finger",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb4.134"
+      },
+      {
+        "Name": "Finger",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.25"
+      },
+      {
+        "Name": "Finger",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.25"
+      },
+      {
+        "Name": "Finger",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.25"
+      },
+      {
+        "Name": "Finger",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb4.134"
+      },
+      {
+        "Name": "Flashbulb(CYB)",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.26"
+      },
+      {
+        "Name": "Gang Jazzler(CYB)",
+        "Damage": "9D Stun Spec.",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.29"
+      },
+      {
+        "Name": "Gas Jet(CYB)",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.26"
+      },
+      {
+        "Name": "Hand Blade",
+        "Damage": "(STR+3)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "sr3.302"
+      },
+      {
+        "Name": "Hand Blade",
+        "Damage": "(STR+3)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "sr3.302"
+      },
+      {
+        "Name": "Hand Razors(CYB)",
+        "Damage": "(STR)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "sr3.302"
+      },
+      {
+        "Name": "H.Razor",
+        "Damage": "(STR)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "sr3.302"
+      },
+      {
+        "Name": "Razors(CYB)  1",
+        "Damage": "(STR+2)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "sr3.302"
+      },
+      {
+        "Name": "Hand",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.27"
+      },
+      {
+        "Name": "Hand",
+        "Damage": "9M",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb4.136"
+      },
+      {
+        "Name": "Hand",
+        "Damage": "9S",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb4.136"
+      },
+      {
+        "Name": "Hand",
+        "Damage": "(STR+1)M Stun",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cp.11"
+      },
+      {
+        "Name": "Hand",
+        "Damage": "(STR+1)M Stun",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cp.11"
+      },
+      {
+        "Name": "Horn Implants(CYB)",
+        "Concealability": "-",
+        "Reach": "-1",
+        "Damage": "(STR)M",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "mm.43"
+      },
+      {
+        "Name": "Horn Implants",
+        "Concealability": "8",
+        "Reach": "-1",
+        "Damage": "(STR)M",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "mm.43"
+      },
+      {
+        "Name": "Malorian Arms Sliver Gun(CYB)",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.7"
+      },
+      {
+        "Name": "Micromissile Launcher(CYB)",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cp.15"
+      },
+      {
+        "Name": "Icer(CYB)",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.27"
+      },
+      {
+        "Name": "LimbLink(CYB)",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.26"
+      },
+      {
+        "Name": "Oral Dart(CYB)",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "mm.17"
+      },
+      {
+        "Name": "Oral Gun(CYB)",
+        "Damage": "4L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "mm.17"
+      },
+      {
+        "Name": "Oral Slasher(CYB)",
+        "Damage": "6M",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "mm.17"
+      },
+      {
+        "Name": "Oral Whip(CYB)",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "ct.25"
+      },
+      {
+        "Name": "Powerjaw",
+        "Damage": "(STR+2)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb4.135"
+      },
+      {
+        "Name": "Retract. Climbing Claws(CYB)",
+        "Damage": "(STR-1)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "mm.31"
+      },
+      {
+        "Name": "Rippers(CYB)",
+        "Damage": "(STR/2)M",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cp.16"
+      },
+      {
+        "Name": "Scratchers(CYB)",
+        "Damage": "(STR+1)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cp.17"
+      },
+      {
+        "Name": "Shock Hand(CYB)",
+        "Concealability": "5",
+        "Reach": "0",
+        "Damage": "8S Stun",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "mm.43"
+      },
+      {
+        "Name": "Cobra",
+        "Damage": "DAM",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb3.98"
+      },
+      {
+        "Name": "Spur(CYB)",
+        "Damage": "(STR)M",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "sr3.302"
+      },
+      {
+        "Name": "Spur",
+        "Damage": "(STR)M",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "sr3.302"
+      },
+      {
+        "Name": "Taser Grip(CYB)",
+        "Damage": "6S Stun",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.28"
+      },
+      {
+        "Name": "Teeth",
+        "Damage": "(str/2)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb2.48"
+      },
+      {
+        "Name": "Teeth",
+        "Damage": "(str-1)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb2.48"
+      },
+      {
+        "Name": "Teeth",
+        "Damage": "(str)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb4.135"
+      },
+      {
+        "Name": "Teeth",
+        "Damage": "(str)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb2.48"
+      },
+      {
+        "Name": "Teeth",
+        "Damage": "(str+1)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb2.48"
+      },
+      {
+        "Name": "Tri-Dart Launcher",
+        "Damage": "(STR)M",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb2.47"
+      },
+      {
+        "Name": "Venom Sack(CYB)",
+        "Damage": "(STR)M",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "mm.42"
+      },
+      {
+        "Name": "Whip(CYB)",
+        "Damage": "(STR)L",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cb1.26"
+      },
+      {
+        "Name": "Wolvers(CYB)",
+        "Damage": "(STR)M",
+        "Cost": "0",
+        "Street Index": "1",
+        "BookPage": "cp.17"
+      }
+    ]

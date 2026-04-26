@@ -1,0 +1,196 @@
+{
+  "Combat skills": [
+    {
+      "name": "Assault Rifles",
+      "attribute": "QCK",
+      "source": "sr3.85",
+      "specializations": [
+        { "name": "weapon->" }
+      ]
+    },
+     {
+      "name": "Clubs",
+      "attribute": "STR",
+      "source": "sr3.85",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Cyber Implant Combat",
+      "attribute": "STR",
+      "source": "sr3.85",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Edged Weapons",
+      "attribute": "STR",
+      "source": "sr3.86",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Gunnery",
+      "attribute": "INT",
+      "source": "sr3.86",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Heavy Weapons",
+      "attribute": "STR",
+      "source": "sr3.86",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Laser Weapons",
+      "attribute": "QCK",
+      "source": "sr3.86",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Launch Weapons",
+      "attribute": "INT",
+      "source": "sr3.86",
+      "specializations": [
+          { "name": "weapon->" }
+      ]
+    },
+    {
+      "name": "Pistols",
+      "attribute": "QCK",
+      "source": "sr3.86",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Pole Arms",
+      "attribute": "STR",
+      "source": "sr3.86",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Projectile Weapons",
+      "attribute": "STR",
+      "source": "sr3.86",
+      "specializations": [
+        { "name": "Pull Bows", "source": "sr3.XXX" },
+        { "name": "Crossbows", "source": "sr3.XXX" }
+      ]
+    },
+    {
+      "name": "Rifles",
+      "attribute": "QCK",
+      "source": "sr3.86",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Shotguns",
+      "attribute": "QCK",
+      "source": "sr3.86",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Spray Weapons",
+      "attribute": "STR",
+      "source": "cc.105",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Submachine Guns",
+      "attribute": "QCK",
+      "source": "sr3.86",
+      "specializations": [{ "name": "weapon->" }]
+    },
+    {
+      "name": "Throwing Weapons",
+      "attribute": "STR",
+      "source": "sr3.86",
+      "specializations": [
+        { "name": "Darts", "source": "sr3.XXX" },
+        { "name": "Grenades", "source": "sr3.XXX" },
+        { "name": "Shuriken", "source": "sr3.XXX" },
+        { "name": "Knives", "source": "sr3.XXX" },
+      ]
+    },
+    {
+      "name": "Unarmed Combat-SR3",
+      "attribute": "STR",
+      "source": "sr3.86",
+      "specializations": [
+        { "name": "Subduing Combat", "source": "sr3.86" },
+        { "name": "Martial Arts Technique", "source": "sr3.86" },
+        { "name": "Fists", "source": "sr3.86" },
+        { "name": "Head", "source": "sr3.86" },
+        { "name": "Kicks", "source": "sr3.86" }
+      ]
+    },
+    {
+      "name": "Underwater Combat",
+      "attribute": "STR",
+      "source": "sr3.86",
+      "specializations": [
+        { "name": "Unarmed Attack", "source": "sr3.86" },
+        { "name": "Armed Attack", "source": "sr3.86" }
+      ]
+    },
+    {
+      "name": "Whips",
+      "attribute": "QCK",
+      "source": "sr3.86",
+      "specializations": [{ "name": "weapon->" }]
+    }
+  ],
+  "Magical skills": [
+    {
+      "name": "Aura Reading",
+      "attribute": "INT",
+      "source": "sr3.86",
+      "specializations": [
+        { "name": "Auras", "source": "sr3.87" },
+        { "name": "Signatures", "source": "sr3.87" },
+        { "name": "Sorcery", "source": "sr3.87" },
+        { "name": "Conjuring", "source": "sr3.87" }
+      ]
+    },
+    {
+      "name": "Sorcery",
+      "attribute": "WIL",
+      "source": "sr3.87",
+      "specializations": [
+        { "name": "Spellcasting", "source": "sr3.87" },
+        { "name": "Spell Defense", "source": "sr3.87" },
+        { "name": "Dispelling", "source": "sr3.87" },
+        { "name": "Astral Combat", "source": "sr3.87" },
+        { "name": "Ritual Sorcery", "source": "mits.30" },
+        { "name": "Spell Category->" }
+      ]
+    },
+    {
+      "name": "Centering",
+      "attribute": "WIL",
+      "source": "mits.30",
+      "specializations": []
+    },
+    {
+      "name": "Conjuring",
+      "attribute": "WIL",
+      "source": "sr3.87",
+      "specializations": [
+        { "name": "Summoning", "source": "sr3.87" },
+        { "name": "Banishing", "source": "sr3.87" },
+        { "name": "Controlling", "source": "sr3.87" }
+      ]
+    },
+    {
+      "name": "Divining",
+      "attribute": "WIL",
+      "source": "mits.30",
+      "specializations": []
+    },
+    {
+      "name": "Enchanting",
+      "attribute": "WIL",
+      "source": "mits.30",
+      "specializations": [
+        { "name": "Alchemy", "source": "mits.30" },
+        { "name": "Artificing", "source": "mits.30" }
+      ]
+    }
+  ]
+}
