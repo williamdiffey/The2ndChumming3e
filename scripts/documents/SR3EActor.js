@@ -121,99 +121,106 @@ _prepareVehicle(sys, attr) {
 }
 
 _prepareCharacter(sys, attr) {
-  const wm = sys.woundMod ?? 0;
+  const wm      = sys.woundMod ?? 0;
+  const isAdept = (sys.magicType ?? '') === 'Adept';
 
-  // Reaction - calculate base from Quickness + Intelligence
+  // Apply adept force to core attributes first — derivations below use .value
+  for (const key of ['body', 'quickness', 'strength', 'charisma', 'intelligence', 'willpower']) {
+    if (attr[key]) {
+      attr[key].value = (attr[key].base ?? 0) + (isAdept ? (attr[key].force ?? 0) : 0);
+    }
+  }
+
+  // Reaction — derived from force-enhanced QUI + INT per RAW
   if (attr.reaction) {
     const baseReaction = Math.floor(
-      ((attr.quickness?.base ?? 0) + (attr.intelligence?.base ?? 0)) / 2
+      ((attr.quickness?.value ?? 0) + (attr.intelligence?.value ?? 0)) / 2
     );
     attr.reaction.base = baseReaction;
-    
+
     if (!attr.reaction.override) {
-      attr.reaction.value = baseReaction + (attr.reaction.reactionBonus ?? 0);
+      attr.reaction.value = baseReaction
+        + (attr.reaction.reactionBonus ?? 0)
+        + (isAdept ? (attr.reaction.force ?? 0) : 0);
     }
   }
- 
-    // Essence
-    if (attr.essence) {
-      let essenceLoss = 0;
-      for (const item of (this.items ?? [])) {
-        if (['cyberware', 'bioware'].includes(item.type)) {
-          essenceLoss += parseFloat(item.system?.essenceCost ?? 0);
-        }
+
+  // Essence (reduced by cyberware/bioware)
+  if (attr.essence) {
+    let essenceLoss = 0;
+    for (const item of (this.items ?? [])) {
+      if (['cyberware', 'bioware'].includes(item.type)) {
+        essenceLoss += parseFloat(item.system?.essenceCost ?? 0);
       }
-      attr.essence.value = Math.max(0, parseFloat((6 - essenceLoss).toFixed(2)));
     }
-
-    // Magic cap
-    if (attr.magic && (attr.magic.base ?? 0) > 0) {
-      attr.magic.value = Math.min(attr.magic.base, Math.floor(attr.essence?.value ?? 6));
-    }
-
-    // Derived pools
-    const combatPoolBase  = Math.max(0, Math.floor(
-      ((attr.quickness?.base    ?? 0) +
-       (attr.intelligence?.base ?? 0) +
-       (attr.willpower?.base    ?? 0)) / 2
-    ) + wm);
-    const combatPool      = combatPoolBase + (sys.combatPoolMod ?? 0);
-    const combatPoolSpent     = sys.combatPoolSpent ?? 0;
-    const availableCombatPool = Math.max(0, combatPool - combatPoolSpent);
-
-    const magicBase = attr.magic?.base ?? 0;
-    const spellPoolBase = magicBase > 0
-      ? Math.max(0, Math.floor(
-          ((attr.intelligence?.base ?? 0) +
-           (attr.willpower?.base    ?? 0) +
-           magicBase) / 2
-        ) + wm)
-      : null;
-    const spellPool      = spellPoolBase !== null ? spellPoolBase + (sys.spellPoolMod ?? 0) : null;
-    const spellPoolSpent     = magicBase > 0 ? (sys.spellPoolSpent ?? 0) : 0;
-    const availableSpellPool = spellPool !== null ? Math.max(0, spellPool - spellPoolSpent) : null;
-
-    const hackingPoolBase = Math.floor((attr.intelligence?.base ?? 0) / 2) + (sys.hackingBonus ?? 0) + wm;
-
-    // Astral pool (magic users only): floor((INT + CHA + WIL) / 3) + woundMod
-    const astralPoolBase = magicBase > 0
-      ? Math.max(0, Math.floor(
-          ((attr.intelligence?.base ?? 0) +
-           (attr.charisma?.base    ?? 0) +
-           (attr.willpower?.base   ?? 0)) / 3
-        ) + wm)
-      : null;
-    const astralPool          = astralPoolBase !== null ? astralPoolBase + (sys.astralPoolMod ?? 0) : null;
-    const astralPoolSpent     = magicBase > 0 ? (sys.astralPoolSpent ?? 0) : 0;
-    const availableAstralPool = astralPool !== null ? Math.max(0, astralPool - astralPoolSpent) : null;
-
-    const vcrItem   = sys.activeVCRItemId ? this.items?.get(sys.activeVCRItemId) : null;
-    const vcrRating = vcrItem ? (vcrItem.system?.rating ?? 0) : 0;
-
-    sys.derived = {
-      initiative:         (attr.reaction?.value ?? 0) + wm,
-      initiativeDice:     1 + (sys.initiativeDiceBonus ?? 0) + (attr.reaction?.diceBonus ?? 0),
-      combatPoolBase,
-      combatPool,
-      availableCombatPool,
-      karmaPool:          Math.max(0, sys.karmaPool ?? 0),
-      spellPoolBase,
-      spellPool,
-      availableSpellPool,
-      astralPoolBase,
-      astralPool,
-      availableAstralPool,
-      hackingPoolBase,
-      hackingPool:        Math.max(0, hackingPoolBase),
-      vcrRating,
-      vcrActive:          vcrRating > 0,
-    };
-
-    // Copy base to value for simple attributes
-    for (const key of ['body', 'quickness', 'strength', 'charisma', 'intelligence', 'willpower']) {
-      if (attr[key]) attr[key].value = attr[key].base ?? 0;
-    }
+    attr.essence.value = Math.max(0, parseFloat((6 - essenceLoss).toFixed(2)));
   }
+
+  // Magic — capped by essence, then add adept force if applicable
+  const magicBase = attr.magic?.base ?? 0;
+  if (attr.magic && magicBase > 0) {
+    attr.magic.value = Math.min(magicBase, Math.floor(attr.essence?.value ?? 6))
+      + (isAdept ? (attr.magic.force ?? 0) : 0);
+  }
+
+  // Derived pools — all use .value so adept force benefits every relevant pool
+  const combatPoolBase = Math.max(0, Math.floor(
+    ((attr.quickness?.value    ?? 0) +
+     (attr.intelligence?.value ?? 0) +
+     (attr.willpower?.value    ?? 0)) / 2
+  ) + wm);
+  const combatPool          = combatPoolBase + (sys.combatPoolMod ?? 0);
+  const combatPoolSpent     = sys.combatPoolSpent ?? 0;
+  const availableCombatPool = Math.max(0, combatPool - combatPoolSpent);
+
+  const magicEff      = attr.magic?.value ?? 0;
+  const spellPoolBase = magicBase > 0
+    ? Math.max(0, Math.floor(
+        ((attr.intelligence?.value ?? 0) +
+         (attr.willpower?.value    ?? 0) +
+         magicEff) / 2
+      ) + wm)
+    : null;
+  const spellPool          = spellPoolBase !== null ? spellPoolBase + (sys.spellPoolMod ?? 0) : null;
+  const spellPoolSpent     = magicBase > 0 ? (sys.spellPoolSpent ?? 0) : 0;
+  const availableSpellPool = spellPool !== null ? Math.max(0, spellPool - spellPoolSpent) : null;
+
+  const hackingPoolBase = Math.floor((attr.intelligence?.value ?? 0) / 2) + (sys.hackingBonus ?? 0) + wm;
+
+  // Astral pool (magic users only): floor((INT + CHA + WIL) / 3) + woundMod
+  const astralPoolBase = magicBase > 0
+    ? Math.max(0, Math.floor(
+        ((attr.intelligence?.value ?? 0) +
+         (attr.charisma?.value    ?? 0) +
+         (attr.willpower?.value   ?? 0)) / 3
+      ) + wm)
+    : null;
+  const astralPool          = astralPoolBase !== null ? astralPoolBase + (sys.astralPoolMod ?? 0) : null;
+  const astralPoolSpent     = magicBase > 0 ? (sys.astralPoolSpent ?? 0) : 0;
+  const availableAstralPool = astralPool !== null ? Math.max(0, astralPool - astralPoolSpent) : null;
+
+  const vcrItem   = sys.activeVCRItemId ? this.items?.get(sys.activeVCRItemId) : null;
+  const vcrRating = vcrItem ? (vcrItem.system?.rating ?? 0) : 0;
+
+  sys.derived = {
+    initiative:         (attr.reaction?.value ?? 0) + wm,
+    initiativeDice:     1 + (sys.initiativeDiceBonus ?? 0) + (attr.reaction?.diceBonus ?? 0),
+    combatPoolBase,
+    combatPool,
+    availableCombatPool,
+    karmaPool:          Math.max(0, sys.karmaPool ?? 0),
+    spellPoolBase,
+    spellPool,
+    availableSpellPool,
+    astralPoolBase,
+    astralPool,
+    availableAstralPool,
+    hackingPoolBase,
+    hackingPool:        Math.max(0, hackingPoolBase),
+    vcrRating,
+    vcrActive:          vcrRating > 0,
+  };
+}
 
   // ---------------------------------------------------------------------------
   // ROLLING — Interactive Rule of Six

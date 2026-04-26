@@ -3,12 +3,13 @@ const {
   SchemaField, ArrayField, HTMLField, ObjectField,
 } = foundry.data.fields;
 
-/** Basic persisted attribute: base, value, mod */
+/** Basic persisted attribute: base, value, mod, force */
 function _attr(base = 3) {
   return new SchemaField({
     base:  new NumberField({ required: true, integer: true, initial: base, min: 0, nullable: false }),
     value: new NumberField({ required: true, integer: true, initial: base, min: 0, nullable: false }),
     mod:   new NumberField({ required: true, integer: true, initial: 0, nullable: false }),
+    force: new NumberField({ required: true, integer: true, initial: 0, min: 0, nullable: false }),
   });
 }
 
@@ -94,11 +95,13 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
         essence: new SchemaField({
           value: new NumberField({ initial: 6, nullable: false }),
           base:  new NumberField({ initial: 6, nullable: false }),
+          force: new NumberField({ initial: 0, min: 0 }),
         }),
         magic: new SchemaField({
           value: new NumberField({ integer: true, initial: 0, min: 0 }),
           base:  new NumberField({ integer: true, initial: 0, min: 0 }),
           mod:   new NumberField({ integer: true, initial: 0 }),
+          force: new NumberField({ integer: true, initial: 0, min: 0 }),
         }),
         reaction: new SchemaField({
           value:         new NumberField({ integer: true, initial: 3, min: 0 }),
@@ -106,6 +109,7 @@ export class CharacterData extends foundry.abstract.TypeDataModel {
           reactionBonus: new NumberField({ integer: true, initial: 0 }),
           diceBonus:     new NumberField({ integer: true, initial: 0 }),
           override:      new BooleanField({ initial: false }),
+          force:         new NumberField({ integer: true, initial: 0, min: 0 }),
         }),
       }),
       wounds:         _wounds(),
@@ -142,15 +146,18 @@ export class NpcData extends foundry.abstract.TypeDataModel {
         essence: new SchemaField({
           value: new NumberField({ initial: 6 }),
           base:  new NumberField({ initial: 6 }),
+          force: new NumberField({ initial: 0, min: 0 }),
         }),
         magic: new SchemaField({
           value: new NumberField({ integer: true, initial: 0, min: 0 }),
           base:  new NumberField({ integer: true, initial: 0, min: 0 }),
+          force: new NumberField({ integer: true, initial: 0, min: 0 }),
         }),
         reaction: new SchemaField({
           value: new NumberField({ integer: true, initial: 3, min: 0 }),
           base:  new NumberField({ integer: true, initial: 3, min: 0 }),
           bonus: new NumberField({ integer: true, initial: 0 }),
+          force: new NumberField({ integer: true, initial: 0, min: 0 }),
         }),
       }),
       wounds:         _wounds(),

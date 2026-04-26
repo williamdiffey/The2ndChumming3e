@@ -362,6 +362,24 @@
 }
 .attr-input:focus { outline: none; border-bottom-color: var(--sr-accent); }
 
+.attr-input.attr-force {
+  width: 36px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--sr-gold);
+  border-bottom-color: var(--sr-gold);
+}
+.attr-force-sep {
+  font-size: 13px;
+  color: var(--sr-muted);
+  padding: 0 1px;
+}
+.attr-force-total {
+  font-size: 13px;
+  color: var(--sr-gold);
+  margin-right: 2px;
+}
+
 .attr-derived {
   font-size: 22px;
   font-weight: 700;
@@ -1505,6 +1523,24 @@
   padding: 0;
 }
 .attr-input:focus { outline: none; border-bottom-color: var(--sr-accent); }
+
+.attr-input.attr-force {
+  width: 36px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--sr-gold);
+  border-bottom-color: var(--sr-gold);
+}
+.attr-force-sep {
+  font-size: 13px;
+  color: var(--sr-muted);
+  padding: 0 1px;
+}
+.attr-force-total {
+  font-size: 13px;
+  color: var(--sr-gold);
+  margin-right: 2px;
+}
 
 .attr-derived {
   font-size: 22px;

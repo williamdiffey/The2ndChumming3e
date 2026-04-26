@@ -107,6 +107,16 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
       el.addEventListener('change', ev => this._onFieldChange(ev))
     );
 
+    // Inline skill force inputs — saved directly to the item, not the actor form
+    html.querySelectorAll('.skill-force-input').forEach(input => {
+      input.addEventListener('change', async ev => {
+        ev.stopPropagation();
+        const itemId = ev.currentTarget.dataset.itemId;
+        const item   = this.actor.items.get(itemId);
+        if (item) await item.update({ 'system.force': parseInt(ev.currentTarget.value) || 0 });
+      });
+    });
+
     // Matrix tab: make program rows draggable
     html.querySelectorAll('[data-matrix-program-id]').forEach(el => {
       el.setAttribute('draggable', 'true');
@@ -348,21 +358,26 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
   }
 
   _tabAttributes(sys) {
-  const attr = sys.attributes ?? {};
-  const d    = sys.derived    ?? {};
-  
+  const attr    = sys.attributes ?? {};
+  const d       = sys.derived    ?? {};
+  const isAdept = (sys.magicType ?? '') === 'Adept';
+
   // Core attributes (2 columns)
   const coreAttrs = [
     ['body','Body'], ['quickness','Quickness'], ['strength','Strength'],
     ['charisma','Charisma'], ['intelligence','Intelligence'], ['willpower','Willpower']
   ];
-  
+
   const attrBlocks = coreAttrs.map(([key, label]) => `
     <div class="attr-block">
       <span class="attr-label">${label}</span>
       <div class="attr-row">
         <input class="attr-input" type="number" name="system.attributes.${key}.base"
-               value="${attr[key]?.base ?? 3}" min="1" max="30"/>
+               value="${attr[key]?.base ?? 3}" min="1" max="30" title="Base"/>
+        ${isAdept ? `<span class="attr-force-sep" title="Improved Ability / Increased ${label}">+</span>
+        <input class="attr-input attr-force" type="number" name="system.attributes.${key}.force"
+               value="${attr[key]?.force ?? 0}" min="0" max="10" title="Adept force"/>
+        <span class="attr-force-total" title="Effective">(${(attr[key]?.base ?? 3) + (attr[key]?.force ?? 0)})</span>` : ''}
         <i class="fas fa-dice-d6 rollable" data-action="rollAttr" data-attr="${key}" title="Roll ${label}"></i>
       </div>
     </div>`).join('');
@@ -376,7 +391,10 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
         <span class="attr-label">Magic</span>
         <div class="attr-row">
           <input class="attr-input" type="number" name="system.attributes.magic.base"
-                 value="${attr.magic?.base ?? 0}" min="0" max="12"/>
+                 value="${attr.magic?.base ?? 0}" min="0" max="12" title="Base"/>
+          ${isAdept ? `<span class="attr-force-sep" title="Adept magic force">+</span>
+          <input class="attr-input attr-force" type="number" name="system.attributes.magic.force"
+                 value="${attr.magic?.force ?? 0}" min="0" max="10" title="Adept force"/>` : ''}
           <span class="attr-mod">${attr.magic?.value ?? 0}</span>
         </div>
       </div>
@@ -386,6 +404,9 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
         <span class="attr-label" style="color:var(--sr-amber)">Reaction</span>
         <div class="attr-row">
           <span class="attr-derived" style="color:var(--sr-amber)">${attr.reaction?.value ?? 0}</span>
+          ${isAdept ? `<span class="attr-force-sep" title="Reaction adept force">+</span>
+          <input class="attr-input attr-force" type="number" name="system.attributes.reaction.force"
+                 value="${attr.reaction?.force ?? 0}" min="0" max="10" title="Adept force on Reaction"/>` : ''}
         </div>
       </div>
 
@@ -505,30 +526,43 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
       .sort((a, b) => a.name.localeCompare(b.name));
     const skills       = allSkills.filter(s => (s.system.category ?? '') !== '' && (s.system.skillName ?? '') !== '' && (s.system.rating ?? 0) > 0);
     const uncatSkills  = allSkills.filter(s => (s.system.category ?? '') === '' || (s.system.skillName ?? '') === '' || (s.system.rating ?? 0) === 0);
+    const isAdept      = (actor.system.magicType ?? '') === 'Adept';
 
-    const _skillRow = s => `
-      <div class="item-row" data-item-id="${s.id}">
-        <span class="item-name skill-name" data-action="rollSkill" data-item-id="${s.id}"
-              title="Roll ${s.name}">${s.name}</span>
-        <span class="item-cell">${s.system.linkedAttribute ?? '—'}</span>
+    const _skillRow = s => {
+      const rating    = s.system.rating ?? 0;
+      const force     = s.system.force  ?? 0;
+      const ratingDisplay = s.system.specialisation
+        ? `${rating} <span style="color:var(--sr-accent)">(${rating + 2})</span>`
+        : `${rating}`;
+      const forceCell = isAdept ? `
         <span class="item-cell">
-          ${s.system.specialisation
-            ? `${s.system.rating ?? 0} <span style="color:var(--sr-accent)">(${(s.system.rating ?? 0) + 2})</span>`
-            : (s.system.rating ?? 0)}
-        </span>
-        <span class="item-cell">${s.system.specialisation || '—'}</span>
-        ${this._itemControls(s.id, true, 'rollSkill')}
-      </div>`;
+          <input type="number" class="skill-force-input" data-item-id="${s.id}"
+                 value="${force}" min="0" max="10"
+                 style="width:38px;text-align:center;background:var(--sr-surface);color:var(--sr-gold);border:1px solid var(--sr-border);border-radius:var(--r)"
+                 title="Improved Ability (Adept force)"/>
+        </span>` : '';
+      return `
+        <div class="item-row" data-item-id="${s.id}">
+          <span class="item-name skill-name" data-action="rollSkill" data-item-id="${s.id}"
+                title="Roll ${s.name}">${s.name}</span>
+          <span class="item-cell">${s.system.linkedAttribute ?? '—'}</span>
+          <span class="item-cell">${ratingDisplay}</span>
+          ${forceCell}
+          <span class="item-cell">${s.system.specialisation || '—'}</span>
+          ${this._itemControls(s.id, true, 'rollSkill')}
+        </div>`;
+    };
 
-    const rows = skills.length ? skills.map(_skillRow).join('') : '<p class="empty-list">No skills. Add some below.</p>';
+    const header    = `<div class="list-header"><span>Skill</span><span>Attr</span><span>Rtg</span>${isAdept ? '<span>Force</span>' : ''}<span>Spec</span><span></span></div>`;
+    const rows      = skills.length ? skills.map(_skillRow).join('') : '<p class="empty-list">No skills. Add some below.</p>';
     const uncatRows = uncatSkills.map(_skillRow).join('');
 
     return `<div class="tab ${this._activeTab === 'skills' ? 'active' : ''}" data-tab="skills" style="overflow-y:auto">
-      <div class="list-header"><span>Skill</span><span>Attr</span><span>Rtg</span><span>Spec</span><span></span></div>
+      ${header}
       ${rows}
       ${uncatSkills.length ? `
         <h3 class="section-hdr" style="margin-top:1rem;color:var(--sr-amber)">Incomplete (set category, skill name, and rating)</h3>
-        <div class="list-header"><span>Skill</span><span>Attr</span><span>Rtg</span><span>Spec</span><span></span></div>
+        ${header}
         ${uncatRows}
       ` : ''}
       <button type="button" class="btn-add" data-action="itemCreate" data-type="skill">+ Add Skill</button>
@@ -1577,9 +1611,14 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
     const physicalDice = ev.shiftKey ?? false;
     const s            = item.system;
     const woundMod     = this.actor.system.woundMod ?? 0;
-    const basePool     = s.rating ? Math.max(1, (s.rating ?? 0) + woundMod) : Math.max(1, (s.attributeValue ?? 3) - 2 + woundMod);
+    const isAdept      = (this.actor.system.magicType ?? '') === 'Adept';
+    const forceBonus   = isAdept ? (s.force ?? 0) : 0;
+    const basePool     = s.rating
+      ? Math.max(1, (s.rating ?? 0) + forceBonus + woundMod)
+      : Math.max(1, (s.attributeValue ?? 3) - 2 + woundMod);
     const specNote     = s.specialisation ? ` (+2 with ${s.specialisation})` : '';
-    const rollOptions  = await SR3EActorSheet._promptRollOptions(this.actor, { defaultPool: basePool, poolNote: specNote, physicalDice });
+    const forceNote    = forceBonus > 0 ? ` [+${forceBonus} Improved Ability]` : '';
+    const rollOptions  = await SR3EActorSheet._promptRollOptions(this.actor, { defaultPool: basePool, poolNote: specNote + forceNote, physicalDice });
     if (rollOptions) await item.rollSkill(rollOptions.tn, { ...rollOptions, pool: rollOptions.pool });
   }
 

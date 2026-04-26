@@ -359,6 +359,13 @@ export class SR3EItemSheet extends foundry.applications.sheets.ItemSheetV2 {
             ` : ''}
 
             ${this._f('Rating', 'rating', s.rating, 'number', 'min="0" max="12"')}
+            ${(() => {
+              const parentActor = this.item.parent;
+              const isAdept = parentActor ? (parentActor.system?.magicType ?? '') === 'Adept' : true;
+              return isAdept
+                ? this._f('Improved Ability (Adept force)', 'force', s.force ?? 0, 'number', 'min="0" max="10"')
+                : '';
+            })()}
 
             ${currentCat ? `
               <div class="form-field">

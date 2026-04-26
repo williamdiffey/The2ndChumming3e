@@ -185,6 +185,7 @@ export class SkillData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
       rating:          new NumberField({ integer: true, initial: 1, min: 0 }),
+      force:           new NumberField({ integer: true, initial: 0, min: 0 }),
       category:        new StringField({ initial: '' }),
       skillName:       new StringField({ initial: '' }),
       linkedAttribute: new StringField({ initial: 'quickness' }),
