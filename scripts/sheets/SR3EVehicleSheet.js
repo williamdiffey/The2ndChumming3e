@@ -56,6 +56,7 @@ export class SR3EVehicleSheet extends foundry.applications.sheets.ActorSheetV2 {
         <div class="sheet-body">
           ${this._tabStats(sys)}
           ${this._tabWeapons(actor)}
+          ${this._tabMods(actor)}
           ${this._tabNotes(sys)}
         </div>
       </div>`;
@@ -145,7 +146,7 @@ export class SR3EVehicleSheet extends foundry.applications.sheets.ActorSheetV2 {
   }
 
   _tabs() {
-    const tabs = [['stats', 'Stats'], ['weapons', 'Weapons'], ['notes', 'Notes']];
+    const tabs = [['stats', 'Stats'], ['weapons', 'Weapons'], ['mods', 'Mods'], ['notes', 'Notes']];
     return `<nav class="sheet-tabs">
       ${tabs.map(([id, label]) =>
         `<a class="tab-btn ${this._activeTab === id ? 'active' : ''}"
@@ -230,53 +231,15 @@ export class SR3EVehicleSheet extends foundry.applications.sheets.ActorSheetV2 {
   /* ------------------------------------------------------------------ */
 
   _tabWeapons(actor) {
-    const firearms    = actor.items.filter(i => i.type === 'firearm');
-    const melees      = actor.items.filter(i => i.type === 'melee');
-    const projectiles = actor.items.filter(i => i.type === 'projectile');
+    const firearms      = actor.items.filter(i => i.type === 'firearm');
+    const vehWeapons    = actor.items.filter(i => i.type === 'vehicleweapon')
+      .sort((a, b) => a.name.localeCompare(b.name));
 
-    const BOW_CATS    = new Set(['Bow', 'LCB', 'MCB', 'HCB', 'SL']);
-    const THROWN_CATS = new Set(['TK', 'SH', 'Imp', 'Ctrp', 'GR', 'BOL', 'THR', 'other']);
-    const ARMED_CATS  = new Set(['EDG', 'CLB', 'POL', 'WHP']);
+    const catFirearms   = firearms.filter(w => (w.system.category ?? '') !== '');
+    const uncatFirearms = firearms.filter(w => (w.system.category ?? '') === '');
 
-    const armedMelee         = melees.filter(w => ARMED_CATS.has(w.system.category ?? ''));
-    const otherMelee         = melees.filter(w => !ARMED_CATS.has(w.system.category ?? ''));
-    const categorisedFirearms   = firearms.filter(w => (w.system.category ?? '') !== '');
-    const uncategorisedFirearms = firearms.filter(w => (w.system.category ?? '') === '');
-    const bows      = projectiles.filter(i => BOW_CATS.has(i.system.category ?? ''));
-    const uncatProj = projectiles.filter(i => {
-      const cat = i.system.category ?? '';
-      return !BOW_CATS.has(cat) && !THROWN_CATS.has(cat) && cat !== '';
-    });
-
-    const _meleeRow = w => `
-      <div class="item-row" data-item-id="${w.id}">
-        <span class="item-name">${w.name}</span>
-        <span class="item-cell">${w.system.damage || '—'}</span>
-        <span class="item-cell">Reach ${w.system.reach ?? 0}</span>
-        <span class="item-cell">${w.system.concealability ?? '—'}</span>
-        ${this._meleeControls(w.id)}
-      </div>`;
-
-    const _projRow = w => `
-      <div class="item-row" data-item-id="${w.id}">
-        <span class="item-name">${w.name}</span>
-        <span class="item-cell">${w.system.damage || '—'}</span>
-        <span class="item-cell">${w.system.strMin || '—'}</span>
-        <span class="item-cell">${w.system.concealability ?? '—'}</span>
-        ${this._itemControls(w.id, true)}
-      </div>`;
-
-    const _uncatSection = (rows, header) => `
-      <h3 class="section-hdr" style="margin-top:1rem;color:var(--sr-amber)">${header}</h3>
-      <div class="list-header"><span>Name</span><span>Damage</span><span>Reach/Mode</span><span>Conceal</span><span></span></div>
-      ${rows}`;
-
-    const armedRows = armedMelee.length
-      ? armedMelee.map(_meleeRow).join('')
-      : '<p class="empty-list">No melee weapons.</p>';
-
-    const fRows = categorisedFirearms.length
-      ? categorisedFirearms.map(w => `
+    const fRows = catFirearms.length
+      ? catFirearms.map(w => `
           <div class="item-row" data-item-id="${w.id}">
             <span class="item-name">${w.name}</span>
             <span class="item-cell">${w.system.damage || '—'}</span>
@@ -287,40 +250,41 @@ export class SR3EVehicleSheet extends foundry.applications.sheets.ActorSheetV2 {
           </div>`).join('')
       : '<p class="empty-list">No firearms.</p>';
 
-    const bowRows = bows.length ? bows.map(_projRow).join('') : '<p class="empty-list">No bows or crossbows.</p>';
+    const vwRows = vehWeapons.length
+      ? vehWeapons.map(w => `
+          <div class="item-row" data-item-id="${w.id}">
+            <span class="item-name">${w.name}</span>
+            <span class="item-cell">${w.system.weaponType || '—'}</span>
+            <span class="item-cell">${w.system.damage || '—'}</span>
+            <span class="item-cell">${w.system.mode || '—'}</span>
+            <span class="item-cell">${w.system.ammunition || '—'}</span>
+            ${this._itemControls(w.id, false)}
+          </div>`).join('')
+      : '<p class="empty-list">No vehicle weapons.</p>';
 
     return `<div class="tab ${this._activeTab === 'weapons' ? 'active' : ''}" data-tab="weapons" style="overflow-y:auto">
-      <h3 class="section-hdr">Melee</h3>
-      <div class="list-header"><span>Name</span><span>Damage</span><span>Reach</span><span>Conceal</span><span></span></div>
-      ${armedRows}
-      ${otherMelee.length ? _uncatSection(otherMelee.map(_meleeRow).join(''), 'Uncategorised Melee') : ''}
-      <button type="button" class="btn-add" data-action="itemCreate" data-type="melee">+ Add Melee</button>
-
-      <h3 class="section-hdr" style="margin-top:1rem">Firearms</h3>
+      <h3 class="section-hdr">Firearms</h3>
       <div class="list-header"><span>Name</span><span>Damage</span><span>Mode</span><span>Conceal</span><span>Ammo</span><span></span></div>
       ${fRows}
-      ${uncategorisedFirearms.length ? _uncatSection(
-          uncategorisedFirearms.map(w => `
-            <div class="item-row" data-item-id="${w.id}">
-              <span class="item-name">${w.name}</span>
-              <span class="item-cell">${w.system.damage || '—'}</span>
-              <span class="item-cell">${w.system.mode || '—'}</span>
-              <span class="item-cell">${w.system.concealability ?? '—'}</span>
-              <span class="item-cell">${w.system.ammunition || '—'}</span>
-              ${this._itemControls(w.id, true)}
-            </div>`).join(''),
-          'Uncategorised Firearms (set category in item sheet)'
-        ) : ''}
+      ${uncatFirearms.length ? `
+        <h3 class="section-hdr" style="margin-top:1rem;color:var(--sr-amber)">Uncategorised Firearms</h3>
+        <div class="list-header"><span>Name</span><span>Damage</span><span>Mode</span><span>Conceal</span><span>Ammo</span><span></span></div>
+        ${uncatFirearms.map(w => `
+          <div class="item-row" data-item-id="${w.id}">
+            <span class="item-name">${w.name}</span>
+            <span class="item-cell">${w.system.damage || '—'}</span>
+            <span class="item-cell">${w.system.mode || '—'}</span>
+            <span class="item-cell">${w.system.concealability ?? '—'}</span>
+            <span class="item-cell">${w.system.ammunition || '—'}</span>
+            ${this._itemControls(w.id, true)}
+          </div>`).join('')}
+      ` : ''}
       <button type="button" class="btn-add" data-action="itemCreate" data-type="firearm">+ Add Firearm</button>
 
-      <h3 class="section-hdr" style="margin-top:1rem">Projectiles (Bows &amp; Crossbows)</h3>
-      <div class="list-header"><span>Name</span><span>Damage</span><span>Str Min</span><span>Conceal</span><span></span></div>
-      ${bowRows}
-      ${uncatProj.length ? `
-        <h3 class="section-hdr" style="margin-top:0.5rem;color:var(--sr-amber)">Uncategorised Projectiles</h3>
-        ${uncatProj.map(_projRow).join('')}
-      ` : ''}
-      <button type="button" class="btn-add" data-action="itemCreate" data-type="projectile">+ Add Bow / Crossbow</button>
+      <h3 class="section-hdr" style="margin-top:1.2rem">Vehicle Weapons</h3>
+      <div class="list-header"><span>Name</span><span>Type</span><span>Damage</span><span>Mode</span><span>Ammo</span><span></span></div>
+      ${vwRows}
+      <button type="button" class="btn-add" data-action="itemCreate" data-type="vehicleweapon">+ Add Vehicle Weapon</button>
     </div>`;
   }
 
@@ -337,6 +301,36 @@ export class SR3EVehicleSheet extends foundry.applications.sheets.ActorSheetV2 {
       <i class="fas fa-dice-d6 rollable" data-action="rollMelee" data-item-id="${itemId}" title="Melee attack"></i>
       <i class="fas fa-edit" data-action="itemEdit" data-item-id="${itemId}" title="Edit"></i>
       <i class="fas fa-trash" data-action="itemDelete" data-item-id="${itemId}" title="Delete"></i>
+    </div>`;
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  Tab: Mods                                                           */
+  /* ------------------------------------------------------------------ */
+
+  _tabMods(actor) {
+    const mods = actor.items.filter(i => i.type === 'vehiclemod')
+      .sort((a, b) => a.name.localeCompare(b.name));
+
+    const rows = mods.length ? mods.map(m => `
+      <div class="item-row" data-item-id="${m.id}">
+        <span class="item-name">${m.name}</span>
+        <span class="item-cell">${m.system.cfCost || '—'}</span>
+        <span class="item-cell">${m.system.installEquipment || '—'}</span>
+        <span class="item-cell" style="color:var(--sr-muted);font-size:11px">${m.system.installTime || '—'}</span>
+        <span class="item-cell">${m.system.cost ? m.system.cost.toLocaleString() + '¥' : '—'}</span>
+        <span class="item-cell">
+          <a class="item-control" data-action="itemEdit" data-item-id="${m.id}" title="Edit">✎</a>
+          <a class="item-control" data-action="itemDelete" data-item-id="${m.id}" title="Delete">✕</a>
+        </span>
+      </div>`).join('') : '<p class="empty-list">No mods installed.</p>';
+
+    return `<div class="tab ${this._activeTab === 'mods' ? 'active' : ''}" data-tab="mods" style="overflow-y:auto">
+      <div class="list-header">
+        <span>Mod</span><span>CF</span><span>Equipment</span><span>Install Time</span><span>Cost</span><span></span>
+      </div>
+      ${rows}
+      <button type="button" class="btn-add" data-action="itemCreate" data-type="vehiclemod">+ Add Mod</button>
     </div>`;
   }
 

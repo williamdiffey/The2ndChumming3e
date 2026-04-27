@@ -1,0 +1,5102 @@
+[
+  {
+    "_id": "sr3e-vehiclemod-0000",
+    "name": "GridLink(TM)  Power",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 600,
+      "availability": "3/96hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "",
+      "bookPage": "r3.126",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0001",
+    "name": "SunCell Power",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 500,
+      "availability": "3/72hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "",
+      "bookPage": "r3.126",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0002",
+    "name": "Nitrous Oxide Injectors [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3500,
+      "availability": "4/48hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Vehicle B/R(4)",
+      "cfCost": "2",
+      "load": "15kg",
+      "bookPage": "r3.126",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0003",
+    "name": "Nitrous Oxide Injectors [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7000,
+      "availability": "4/48hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "49 hrs/Vehicle B/R(4)",
+      "cfCost": "2",
+      "load": "15kg",
+      "bookPage": "r3.126",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0004",
+    "name": "Nitrous Oxide Injectors [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 10500,
+      "availability": "4/48hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "50 hrs/Vehicle B/R(4)",
+      "cfCost": "2",
+      "load": "15kg",
+      "bookPage": "r3.126",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0005",
+    "name": "Nitrous Oxide Injectors [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 28000,
+      "availability": "4/48hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "51 hrs/Vehicle B/R(4)",
+      "cfCost": "2",
+      "load": "15kg",
+      "bookPage": "r3.126",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0006",
+    "name": "Nitrous Oxide Injectors [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 35000,
+      "availability": "4/48hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "52 hrs/Vehicle B/R(4)",
+      "cfCost": "2",
+      "load": "15kg",
+      "bookPage": "r3.126",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0007",
+    "name": "Adjusted Controls(Dwarf)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "3/72hrs",
+      "streetIndex": "1",
+      "installEquipment": "40 hrs/Vehicle B/R(4)",
+      "installTime": "Vehicle Facility",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.127",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0008",
+    "name": "Adjusted Controls(Troll)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3500,
+      "availability": "3/72hrs",
+      "streetIndex": "1",
+      "installEquipment": "40 hrs/Vehicle B/R(4)",
+      "installTime": "Vehicle Facility",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.127",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0009",
+    "name": "Adjusted Controls(Other)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3000,
+      "availability": "3/72hrs",
+      "streetIndex": "1",
+      "installEquipment": "40 hrs/Vehicle B/R(4)",
+      "installTime": "Vehicle Facility",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.127",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0010",
+    "name": "Advanced Drone Pilot [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Computer B/R(8-Handling)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.127",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0011",
+    "name": "Advanced Drone Pilot [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 25000,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Computer B/R(8-Handling)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.127",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0012",
+    "name": "Advanced Drone Pilot [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 500000,
+      "availability": "10/35days",
+      "streetIndex": "4",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Computer B/R(8-Handling)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.127",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0013",
+    "name": "Advanced Drone Pilot [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500000,
+      "availability": "14/70days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Computer B/R(8-Handling)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.127",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0014",
+    "name": "Autonavigation System [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 500,
+      "availability": "2/96hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(8-Handling)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.127",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0015",
+    "name": "Autonavigation System [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000,
+      "availability": "3/6days",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "32 hrs/Vehicle B/R(8-Handling)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.127",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0016",
+    "name": "Autonavigation System [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "4/8days",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(8-Handling)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.127",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0017",
+    "name": "Autonavigation System [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 15000,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Vehicle B/R(8-Handling)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.127",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0018",
+    "name": "Cont. Manu. Contr. [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(10-Handling)",
+      "cfCost": "2",
+      "load": "30kg",
+      "bookPage": "r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0019",
+    "name": "Cont. Manu. Contr. [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(10-Handling)",
+      "cfCost": "2",
+      "load": "30kg",
+      "bookPage": "r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0020",
+    "name": "Cont. Manu. Contr. [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7500,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(10-Handling)",
+      "cfCost": "2",
+      "load": "30kg",
+      "bookPage": "r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0021",
+    "name": "Cont. Manu. Contr. [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 20000,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(10-Handling)",
+      "cfCost": "2",
+      "load": "30kg",
+      "bookPage": "r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0022",
+    "name": "Cont. Manu. Contr. [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 25000,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(10-Handling)",
+      "cfCost": "2",
+      "load": "30kg",
+      "bookPage": "r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0023",
+    "name": "Cont. Manu. Contr. [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 30000,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(10-Handling)",
+      "cfCost": "2",
+      "load": "30kg",
+      "bookPage": "r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0024",
+    "name": "Cont. Manu. Contr. [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 70000,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(10-Handling)",
+      "cfCost": "2",
+      "load": "30kg",
+      "bookPage": "r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0025",
+    "name": "Cont. Manu. Contr. [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 80000,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(10-Handling)",
+      "cfCost": "2",
+      "load": "30kg",
+      "bookPage": "r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0026",
+    "name": "Cont. Manu. Contr. [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 90000,
+      "availability": "6/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(10-Handling)",
+      "cfCost": "2",
+      "load": "30kg",
+      "bookPage": "r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0027",
+    "name": "Rem-Contr. Intr.  Bod[1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "4/72hrs",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4), Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "sr3.306,r3.130",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0028",
+    "name": "Rem-Contr. Intr.  Bod[2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "4/72hrs",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4), Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "sr3.306,r3.130",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0029",
+    "name": "Rem-Contr. Intr.  Bod[3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7500,
+      "availability": "4/72hrs",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4), Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "sr3.306,r3.130",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0030",
+    "name": "Rem-Contr. Intr.  Bod[4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 10000,
+      "availability": "4/72hrs",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4), Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "sr3.306,r3.130",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0031",
+    "name": "Rem-Contr. Intr.  Bod[5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 12500,
+      "availability": "4/72hrs",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4), Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "sr3.306,r3.130",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0032",
+    "name": "Rem-Contr. Intr.  Bod[6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 15000,
+      "availability": "4/72hrs",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4), Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "sr3.306,r3.130",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0033",
+    "name": "Rem-Contr. Intr.  Bod[7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 17500,
+      "availability": "4/72hrs",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4), Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "sr3.306,r3.130",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0034",
+    "name": "Rem-Contr. Intr.  Bod[8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 20000,
+      "availability": "4/72hrs",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4), Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "sr3.306,r3.130",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0035",
+    "name": "Rem-Contr. Intr.  Bod[9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 22500,
+      "availability": "4/72hrs",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4), Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "sr3.306,r3.130",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0036",
+    "name": "Datajack Port",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "3/72hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "56 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "15kg",
+      "bookPage": "sr3.306,r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0037",
+    "name": "Datajack Port(Motorcycles)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "3/72hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "112 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "15kg",
+      "bookPage": "sr3.306,r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0038",
+    "name": "Bike Gyro-Stabilization Gear",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 125,
+      "availability": "6/10days",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Bike B/R(5)",
+      "cfCost": "0",
+      "load": "5kg",
+      "bookPage": "r3.129",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0039",
+    "name": "Rigger Adaptation",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2800,
+      "availability": "4/7days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "10kg",
+      "bookPage": "sr3.306,r3.130",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0040",
+    "name": "APPS",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "3/6days",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "",
+      "bookPage": "r3.131",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0041",
+    "name": "Artic",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 0,
+      "availability": "5/1wk",
+      "streetIndex": "1,50",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "16 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "0kg",
+      "bookPage": "twl.132",
+      "description": "Parts Cost for Ground Vehicle: Body x 250; Parts Cost for Air Vehicle: Body x 500"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0042",
+    "name": "Crash Cages",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3500,
+      "availability": "4/96hrs",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "16 hrs/Vehicle B/R(4)",
+      "cfCost": "2",
+      "load": "25kg",
+      "bookPage": "r3.132",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0043",
+    "name": "Roll Bars",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "3/72hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "24 hrs/Vehicle B/R(3)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.133",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0044",
+    "name": "Vehicle Armor [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1250,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "8 hrs/Vehicle B/R(1)",
+      "cfCost": "0",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.131",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0045",
+    "name": "Vehicle Armor [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(1)",
+      "cfCost": "0",
+      "load": "Body^2*10kg",
+      "bookPage": "r3.131",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0046",
+    "name": "Vehicle Armor [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3750,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "24 hrs/Vehicle B/R(1)",
+      "cfCost": "0",
+      "load": "Body^2*15kg",
+      "bookPage": "r3.131",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0047",
+    "name": "Vehicle Armor [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "32 hrs/Vehicle B/R(2)",
+      "cfCost": "0",
+      "load": "Body^2*20kg",
+      "bookPage": "r3.131",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0048",
+    "name": "Vehicle Armor [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 6250,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(2)",
+      "cfCost": "0",
+      "load": "Body^2*25kg",
+      "bookPage": "r3.131",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0049",
+    "name": "Vehicle Armor [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7500,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Vehicle B/R(2)",
+      "cfCost": "0",
+      "load": "Body^2*30kg",
+      "bookPage": "r3.131",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0050",
+    "name": "Vehicle Armor [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 9750,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "56 hrs/Vehicle B/R(3)",
+      "cfCost": "0",
+      "load": "Body^2*35kg",
+      "bookPage": "r3.131",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0051",
+    "name": "Vehicle Armor [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 10000,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Vehicle B/R(3)",
+      "cfCost": "0",
+      "load": "Body^2*40kg",
+      "bookPage": "r3.131",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0052",
+    "name": "Vehicle Armor [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 12500,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(3)",
+      "cfCost": "0",
+      "load": "Body^2*45kg",
+      "bookPage": "r3.131",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0053",
+    "name": "Vehicle Armor [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 13750,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "Body^2*50kg",
+      "bookPage": "r3.131",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0054",
+    "name": "Vehicle Armor [11]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 15000,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "88 hrs/Vehicle B/R(5)",
+      "cfCost": "0",
+      "load": "Body^2*55kg",
+      "bookPage": "r3.131",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0055",
+    "name": "Vehicle Armor [11]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 16250,
+      "availability": "6/12days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "93 hrs/Vehicle B/R(6)",
+      "cfCost": "0",
+      "load": "Body^2*60kg",
+      "bookPage": "r3.131",
+      "description": "Handling+2"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0056",
+    "name": "Concealed Armor [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "8 hrs/Vehicle B/R(1)",
+      "cfCost": "3",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0057",
+    "name": "Concealed Armor [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 4000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(1)",
+      "cfCost": "6",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0058",
+    "name": "Concealed Armor [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 6000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "24 hrs/Vehicle B/R(1)",
+      "cfCost": "9",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0059",
+    "name": "Concealed Armor [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 8000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "32 hrs/Vehicle B/R(2)",
+      "cfCost": "12",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0060",
+    "name": "Concealed Armor [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 10000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(2)",
+      "cfCost": "15",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0061",
+    "name": "Concealed Armor [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 12000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Vehicle B/R(2)",
+      "cfCost": "18",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0062",
+    "name": "Concealed Armor [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 14000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "56 hrs/Vehicle B/R(3)",
+      "cfCost": "21",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0063",
+    "name": "Concealed Armor [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 16000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Vehicle B/R(3)",
+      "cfCost": "24",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0064",
+    "name": "Concealed Armor [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 18000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(3)",
+      "cfCost": "37",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0065",
+    "name": "Concealed Armor [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 20000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(4)",
+      "cfCost": "30",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0066",
+    "name": "Concealed Armor [11]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 22000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "88 hrs/Vehicle B/R(4)",
+      "cfCost": "33",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": "Handling+1"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0067",
+    "name": "Concealed Armor [12]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 24000,
+      "availability": "8/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "96 hrs/Vehicle B/R(4)",
+      "cfCost": "36",
+      "load": "Body^2*5kg",
+      "bookPage": "r3.132",
+      "description": "Handling+2"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0068",
+    "name": "Ablative Armor [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 700,
+      "availability": "8/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "6 hrs/no test needed",
+      "cfCost": "0",
+      "load": "Body*100kg",
+      "bookPage": "r3.131",
+      "description": "2pts not hardened"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0069",
+    "name": "Ablative Armor [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1600,
+      "availability": "12/12days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "6 hrs/no test needed",
+      "cfCost": "0",
+      "load": "Body*100kg",
+      "bookPage": "r3.131",
+      "description": "4pts not hardened"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0070",
+    "name": "Ablative Armor [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "14/21days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "6 hrs/no test needed",
+      "cfCost": "0",
+      "load": "Body*100kg",
+      "bookPage": "r3.131",
+      "description": "6pts not hardened"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0071",
+    "name": "Smart Armor System",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 20000,
+      "availability": "10/28days",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "Body*40 hrs/Dem(4)+Elec(40)+Comp(4)",
+      "cfCost": "3*Armor",
+      "load": "Body*50kg",
+      "bookPage": "r3.133",
+      "description": "Replacement: Body*500Y"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0072",
+    "name": "Gunnery Recoil Adjuster [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 500,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "25kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0073",
+    "name": "Gunnery Recoil Adjuster [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "26kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0074",
+    "name": "Gunnery Recoil Adjuster [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1500,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "27kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0075",
+    "name": "Gunnery Recoil Adjuster [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "28kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0076",
+    "name": "Gunnery Recoil Adjuster [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "29kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0077",
+    "name": "Gunnery Recoil Adjuster [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3000,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "30kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0078",
+    "name": "Gunnery Recoil Adjuster [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3500,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "31kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0079",
+    "name": "Gunnery Recoil Adjuster [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 4000,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "32kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0080",
+    "name": "Gunnery Recoil Adjuster [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 4500,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "33kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0081",
+    "name": "Gunnery Recoil Adjuster [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "34kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0082",
+    "name": "Gunnery Recoil Adjuster [11]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5500,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "35kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0083",
+    "name": "Gunnery Recoil Adjuster [12]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 6000,
+      "availability": "6/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "36kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0084",
+    "name": "Launch Control System(Medium)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 750,
+      "availability": "6/7days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "24 hrs/Vehcile B/R(4)",
+      "cfCost": "1",
+      "load": "10kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0085",
+    "name": "Launch Control System(Heavy)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "6/7days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "24 hrs/Vehcile B/R(4)",
+      "cfCost": "2",
+      "load": "10kg",
+      "bookPage": "r3.137",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0086",
+    "name": "Smartlink-I",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 650,
+      "availability": "4/48hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0087",
+    "name": "Smartlink-II",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 900,
+      "availability": "6/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0088",
+    "name": "Pistol Customization Kit",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 150,
+      "availability": "4/36hrs",
+      "streetIndex": "2",
+      "installEquipment": "Weapon Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0089",
+    "name": "Submachinegun Cust. Kit",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 350,
+      "availability": "5/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Weapon Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "0.25",
+      "bookPage": "r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0090",
+    "name": "Rifle Customization Kit",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 750,
+      "availability": "6/72hrs",
+      "streetIndex": "2.5",
+      "installEquipment": "Weapon Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "0.5",
+      "bookPage": "r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0091",
+    "name": "Shotgun Customization Kit",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 750,
+      "availability": "6/72hrs",
+      "streetIndex": "2.5",
+      "installEquipment": "Weapon Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "0.5",
+      "bookPage": "r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0092",
+    "name": "Grenade Launcher Cust.Kit",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 750,
+      "availability": "6/72hrs",
+      "streetIndex": "2.5",
+      "installEquipment": "Weapon Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "0.5",
+      "bookPage": "r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0093",
+    "name": "LMG Customization Kit",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 750,
+      "availability": "6/72hrs",
+      "streetIndex": "2.5",
+      "installEquipment": "Weapon Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "0.5",
+      "bookPage": "r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0094",
+    "name": "MMG Customization Kit",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000,
+      "availability": "6/42hrs",
+      "streetIndex": "2.5",
+      "installEquipment": "Weapon Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "1",
+      "bookPage": "r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0095",
+    "name": "HMG Customization Kit",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000,
+      "availability": "6/42hrs",
+      "streetIndex": "2.5",
+      "installEquipment": "Weapon Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "1",
+      "bookPage": "r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0096",
+    "name": "Assault Cannon Cust. Kit",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000,
+      "availability": "6/42hrs",
+      "streetIndex": "2.5",
+      "installEquipment": "Weapon Kit",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "1",
+      "bookPage": "r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0097",
+    "name": "External Hardpoint",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "6/7days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "2",
+      "load": "10kg+Weapon",
+      "bookPage": "sr3.312,r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0098",
+    "name": "External Firmpoint",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 750,
+      "availability": "6/7days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "10kg+Weapon",
+      "bookPage": "sr3.312,r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0099",
+    "name": "Internal Hardpoint",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3000,
+      "availability": "6/7days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "7",
+      "load": "10kg+Weapon",
+      "bookPage": "sr3.312,r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0100",
+    "name": "Internal Firmpoint",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1500,
+      "availability": "6/7days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "5",
+      "load": "10kg+Weapon",
+      "bookPage": "sr3.312,r3.136",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0101",
+    "name": "External Missile Mount",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1500,
+      "availability": "10/60days",
+      "streetIndex": "5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "8 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "weight of the missiles",
+      "bookPage": "r3.138",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0102",
+    "name": "Internal Missile Mount",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "10/60days",
+      "streetIndex": "5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "8 hrs/Vehicle B/R(4)",
+      "cfCost": "5",
+      "load": "weight of the missiles",
+      "bookPage": "r3.138",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0103",
+    "name": "Pintle Mount",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 50,
+      "availability": "4/96hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "12 hrs/Vehicle B/R(2)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "sr3.312,r3.138",
+      "description": "-2 Recoil"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0104",
+    "name": "Ring Mount",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3000,
+      "availability": "8/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Vehicle B/R(3)",
+      "cfCost": "1",
+      "load": "25kg",
+      "bookPage": "r3.138",
+      "description": "-6 Recoil"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0105",
+    "name": "Ring Mount(Door Mount)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3000,
+      "availability": "8/14days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Vehicle B/R(3)",
+      "cfCost": "16",
+      "load": "25kg",
+      "bookPage": "r3.138",
+      "description": "-6 Recoil"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0106",
+    "name": "Mini-Turret",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "GM",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "7",
+      "load": "25kg",
+      "bookPage": "sr3.312,r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0107",
+    "name": "Small Turret",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7500,
+      "availability": "GM",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "8",
+      "load": "100kg",
+      "bookPage": "sr3.312,r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0108",
+    "name": "Medium Turret",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 15000,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "24",
+      "load": "1000kg",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0109",
+    "name": "Large Turret",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 300000,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "36",
+      "load": "6000kg",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0110",
+    "name": "Extra-larget Turret",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000000,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "72",
+      "load": "30000kg",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0111",
+    "name": "Remote Micro Turret",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "GM",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "10kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0112",
+    "name": "Remote Mini Turret",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 6000,
+      "availability": "GM",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "4",
+      "load": "25kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0113",
+    "name": "Remote Small Turret",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 9000,
+      "availability": "GM",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "5",
+      "load": "100kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0114",
+    "name": "Remote Medium Turret",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 17500,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "8",
+      "load": "1000kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0115",
+    "name": "Remote Large Turret",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 600000,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "60",
+      "load": "8000kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0116",
+    "name": "Remote Ex-Large Turret",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000000,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "120",
+      "load": "75000kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0117",
+    "name": "Mini-Turret(Anti-Air)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7500,
+      "availability": "GM",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "8",
+      "load": "25kg",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0118",
+    "name": "Small Turret(Anti-Air)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 11250,
+      "availability": "GM",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "9",
+      "load": "100kg",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0119",
+    "name": "Medium Turret(Anti-Air)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 22500,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "25",
+      "load": "1000kg",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0120",
+    "name": "Large Turret(Anti-Air)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 450000,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "37",
+      "load": "6000kg",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0121",
+    "name": "Extra-large Turret(Anti-Air)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1500000,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "73",
+      "load": "30000kg",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0122",
+    "name": "Remote Micro Turret(Anti-Air)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3750,
+      "availability": "GM",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "2",
+      "load": "10kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0123",
+    "name": "Remote Mini Turret(Anti-Air)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 9000,
+      "availability": "GM",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "5",
+      "load": "25kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0124",
+    "name": "Remote Small Turret(Anti-Air)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 13500,
+      "availability": "GM",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "6",
+      "load": "100kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0125",
+    "name": "Remote Medium Turret(Anti-Air)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 26250,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "9",
+      "load": "1000kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0126",
+    "name": "Remote Large Turret(Anti-Air)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 900000,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "61",
+      "load": "8000kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0127",
+    "name": "Mini-Turret(Pop-Up)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "GM",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "14",
+      "load": "25kg",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0128",
+    "name": "Small Turret(Pop-Up)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7500,
+      "availability": "GM",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "16",
+      "load": "100kg",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0129",
+    "name": "Medium Turret(Pop-Up)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 15000,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "48",
+      "load": "1000kg",
+      "bookPage": "r3.139",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0130",
+    "name": "Remote Micro Turret(Pop-Up)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "GM",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "2",
+      "load": "10kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0131",
+    "name": "Remote Mini Turret(Pop-Up)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 6000,
+      "availability": "GM",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "8",
+      "load": "25kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0132",
+    "name": "Remote Small Turret(Pop-Up)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 9000,
+      "availability": "GM",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "10",
+      "load": "100kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0133",
+    "name": "Remote Medium Turret(Pop-Up)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 17500,
+      "availability": "GM",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "72 hrs/Vehicle B/R(4)",
+      "cfCost": "16",
+      "load": "1000kg",
+      "bookPage": "r3.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0134",
+    "name": "Autosoft Interpretation [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000,
+      "availability": "8/14days",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Shop",
+      "installTime": "72 hrs/Electronics B/R(4)",
+      "cfCost": "1",
+      "load": "2kg",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0135",
+    "name": "Autosoft Interpretation [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "8/14days",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Shop",
+      "installTime": "72 hrs/Electronics B/R(4)",
+      "cfCost": "1",
+      "load": "2kg",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0136",
+    "name": "Autosoft Interpretation [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3000,
+      "availability": "8/14days",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Shop",
+      "installTime": "72 hrs/Electronics B/R(4)",
+      "cfCost": "1",
+      "load": "2kg",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0137",
+    "name": "Autosoft Interpretation [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 4000,
+      "availability": "8/14days",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Shop",
+      "installTime": "72 hrs/Electronics B/R(4)",
+      "cfCost": "1",
+      "load": "2kg",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0138",
+    "name": "Autosoft Interpretation [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "8/14days",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Shop",
+      "installTime": "72 hrs/Electronics B/R(4)",
+      "cfCost": "1",
+      "load": "2kg",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0139",
+    "name": "BattleTac FDDM Receiver [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 35000,
+      "availability": "10/21days",
+      "streetIndex": "3",
+      "installEquipment": "Microtronics Shop",
+      "installTime": "64 hrs/Computer B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0140",
+    "name": "BattleTac FDDM Receiver [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 35000,
+      "availability": "10/21days",
+      "streetIndex": "3",
+      "installEquipment": "Microtronics Shop",
+      "installTime": "128 hrs/Computer B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0141",
+    "name": "BattleTac FDDM Receiver [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 35000,
+      "availability": "10/21days",
+      "streetIndex": "3",
+      "installEquipment": "Microtronics Shop",
+      "installTime": "192 hrs/Computer B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0142",
+    "name": "BattleTac FDDM Receiver [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 35000,
+      "availability": "10/21days",
+      "streetIndex": "3",
+      "installEquipment": "Microtronics Shop",
+      "installTime": "256 hrs/Computer B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0143",
+    "name": "BattleTac FDDM Receiver [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 35000,
+      "availability": "10/21days",
+      "streetIndex": "3",
+      "installEquipment": "Microtronics Shop",
+      "installTime": "320 hrs/Computer B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0144",
+    "name": "BattleTac IVIS Receiver [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 25000,
+      "availability": "8/14days",
+      "streetIndex": "3",
+      "installEquipment": "Microtronics Shop",
+      "installTime": "64 hrs/Computer B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0145",
+    "name": "BattleTac IVIS Receiver [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 25000,
+      "availability": "8/14days",
+      "streetIndex": "3",
+      "installEquipment": "Microtronics Shop",
+      "installTime": "128 hrs/Computer B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0146",
+    "name": "BattleTac IVIS Receiver [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 25000,
+      "availability": "8/14days",
+      "streetIndex": "3",
+      "installEquipment": "Microtronics Shop",
+      "installTime": "192 hrs/Computer B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0147",
+    "name": "BattleTac IVIS Receiver [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 25000,
+      "availability": "8/14days",
+      "streetIndex": "3",
+      "installEquipment": "Microtronics Shop",
+      "installTime": "256 hrs/Computer B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0148",
+    "name": "BattleTac IVIS Receiver [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 25000,
+      "availability": "8/14days",
+      "streetIndex": "3",
+      "installEquipment": "Microtronics Shop",
+      "installTime": "320 hrs/Computer B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.142",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0149",
+    "name": "ECM [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 10000,
+      "availability": "5/7days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Electronics B/R(4)",
+      "cfCost": "1",
+      "load": "5kg",
+      "bookPage": "r3.143",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0150",
+    "name": "ECM [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 20000,
+      "availability": "6/10days",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "32 hrs/Electronics B/R(4)",
+      "cfCost": "2",
+      "load": "10kg",
+      "bookPage": "r3.143",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0151",
+    "name": "ECM [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 30000,
+      "availability": "7/14days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Electronics B/R(4)",
+      "cfCost": "3",
+      "load": "15kg",
+      "bookPage": "r3.143",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0152",
+    "name": "ECM [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 50000,
+      "availability": "8/21days",
+      "streetIndex": "4",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Electronics B/R(4)",
+      "cfCost": "3",
+      "load": "20kg",
+      "bookPage": "r3.143",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0153",
+    "name": "ECM [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 75000,
+      "availability": "10/30days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Electronics B/R(4)",
+      "cfCost": "6",
+      "load": "25kg",
+      "bookPage": "r3.143",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0154",
+    "name": "ECM [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 100000,
+      "availability": "12/45days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "96 hrs/Electronics B/R(4)",
+      "cfCost": "8",
+      "load": "50kg",
+      "bookPage": "r3.143",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0155",
+    "name": "ECM [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 200000,
+      "availability": "14/60days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "112 hrs/Electronics B/R(4)",
+      "cfCost": "9",
+      "load": "75kg",
+      "bookPage": "r3.143",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0156",
+    "name": "ECM [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 300000,
+      "availability": "16/3months",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "128 hrs/Electronics B/R(4)",
+      "cfCost": "12",
+      "load": "100kg",
+      "bookPage": "r3.143",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0157",
+    "name": "ECM [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 500000,
+      "availability": "18/6months",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "144 hrs/Electronics B/R(4)",
+      "cfCost": "16",
+      "load": "150kg",
+      "bookPage": "r3.143",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0158",
+    "name": "ECM [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000000,
+      "availability": "20/1year",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "160 hrs/Electronics B/R(4)",
+      "cfCost": "20",
+      "load": "250kg",
+      "bookPage": "r3.143",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0159",
+    "name": "ECCM [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 10000,
+      "availability": "4/7days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Electronics B/R(4)",
+      "cfCost": "1",
+      "load": "3kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0160",
+    "name": "ECCM [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 20000,
+      "availability": "4/10days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "32 hrs/Electronics B/R(4)",
+      "cfCost": "2",
+      "load": "5kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0161",
+    "name": "ECCM [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 30000,
+      "availability": "5/14days",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Electronics B/R(4)",
+      "cfCost": "3",
+      "load": "8kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0162",
+    "name": "ECCM [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 40000,
+      "availability": "6/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Electronics B/R(4)",
+      "cfCost": "3",
+      "load": "12kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0163",
+    "name": "ECCM [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 50000,
+      "availability": "8/30days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Electronics B/R(4)",
+      "cfCost": "6",
+      "load": "18kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0164",
+    "name": "ECCM [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 75000,
+      "availability": "10/45days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "96 hrs/Electronics B/R(4)",
+      "cfCost": "8",
+      "load": "25kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0165",
+    "name": "ECCM [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 100000,
+      "availability": "12/60days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "112 hrs/Electronics B/R(4)",
+      "cfCost": "9",
+      "load": "50kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0166",
+    "name": "ECCM [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 250000,
+      "availability": "14/3months",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "128 hrs/Electronics B/R(4)",
+      "cfCost": "12",
+      "load": "75kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0167",
+    "name": "ECCM [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 300000,
+      "availability": "16/6months",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "144 hrs/Electronics B/R(4)",
+      "cfCost": "16",
+      "load": "100kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0168",
+    "name": "ECCM [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 500000,
+      "availability": "18/1year",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "160 hrs/Electronics B/R(4)",
+      "cfCost": "20",
+      "load": "150kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0169",
+    "name": "ED [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 15000,
+      "availability": "8/30days",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Electronics B/R(4)",
+      "cfCost": "2",
+      "load": "10kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0170",
+    "name": "ED [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 30000,
+      "availability": "8/45days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "32 hrs/Electronics B/R(4)",
+      "cfCost": "3",
+      "load": "20kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0171",
+    "name": "ED [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 50000,
+      "availability": "8/60days",
+      "streetIndex": "4",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Electronics B/R(4)",
+      "cfCost": "5",
+      "load": "30kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0172",
+    "name": "ED [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 75000,
+      "availability": "10/3months",
+      "streetIndex": "4.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Electronics B/R(4)",
+      "cfCost": "6",
+      "load": "45kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0173",
+    "name": "ED [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 100000,
+      "availability": "12/6months",
+      "streetIndex": "5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Electronics B/R(4)",
+      "cfCost": "7",
+      "load": "50kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0174",
+    "name": "ED [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 250000,
+      "availability": "16/1year",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "96 hrs/Electronics B/R(4)",
+      "cfCost": "9",
+      "load": "75kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0175",
+    "name": "ECD [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 10000,
+      "availability": "8/30days",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Electronics B/R(4)",
+      "cfCost": "2",
+      "load": "25kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0176",
+    "name": "ECD [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 30000,
+      "availability": "8/45days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "32 hrs/Electronics B/R(4)",
+      "cfCost": "3",
+      "load": "30kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0177",
+    "name": "ECD [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 50000,
+      "availability": "8/60days",
+      "streetIndex": "4",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Electronics B/R(4)",
+      "cfCost": "4",
+      "load": "35kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0178",
+    "name": "ECD [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 75000,
+      "availability": "10/3months",
+      "streetIndex": "4.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Electronics B/R(4)",
+      "cfCost": "5",
+      "load": "45kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0179",
+    "name": "ECD [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 150000,
+      "availability": "12/6months",
+      "streetIndex": "5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Electronics B/R(4)",
+      "cfCost": "6",
+      "load": "60kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0180",
+    "name": "ECD [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 300000,
+      "availability": "16/1year",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "96 hrs/Electronics B/R(4)",
+      "cfCost": "8",
+      "load": "75kg",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0181",
+    "name": "Power Amplifier [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 250,
+      "availability": "1/12hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Electronics B/R(4)",
+      "cfCost": "0.5",
+      "load": "1kg",
+      "bookPage": "r3.146",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0182",
+    "name": "Power Amplifier [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 500,
+      "availability": "2/24hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Electronics B/R(4)",
+      "cfCost": "1",
+      "load": "2kg",
+      "bookPage": "r3.146",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0183",
+    "name": "Power Amplifier [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 750,
+      "availability": "3/36hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Electronics B/R(4)",
+      "cfCost": "1.5",
+      "load": "3kg",
+      "bookPage": "r3.146",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0184",
+    "name": "Power Amplifier [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000,
+      "availability": "4/48hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Electronics B/R(4)",
+      "cfCost": "2",
+      "load": "4kg",
+      "bookPage": "r3.146",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0185",
+    "name": "Power Amplifier [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1250,
+      "availability": "5/60hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Electronics B/R(4)",
+      "cfCost": "2.5",
+      "load": "5kg",
+      "bookPage": "r3.146",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0186",
+    "name": "Power Amplifier [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1500,
+      "availability": "6/72hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Electronics B/R(4)",
+      "cfCost": "3",
+      "load": "6kg",
+      "bookPage": "r3.146",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0187",
+    "name": "Power Amplifier [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1750,
+      "availability": "7/84hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Electronics B/R(4)",
+      "cfCost": "3.5",
+      "load": "7kg",
+      "bookPage": "r3.146",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0188",
+    "name": "Power Amplifier [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "8/96hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Electronics B/R(4)",
+      "cfCost": "4",
+      "load": "8kg",
+      "bookPage": "r3.146",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0189",
+    "name": "Power Amplifier [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2250,
+      "availability": "9/108hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Electronics B/R(4)",
+      "cfCost": "4.5",
+      "load": "9kg",
+      "bookPage": "r3.146",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0190",
+    "name": "Power Amplifier [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "10/120hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Electronics B/R(4)",
+      "cfCost": "5",
+      "load": "10kg",
+      "bookPage": "r3.146",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0191",
+    "name": "Remote-Control Encryption [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "1/24hrs",
+      "streetIndex": "3",
+      "installEquipment": "Electronics Kit",
+      "installTime": "1 hour/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0192",
+    "name": "Remote-Control Encryption [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 10000,
+      "availability": "2/48hrs",
+      "streetIndex": "3",
+      "installEquipment": "Electronics Kit",
+      "installTime": "1 hour/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0193",
+    "name": "Remote-Control Encryption [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 15000,
+      "availability": "3/72hrs",
+      "streetIndex": "3",
+      "installEquipment": "Electronics Kit",
+      "installTime": "1 hour/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0194",
+    "name": "Remote-Control Encryption [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 20000,
+      "availability": "4/4days",
+      "streetIndex": "3",
+      "installEquipment": "Electronics Kit",
+      "installTime": "1 hour/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0195",
+    "name": "Remote-Control Encryption [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 25000,
+      "availability": "5/5days",
+      "streetIndex": "3",
+      "installEquipment": "Electronics Kit",
+      "installTime": "1 hour/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0196",
+    "name": "Remote-Control Encryption [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 30000,
+      "availability": "6/6days",
+      "streetIndex": "3",
+      "installEquipment": "Electronics Kit",
+      "installTime": "1 hour/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0197",
+    "name": "Remote-Control Encryption [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 35000,
+      "availability": "7/7days",
+      "streetIndex": "3",
+      "installEquipment": "Electronics Kit",
+      "installTime": "1 hour/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0198",
+    "name": "Remote-Control Encryption [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 40000,
+      "availability": "8/8days",
+      "streetIndex": "3",
+      "installEquipment": "Electronics Kit",
+      "installTime": "1 hour/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0199",
+    "name": "Remote-Control Encryption [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 45000,
+      "availability": "9/9days",
+      "streetIndex": "3",
+      "installEquipment": "Electronics Kit",
+      "installTime": "1 hour/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0200",
+    "name": "Remote-Control Encryption [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 50000,
+      "availability": "10/10days",
+      "streetIndex": "3",
+      "installEquipment": "Electronics Kit",
+      "installTime": "1 hour/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0201",
+    "name": "Sensors [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "4/7days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Electronics B/R(4)",
+      "cfCost": "1",
+      "load": "12kg",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0202",
+    "name": "Sensors [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7500,
+      "availability": "4/10days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "32 hrs/Electronics B/R(4)",
+      "cfCost": "2",
+      "load": "20kg",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0203",
+    "name": "Sensors [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 10000,
+      "availability": "5/14days",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Electronics B/R(4)",
+      "cfCost": "3",
+      "load": "25kg",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0204",
+    "name": "Sensors [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 12500,
+      "availability": "6/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Electronics B/R(4)",
+      "cfCost": "3",
+      "load": "35kg",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0205",
+    "name": "Sensors [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 15000,
+      "availability": "8/30days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Electronics B/R(4)",
+      "cfCost": "6",
+      "load": "50kg",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0206",
+    "name": "Sensors [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 20000,
+      "availability": "10/45days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "96 hrs/Electronics B/R(4)",
+      "cfCost": "8",
+      "load": "75kg",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0207",
+    "name": "Sensors [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 30000,
+      "availability": "12/60days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "112 hrs/Electronics B/R(4)",
+      "cfCost": "9",
+      "load": "110kg",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0208",
+    "name": "Sensors [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 50000,
+      "availability": "14/3months",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "128 hrs/Electronics B/R(4)",
+      "cfCost": "12",
+      "load": "150kg",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0209",
+    "name": "Sensors [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 100000,
+      "availability": "16/6months",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "144 hrs/Electronics B/R(4)",
+      "cfCost": "16",
+      "load": "200kg",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0210",
+    "name": "Sensors [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 500000,
+      "availability": "18/1year",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "160 hrs/Electronics B/R(4)",
+      "cfCost": "20",
+      "load": "250kg",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0211",
+    "name": "Enhanced Sensors [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "4/7days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Electronics B/R(4)",
+      "cfCost": "1",
+      "load": "12kg",
+      "bookPage": "sta2.39",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0212",
+    "name": "Enhanced Sensors [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7500,
+      "availability": "4/10days",
+      "streetIndex": "2.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "32 hrs/Electronics B/R(4)",
+      "cfCost": "2",
+      "load": "20kg",
+      "bookPage": "sta2.39",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0213",
+    "name": "Enhanced Sensors [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 10000,
+      "availability": "5/14days",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Electronics B/R(4)",
+      "cfCost": "3",
+      "load": "25kg",
+      "bookPage": "sta2.39",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0214",
+    "name": "Enhanced Sensors [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 12500,
+      "availability": "6/21days",
+      "streetIndex": "3.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "64 hrs/Electronics B/R(4)",
+      "cfCost": "3",
+      "load": "35kg",
+      "bookPage": "sta2.39",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0215",
+    "name": "Enhanced Sensors [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 15000,
+      "availability": "8/30days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Electronics B/R(4)",
+      "cfCost": "6",
+      "load": "50kg",
+      "bookPage": "sta2.39",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0216",
+    "name": "Enhanced Sensors [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 20000,
+      "availability": "10/45days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "96 hrs/Electronics B/R(4)",
+      "cfCost": "8",
+      "load": "75kg",
+      "bookPage": "sta2.39",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0217",
+    "name": "Enhanced Sensors [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 30000,
+      "availability": "12/60days",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "112 hrs/Electronics B/R(4)",
+      "cfCost": "9",
+      "load": "110kg",
+      "bookPage": "sta2.39",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0218",
+    "name": "Enhanced Sensors [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 50000,
+      "availability": "14/3months",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "128 hrs/Electronics B/R(4)",
+      "cfCost": "12",
+      "load": "150kg",
+      "bookPage": "sta2.39",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0219",
+    "name": "Enhanced Sensors [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 100000,
+      "availability": "16/6months",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "144 hrs/Electronics B/R(4)",
+      "cfCost": "16",
+      "load": "200kg",
+      "bookPage": "sta2.39",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0220",
+    "name": "Enhanced Sensors [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 500000,
+      "availability": "18/1year",
+      "streetIndex": "GM",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "160 hrs/Electronics B/R(4)",
+      "cfCost": "20",
+      "load": "250kg",
+      "bookPage": "sta2.39",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0221",
+    "name": "Electronics Port",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000,
+      "availability": "3/6days",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "8 hrs/Electronics B/R(3)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.145",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0222",
+    "name": "Retransmission Unit",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 25000,
+      "availability": "8/14days",
+      "streetIndex": "3",
+      "installEquipment": "Microtronics Shop",
+      "installTime": "64 hrs/Electronics B/R(4)",
+      "cfCost": "1.5",
+      "load": "5kg",
+      "bookPage": "r3.147",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0223",
+    "name": "Amphibious Package",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "3/6days",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "32 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "0",
+      "bookPage": "r3.149",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0224",
+    "name": "Amphibious Package",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7500,
+      "availability": "5/10days",
+      "streetIndex": "1.25",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(5)",
+      "cfCost": "2",
+      "load": "0",
+      "bookPage": "r3.149",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0225",
+    "name": "Amphibious Package",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 15000,
+      "availability": "6/12days",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "80 hrs/Vehicle B/R(6)",
+      "cfCost": "4",
+      "load": "0",
+      "bookPage": "r3.149",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0226",
+    "name": "Amphibious Package",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Facility",
+      "installTime": "0/0",
+      "cfCost": "0",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0227",
+    "name": "Amphibious Package",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7500,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Facility",
+      "installTime": "0/0",
+      "cfCost": "2",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0228",
+    "name": "Amphibious Package",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 15000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Facility",
+      "installTime": "0/0",
+      "cfCost": "3",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0229",
+    "name": "Anti-Theft System [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1200,
+      "availability": "4/7days",
+      "streetIndex": "1.25",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0230",
+    "name": "Anti-Theft System [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1600,
+      "availability": "4/7days",
+      "streetIndex": "1.25",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0231",
+    "name": "Anti-Theft System [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "4/7days",
+      "streetIndex": "1.25",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0232",
+    "name": "Anti-Theft System [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2400,
+      "availability": "4/7days",
+      "streetIndex": "1.25",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0233",
+    "name": "Anti-Theft System [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 7000,
+      "availability": "5/10days",
+      "streetIndex": "1.50",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0234",
+    "name": "Anti-Theft System [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 8000,
+      "availability": "5/10days",
+      "streetIndex": "1.50",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0235",
+    "name": "Anti-Theft System [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 9000,
+      "availability": "5/10days",
+      "streetIndex": "1.50",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0236",
+    "name": "Anti-Theft System [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 50000,
+      "availability": "6/14days",
+      "streetIndex": "2.00",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0237",
+    "name": "Electric Shock System",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "",
+      "streetIndex": "1.00",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0238",
+    "name": "Proximity Alert",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 250,
+      "availability": "",
+      "streetIndex": "1.00",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0239",
+    "name": "Bench Seat",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 750,
+      "availability": "3/48hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "4 hrs/Vehicle B/R(4)",
+      "cfCost": "6",
+      "load": "100kg",
+      "bookPage": "r3.153",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0240",
+    "name": "Folding Bench Seat",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 750,
+      "availability": "3/48hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "4 hrs/Vehicle B/R(4)",
+      "cfCost": "6",
+      "load": "100kg",
+      "bookPage": "r3.153",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0241",
+    "name": "Bucket Seat",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 700,
+      "availability": "3/48hrs",
+      "streetIndex": "1",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "4 hrs/Vehicle B/R(4)",
+      "cfCost": "6",
+      "load": "100kg",
+      "bookPage": "r3.153",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0242",
+    "name": "Small Sidecar",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000,
+      "availability": "Always",
+      "streetIndex": "1",
+      "installEquipment": "-",
+      "installTime": "-",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.154",
+      "description": "+1 Hand, CF 6"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0243",
+    "name": "Medium Sidecar",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "Always",
+      "streetIndex": "1",
+      "installEquipment": "-",
+      "installTime": "-",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.154",
+      "description": "+1 Hand, CF 8"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0244",
+    "name": "Large Sidecar",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3500,
+      "availability": "Always",
+      "streetIndex": "1",
+      "installEquipment": "-",
+      "installTime": "-",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.154",
+      "description": "+2 Hand, CF 12"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0245",
+    "name": "White-Light",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 600,
+      "availability": "4/96hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.154",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0246",
+    "name": "Medium-Range Infared",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 600,
+      "availability": "4/96hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "24 hrs/Vehicle B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.154",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0247",
+    "name": "Library Transponder Chip [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 60,
+      "availability": "5/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Kit",
+      "installTime": "2 hrs/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.100",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0248",
+    "name": "Library Transponder Chip [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 240,
+      "availability": "5/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Kit",
+      "installTime": "2 hrs/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.100",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0249",
+    "name": "Library Transponder Chip [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 540,
+      "availability": "5/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Kit",
+      "installTime": "2 hrs/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.100",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0250",
+    "name": "Library Transponder Chip [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 960,
+      "availability": "5/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Kit",
+      "installTime": "2 hrs/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.100",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0251",
+    "name": "Library Transponder Chip [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1500,
+      "availability": "5/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Kit",
+      "installTime": "2 hrs/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.100",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0252",
+    "name": "Library Transponder Chip [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2160,
+      "availability": "5/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Kit",
+      "installTime": "2 hrs/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.100",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0253",
+    "name": "Library Transponder Chip [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2940,
+      "availability": "5/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Kit",
+      "installTime": "2 hrs/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.100",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0254",
+    "name": "Library Transponder Chip [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3840,
+      "availability": "5/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Kit",
+      "installTime": "2 hrs/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.100",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0255",
+    "name": "Library Transponder Chip [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 4860,
+      "availability": "5/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Kit",
+      "installTime": "2 hrs/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.100",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0256",
+    "name": "Library Transponder Chip [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 6000,
+      "availability": "5/48hrs",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Kit",
+      "installTime": "2 hrs/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.100",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0257",
+    "name": "Ejection Seat(Standard)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3000,
+      "availability": "5/10days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4)",
+      "cfCost": "7",
+      "load": "110kg",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0258",
+    "name": "Ejection Seat(Reinforced)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 6000,
+      "availability": "5/10days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "16 hrs/Vehicle B/R(4)",
+      "cfCost": "7",
+      "load": "250kg",
+      "bookPage": "r3.150",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0259",
+    "name": "Valkyrie Module",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000000,
+      "availability": "10/2weeks",
+      "streetIndex": "3",
+      "installEquipment": "Vehicle Shop, Electronics Shop",
+      "installTime": "5 days/Vehicle B/R(5) Electronics B/R(5)",
+      "cfCost": "15",
+      "load": "500kg",
+      "bookPage": "r3.155",
+      "description": "See MM-139"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0260",
+    "name": "Photovoltaic Chameleon Paint",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "6/14days",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "72 hrs/Electronics(6)",
+      "cfCost": "0",
+      "load": "",
+      "bookPage": "r3.152",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0261",
+    "name": "Morphing License Plate",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "8/14days",
+      "streetIndex": "2",
+      "installEquipment": "Electronics Kit",
+      "installTime": "2 hrs/Electronics B/R(4)",
+      "cfCost": "0",
+      "load": "1kg",
+      "bookPage": "r3.100",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0262",
+    "name": "Ski-Skids",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 0,
+      "availability": "Always",
+      "streetIndex": "0,90",
+      "installEquipment": "Vehicle Shop",
+      "installTime": "48 hrs/Vehicle B/R(2)",
+      "cfCost": "0",
+      "load": "100kg x Body",
+      "bookPage": "twl.133",
+      "description": "Cost: 500 x (Body + Armor)"
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0263",
+    "name": "Boat Hull Modification",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 500,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Facility",
+      "installTime": "0/0",
+      "cfCost": "0",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0264",
+    "name": "Convertible Top",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 250010,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Shop",
+      "installTime": "0/0",
+      "cfCost": "0",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0265",
+    "name": "EnviroSeal (Gas)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 250,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Facility",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0266",
+    "name": "EnviroSeal (Water)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 750,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Facility",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0267",
+    "name": "EnviroSeal (Engine)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Facility",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0268",
+    "name": "External Luggage",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 250,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Shop",
+      "installTime": "0/0",
+      "cfCost": "0",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0269",
+    "name": "Flotation Package (Aircraft)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 10,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Facility",
+      "installTime": "0/0",
+      "cfCost": "2",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0270",
+    "name": "Life Support (10 man-hours)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1500,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Shop",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0271",
+    "name": "Reinforced Seating",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 250,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Shop",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0272",
+    "name": "Secondary Controls",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 400,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Facility",
+      "installTime": "0/0",
+      "cfCost": "2",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0273",
+    "name": "VAUBAN Vehicle A.T. Lvl [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 80000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Sensor +1",
+      "installTime": "0/0",
+      "cfCost": "Upgrade",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0274",
+    "name": "VAUBAN Vehicle A.T. Lvl [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 160000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Sensor +2",
+      "installTime": "0/0",
+      "cfCost": "Upgrade",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0275",
+    "name": "VAUBAN Vehicle A.T. Lvl [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 240000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Sensor +3",
+      "installTime": "0/0",
+      "cfCost": "Upgrade",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0276",
+    "name": "VAUBAN Vehicle A.T. Lvl [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 320000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Sensor +4",
+      "installTime": "0/0",
+      "cfCost": "Upgrade",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0277",
+    "name": "External Rack Mount(1 missile)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "-",
+      "installTime": "0/0",
+      "cfCost": "0",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0278",
+    "name": "Pintle Mount",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 50,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "-",
+      "installTime": "0/0",
+      "cfCost": "0",
+      "load": "0",
+      "bookPage": "sr3.312",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0279",
+    "name": "Ring Mount",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 1500,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "-",
+      "installTime": "0/0",
+      "cfCost": "0",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0280",
+    "name": "Ring Mount with Hatch",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "-",
+      "installTime": "0/0",
+      "cfCost": "0",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0281",
+    "name": "Ring Mount",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 3000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "-",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "sr2.???",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0282",
+    "name": "Lure Ammo AM-56 [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Missile jammer",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0283",
+    "name": "Lure Ammo AM-56 [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 8000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Missile jammer",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0284",
+    "name": "Lure Ammo AM-56 [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 18000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Missile jammer",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0285",
+    "name": "Lure Ammo AM-56 [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 32000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Missile jammer",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0286",
+    "name": "Lure Ammo AM-56 [5]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 50000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Missile jammer",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0287",
+    "name": "Lure Ammo AM-56 [6]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 72000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Missile jammer",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0288",
+    "name": "Lure Ammo AM-56 [7]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 98000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Missile jammer",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0289",
+    "name": "Lure Ammo AM-56 [8]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 128000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Missile jammer",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0290",
+    "name": "Lure Ammo AM-56 [9]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 162000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Missile jammer",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0291",
+    "name": "Lure Ammo AM-56 [10]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 200000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Missile jammer",
+      "installTime": "0/0",
+      "cfCost": "1",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0292",
+    "name": "VAUBAN Missile A.T. [1]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 36000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Sensor +1",
+      "installTime": "0/0",
+      "cfCost": "Upgrade",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0293",
+    "name": "VAUBAN Missile A.T. [2]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 72000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Sensor +2",
+      "installTime": "0/0",
+      "cfCost": "Upgrade",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0294",
+    "name": "VAUBAN Missile A.T. [3]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 108000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Sensor +3",
+      "installTime": "0/0",
+      "cfCost": "Upgrade",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0295",
+    "name": "VAUBAN Missile A.T. [4]",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 144000,
+      "availability": "1/?",
+      "streetIndex": "1",
+      "installEquipment": "Sensor +4",
+      "installTime": "0/0",
+      "cfCost": "Upgrade",
+      "load": "0",
+      "bookPage": "fra.141",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0296",
+    "name": "Datajack Port",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2500,
+      "availability": "3/72hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "56 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "15kg",
+      "bookPage": "r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0297",
+    "name": "Datajack Port(Motorcycles)",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 5000,
+      "availability": "3/72hrs",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "112 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "15kg",
+      "bookPage": "r3.128",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0298",
+    "name": "Bike Gyro-Stabilization Gear",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 125,
+      "availability": "6/10days",
+      "streetIndex": "1.5",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "48 hrs/Bike B/R(5)",
+      "cfCost": "0",
+      "load": "5kg",
+      "bookPage": "r3.129",
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-vehiclemod-0299",
+    "name": "Rigger Adaptation",
+    "type": "vehiclemod",
+    "img": "icons/svg/upgrade.svg",
+    "system": {
+      "cost": 2800,
+      "availability": "4/7days",
+      "streetIndex": "2",
+      "installEquipment": "Vehicle Facility",
+      "installTime": "40 hrs/Vehicle B/R(4)",
+      "cfCost": "1",
+      "load": "10kg",
+      "bookPage": "r3.130",
+      "description": ""
+    }
+  }
+]

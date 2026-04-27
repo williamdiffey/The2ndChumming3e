@@ -976,7 +976,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "sr2.283",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -996,7 +997,8 @@
       "streetIndex": "1.2",
       "legal": false,
       "bookPage": "cb1.32",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1016,7 +1018,8 @@
       "streetIndex": "6",
       "legal": false,
       "bookPage": "sr2.???",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1036,7 +1039,8 @@
       "streetIndex": "2.5",
       "legal": false,
       "bookPage": "sr2.???",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1056,7 +1060,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "cc.41",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1076,7 +1081,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "cc.41",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1096,7 +1102,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "cc.41",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1116,7 +1123,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "cc.41",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1136,7 +1144,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "cc.41",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1156,7 +1165,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "sr2.???",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1176,7 +1186,8 @@
       "streetIndex": "2.5",
       "legal": false,
       "bookPage": "sr2.???",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1196,7 +1207,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "cb1.33",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1216,7 +1228,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "sr2.???",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1236,7 +1249,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "sr2.???",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1256,7 +1270,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "sr2.283",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1276,7 +1291,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "sr2.283",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1296,7 +1312,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "sr2.???",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1316,7 +1333,8 @@
       "streetIndex": "1.5",
       "legal": false,
       "bookPage": "cb2.49,SR2-???",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1336,7 +1354,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "sr2.283,fof.48",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1356,7 +1375,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "sr2.283,fof.48",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1376,7 +1396,8 @@
       "streetIndex": ".9",
       "legal": false,
       "bookPage": "sr2.???",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1396,7 +1417,8 @@
       "streetIndex": ".8",
       "legal": false,
       "bookPage": "sr2.???",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1416,7 +1438,8 @@
       "streetIndex": "2",
       "legal": false,
       "bookPage": "sr2.???",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   },
   {
@@ -1436,7 +1459,8 @@
       "streetIndex": "3",
       "legal": false,
       "bookPage": "cc.41",
-      "notes": ""
+      "notes": "",
+      "isAoE": true
     }
   }
 ]

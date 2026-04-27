@@ -1,0 +1,3512 @@
+[
+  {
+    "_id": "sr3e-bioware-0000",
+    "name": "Adrenal Pump [1](trig)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.25,
+      "cost": 60000,
+      "availability": "10/16 days",
+      "streetIndex": 3,
+      "mods": "",
+      "bookPage": "mm.064",
+      "rating": 0,
+      "description": "+1QCK,+2STR,+1WIL,+2RCT, damage taken"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0001",
+    "name": "Adrenal Pump [2](trig)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 2.5,
+      "cost": 100000,
+      "availability": "10/16 days",
+      "streetIndex": 3,
+      "mods": "",
+      "bookPage": "mm.064",
+      "rating": 0,
+      "description": "+2QCK,+4STR,+2WIL,+4RCT, damage taken"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0002",
+    "name": "Anti-Plague Nanot.",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 17500,
+      "availability": "6/7 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "cb1.29",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0003",
+    "name": "Biotechnica Neoappendix",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 15000,
+      "availability": "5/7 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "cb4.138",
+      "rating": 0,
+      "description": "Extra die for finding food in Survival"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0004",
+    "name": "Bonespike",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 10000,
+      "availability": "5/72 hours",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "cb3.97",
+      "rating": 0,
+      "description": "Damage (STR-1)M,concealabilitie 9 if retracted"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0005",
+    "name": "Cam-O-Skin (DERMATECH)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.5,
+      "cost": 8500,
+      "availability": "6/72 hours",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "cb3.99",
+      "rating": 0,
+      "description": "Like camouflage clothing"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0006",
+    "name": "Cat's Eyes",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 15000,
+      "availability": "4/6 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.064",
+      "rating": 0,
+      "description": "Lowlight vision"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0007",
+    "name": "Chemical Gland NarcoJet",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.6,
+      "cost": 45000,
+      "availability": "10/4 days",
+      "streetIndex": 3,
+      "mods": "",
+      "bookPage": "mm.064",
+      "rating": 0,
+      "description": "Narcojet toxin"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0008",
+    "name": "Chemical Gland GammaScopo",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.6,
+      "cost": 60000,
+      "availability": "10/4 days",
+      "streetIndex": 3,
+      "mods": "",
+      "bookPage": "mm.064",
+      "rating": 0,
+      "description": "Gamma-Scopolamine toxin"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0009",
+    "name": "Chemical Gland template",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.6,
+      "cost": 1000000,
+      "availability": "10/4 days",
+      "streetIndex": 3,
+      "mods": "",
+      "bookPage": "mm.064",
+      "rating": 0,
+      "description": "must be customized in Bioware.dat via DATeditor"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0010",
+    "name": "Compound Eyes [1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 3000,
+      "availability": "6/60 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cp.32",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0011",
+    "name": "Compound Eyes [2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 6000,
+      "availability": "6/60 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cp.32",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0012",
+    "name": "Compound Eyes [3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 9000,
+      "availability": "6/60 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cp.32",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0013",
+    "name": "Compound Eyes [4]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 12000,
+      "availability": "6/60 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cp.32",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0014",
+    "name": "Compound Eyes [5]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 15000,
+      "availability": "6/60 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cp.32",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0015",
+    "name": "Compound Eyes [1]UV",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 7500,
+      "availability": "6/60 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cp.33",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0016",
+    "name": "Compound Eyes [2]UV",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 10500,
+      "availability": "6/60 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cp.33",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0017",
+    "name": "Compound Eyes [3]UV",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 13500,
+      "availability": "6/60 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cp.33",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0018",
+    "name": "Compound Eyes [4]UV",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 16500,
+      "availability": "6/60 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cp.33",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0019",
+    "name": "Compound Eyes [5]UV",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 19500,
+      "availability": "6/60 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cp.33",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0020",
+    "name": "Cyberliver[1]T-MAXX",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 60000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0021",
+    "name": "Cyberliver[2]T-MAXX",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 120000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0022",
+    "name": "Cyberliver[3]T-MAXX",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 180000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0023",
+    "name": "Cyberliver[4]T-MAXX",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.5,
+      "cost": 240000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0024",
+    "name": "Cyberliver[5]T-MAXX",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.6,
+      "cost": 300000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0025",
+    "name": "Cyberliver[6]T-MAXX",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.7,
+      "cost": 360000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0026",
+    "name": "Cyberliver II[1]T-MAXX II",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.25,
+      "cost": 120000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0027",
+    "name": "Cyberliver II[2]T-MAXX II",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 240000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0028",
+    "name": "Cyberliver II[3]T-MAXX II",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.55,
+      "cost": 360000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0029",
+    "name": "Cyberliver II[4]T-MAXX II",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.7,
+      "cost": 480000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0030",
+    "name": "Cyberliver II[5]T-MAXX II",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.85,
+      "cost": 600000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0031",
+    "name": "Cyberliver II[6]T-MAXX II",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1,
+      "cost": 1080000,
+      "availability": "6/4 days",
+      "streetIndex": 1.1,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0032",
+    "name": "Decentralized Heart",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 2,
+      "cost": 130000,
+      "availability": "14/24 days",
+      "streetIndex": 4,
+      "mods": "",
+      "bookPage": "cb1.27",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0033",
+    "name": "Digestive Expansion",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1,
+      "cost": 80000,
+      "availability": "6/10 days",
+      "streetIndex": 2,
+      "mods": "+1DGX",
+      "bookPage": "mm.065",
+      "rating": 0,
+      "description": "-20% lifestyle cost, can eat anything organic, ingested toxin power halved, -1 die taste Perception"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0034",
+    "name": "Enhanced Articulation",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.6,
+      "cost": 40000,
+      "availability": "5/6 days",
+      "streetIndex": 1.5,
+      "mods": "+1NCT,",
+      "bookPage": "mm.066",
+      "rating": 0,
+      "description": "+1RCT, 1 addt'l die to Combat, Physical, Technical,& B/R skill tests"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0035",
+    "name": "Extended Volume[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 8000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.066",
+      "rating": 0,
+      "description": "+45 seconds of air, -1 fatigue TNs"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0036",
+    "name": "Extended Volume[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 15000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.066",
+      "rating": 0,
+      "description": "+90 seconds of air, -2 fatigue TNs"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0037",
+    "name": "Extended Volume[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 25000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.066",
+      "rating": 0,
+      "description": "+135 seconds of air, -3 fatigue TNs"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0038",
+    "name": "Flashlite Implant",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.1,
+      "cost": 2900,
+      "availability": "6/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0039",
+    "name": "Fluid Rerouter[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 2500,
+      "availability": "6/48 hours",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "pw.50",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0040",
+    "name": "Fluid Rerouter[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 5000,
+      "availability": "6/48 hours",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "pw.50",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0041",
+    "name": "Fluid Rerouter[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.6,
+      "cost": 7500,
+      "availability": "6/48 hours",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "pw.50",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0042",
+    "name": "Fluid Rerouter[4]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.8,
+      "cost": 10000,
+      "availability": "6/48 hours",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "pw.50",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0043",
+    "name": "Fluid Rerouter[5]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1,
+      "cost": 12500,
+      "availability": "6/48 hours",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "pw.50",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0044",
+    "name": "Fluid Rerouter[6]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.2,
+      "cost": 15000,
+      "availability": "6/48 hours",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "pw.50",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0045",
+    "name": "FleshWeave (SYCUST)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.5,
+      "cost": 120000,
+      "availability": "6/36 hours",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "cb3.96",
+      "rating": 0,
+      "description": "Count 0.5 essence(as Cyberware)"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0046",
+    "name": "Forked Tongue",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.35,
+      "cost": 12500,
+      "availability": "5/72 hours",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "cb1.27",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0047",
+    "name": "Grafted Muscle",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1,
+      "cost": 100000,
+      "availability": "8/14 days",
+      "streetIndex": 1.25,
+      "mods": "+1ROD,+1RTR,+1RCK,",
+      "bookPage": "cp.17",
+      "rating": 0,
+      "description": "+1BOD,+1STR,+1QCK,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0048",
+    "name": "Indep. Air Supply",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.7,
+      "cost": 50000,
+      "availability": "4/7 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "cp.17",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0049",
+    "name": "Lifesave Skinweave",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 2,
+      "cost": 45000,
+      "availability": "12/10 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "cb1.29",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0050",
+    "name": "Low-Light",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 4500,
+      "availability": "5/36 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cp.33",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0051",
+    "name": "Metabolic Arrestor",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.6,
+      "cost": 20000,
+      "availability": "6/8 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.066",
+      "rating": 0,
+      "description": "Metabolic stasis after 10 boxes of physical damage"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0052",
+    "name": "Muscle & Bone Lacing Adv.[1]   1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.5,
+      "cost": 10000,
+      "availability": "6/14 days",
+      "streetIndex": 1.5,
+      "mods": "+1BOD,",
+      "bookPage": "cb4.138",
+      "rating": 0,
+      "description": "+1BOD,cannot be combined with Cybernet.Bone.Lace"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0053",
+    "name": "Muscle & Bone Lacing Adv.[2]   1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.5,
+      "cost": 15000,
+      "availability": "7/14 days",
+      "streetIndex": 1.5,
+      "mods": "+2BOD,",
+      "bookPage": "cb4.138",
+      "rating": 0,
+      "description": "+2BOD,cannot be combined with Cybernet.Bone.Lace"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0054",
+    "name": "Muscle & Bone Lacing Adv.[3]   1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 2.5,
+      "cost": 30000,
+      "availability": "8/14 days",
+      "streetIndex": 1.75,
+      "mods": "+3BOD,",
+      "bookPage": "cb4.138",
+      "rating": 0,
+      "description": "+3BOD,cannot be combined with Cybernet.Bone.Lace"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0055",
+    "name": "Muscle Augmentation[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 20000,
+      "availability": "6/6 days",
+      "streetIndex": 0.9,
+      "mods": "+1RTR,",
+      "bookPage": "mm.067",
+      "rating": 0,
+      "description": "+1STR"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0056",
+    "name": "Muscle Augmentation[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.8,
+      "cost": 40000,
+      "availability": "6/6 days",
+      "streetIndex": 0.9,
+      "mods": "+2RTR,",
+      "bookPage": "mm.067",
+      "rating": 0,
+      "description": "+2STR"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0057",
+    "name": "Muscle Augmentation[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.2,
+      "cost": 60000,
+      "availability": "6/6 days",
+      "streetIndex": 0.9,
+      "mods": "+3RTR,",
+      "bookPage": "mm.067",
+      "rating": 0,
+      "description": "+3STR"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0058",
+    "name": "Muscle Augmentation[4]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.6,
+      "cost": 80000,
+      "availability": "6/6 days",
+      "streetIndex": 0.9,
+      "mods": "+4RTR,",
+      "bookPage": "mm.067",
+      "rating": 0,
+      "description": "+4STR"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0059",
+    "name": "Muscle Toner[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 25000,
+      "availability": "6/6 days",
+      "streetIndex": 0.9,
+      "mods": "+1RCK,",
+      "bookPage": "mm.067",
+      "rating": 0,
+      "description": "+1QCK"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0060",
+    "name": "Muscle Toner[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.8,
+      "cost": 50000,
+      "availability": "6/6 days",
+      "streetIndex": 0.9,
+      "mods": "+2RCK,",
+      "bookPage": "mm.067",
+      "rating": 0,
+      "description": "+2QCK"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0061",
+    "name": "Muscle Toner[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.2,
+      "cost": 75000,
+      "availability": "6/6 days",
+      "streetIndex": 0.9,
+      "mods": "+3RCK,",
+      "bookPage": "mm.067",
+      "rating": 0,
+      "description": "+3QCK"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0062",
+    "name": "Muscle Toner[4]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.6,
+      "cost": 100000,
+      "availability": "6/6 days",
+      "streetIndex": 0.9,
+      "mods": "+4RCK,",
+      "bookPage": "mm.067",
+      "rating": 0,
+      "description": "+4QCK"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0063",
+    "name": "Nano-Groomers (FRESCO)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 4000,
+      "availability": "3/12 hours",
+      "streetIndex": 0.8,
+      "mods": "",
+      "bookPage": "cb3.98",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0064",
+    "name": "Nanoaudiotory Rebuild)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 9000,
+      "availability": "6/72 hours",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "cb4.138",
+      "rating": 0,
+      "description": "Equiv. hearing amp. ad damper"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0065",
+    "name": "Nanooptic Upgrade",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 7500,
+      "availability": "6/48 hours",
+      "streetIndex": 1.25,
+      "mods": "",
+      "bookPage": "cb2.48",
+      "rating": 0,
+      "description": "Equivalent Cyber LowLight, Not in Cybereye,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0066",
+    "name": "Nephritic Screen",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 20000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.067",
+      "rating": 0,
+      "description": "-1 Power of pathogen and blood toxins, +1BOD to resist them"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0067",
+    "name": "Nictitating Membranes",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.1,
+      "cost": 8000,
+      "availability": "4/6 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.067",
+      "rating": 0,
+      "description": "-1 eye irritance mods, flare comp"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0068",
+    "name": "Nitrogen Binder (OTEC)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.6,
+      "cost": 32000,
+      "availability": "6/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "cb4.138",
+      "rating": 0,
+      "description": "+2BOD if resistance test for nitrogen narcosis"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0069",
+    "name": "Orthoskin[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.5,
+      "cost": 25000,
+      "availability": "8/8 days",
+      "streetIndex": 0.8,
+      "mods": "+1IMP,",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "+1IMP"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0070",
+    "name": "Orthoskin[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1,
+      "cost": 60000,
+      "availability": "8/8 days",
+      "streetIndex": 0.8,
+      "mods": "+1IMP,+1BAL,",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "+1IMP,+1BAL"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0071",
+    "name": "Orthoskin[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.5,
+      "cost": 100000,
+      "availability": "8/8 days",
+      "streetIndex": 0.8,
+      "mods": "+2IMP,+1BAL,",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "+2IMP,+1BAL"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0072",
+    "name": "Overdrive Heart",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.6,
+      "cost": 98500,
+      "availability": "14/10 days",
+      "streetIndex": 3.5,
+      "mods": "",
+      "bookPage": "cb1.37",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0073",
+    "name": "Pathogenic Def.[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 24000,
+      "availability": "4/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "Max half BOD, -1 power to biological attacks"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0074",
+    "name": "Pathogenic Def.[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 48000,
+      "availability": "4/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "Max half BOD, -2 power to biological attacks"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0075",
+    "name": "Pathogenic Def.[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.6,
+      "cost": 72000,
+      "availability": "4/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "Max half BOD, -3 power to biological attacks"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0076",
+    "name": "Pathogenic Def.[4]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.8,
+      "cost": 96000,
+      "availability": "4/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "Max half BOD, -4 power to biological attacks"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0077",
+    "name": "Pathogenic Def.[5]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1,
+      "cost": 120000,
+      "availability": "4/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "Max half BOD, -5 power to biological attacks"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0078",
+    "name": "Pathogenic Def.[6]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.2,
+      "cost": 144000,
+      "availability": "4/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "Max half BOD, -6 power to biological attacks"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0079",
+    "name": "Pathogenic Def.[7]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.4,
+      "cost": 168000,
+      "availability": "4/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "Max half BOD, -7 power to biological attacks"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0080",
+    "name": "Pathogenic Def.[8]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.6,
+      "cost": 192000,
+      "availability": "4/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "Max half BOD, -8 power to biological attacks"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0081",
+    "name": "Pathogenic Def.[9]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.8,
+      "cost": 216000,
+      "availability": "4/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "Max half BOD, -9 power to biological attacks"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0082",
+    "name": "Pathogenic Def.[10]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 2,
+      "cost": 240000,
+      "availability": "4/4 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "Max half BOD, -10 power to biological attacks"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0083",
+    "name": "Physio.Tailoring Quick.",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 200000,
+      "availability": "16/30 days",
+      "streetIndex": 4,
+      "mods": "+1QCK,",
+      "bookPage": "cb4.140",
+      "rating": 0,
+      "description": "+1 QCK Only available in beta clinic or higher"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0084",
+    "name": "Physio.Tailor.Racial.Bod.Max   1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0,
+      "cost": 300000,
+      "availability": "16/30 days",
+      "streetIndex": 4,
+      "mods": "+1ROD,",
+      "bookPage": "cb4.140",
+      "rating": 0,
+      "description": "+1 BOD Only available in beta clinic or higher"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0085",
+    "name": "Physio.Tailoring React.",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 200000,
+      "availability": "16/30 days",
+      "streetIndex": 4,
+      "mods": "+1RCK,",
+      "bookPage": "cb4.140",
+      "rating": 0,
+      "description": "+1 RCK Only available in beta clinic or higher"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0086",
+    "name": "Physio.Tailor.Reduce.Oxygen    1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 200000,
+      "availability": "16/30 days",
+      "streetIndex": 4,
+      "mods": "",
+      "bookPage": "cb4.140",
+      "rating": 0,
+      "description": "Only available in beta clinic or higher"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0087",
+    "name": "Physio.Tailor.UV resistance    1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 175000,
+      "availability": "16/30 days",
+      "streetIndex": 4,
+      "mods": "",
+      "bookPage": "cb4.140",
+      "rating": 0,
+      "description": "Only available in beta clinic or higher"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0088",
+    "name": "Physio.Tailor.Skin.Armor.Bal   1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.75,
+      "cost": 250000,
+      "availability": "16/30 days",
+      "streetIndex": 4,
+      "mods": "+1BAL,",
+      "bookPage": "cb4.140",
+      "rating": 0,
+      "description": "Only available in beta clinic or higher"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0089",
+    "name": "Platelet Factories",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 30000,
+      "availability": "5/8 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.068",
+      "rating": 0,
+      "description": "-1 box for any higher than M wound, anticoagulents needed"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0090",
+    "name": "Poison Gland (Teeth)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 5000,
+      "availability": "8/10 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": "must be customized in Bio.dat,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0091",
+    "name": "+Poison Biotoxin[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0,
+      "cost": 10000,
+      "availability": "8/10 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": "5S Physical damage"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0092",
+    "name": "Poison Gland (Hands)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 5000,
+      "availability": "8/10 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": "must be customized in Bio.dat,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0093",
+    "name": "+Poison Biotoxin[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0,
+      "cost": 11000,
+      "availability": "8/10 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": "+4 on all target for 10turn,BOD(6) test resist"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0094",
+    "name": "+Poison Hallucinogen",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0,
+      "cost": 8000,
+      "availability": "8/10 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": "+4 on all target for 10turn,BOD(6) test resist"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0095",
+    "name": "Rebreathers",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.75,
+      "cost": 95000,
+      "availability": "5/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "cb1.27",
+      "rating": 0,
+      "description": "Hold breath for(BodyX30)+90sec.Act as Tracheous Filter Lvl3,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0096",
+    "name": "Skin Weave, Basic",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.5,
+      "cost": 60000,
+      "availability": "8/8 days",
+      "streetIndex": 0.8,
+      "mods": "+1BAL,",
+      "bookPage": "cp.17",
+      "rating": 0,
+      "description": "+1BAL,incomp.with orthoskin"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0097",
+    "name": "Skin Weave[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.5,
+      "cost": 25000,
+      "availability": "8/8 days",
+      "streetIndex": 0.8,
+      "mods": "+1BAL,",
+      "bookPage": "cb2.49",
+      "rating": 0,
+      "description": "+1BAL,incomp. with orthoskin or Cyber armor,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0098",
+    "name": "Skin Weave[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1,
+      "cost": 60000,
+      "availability": "8/8 days",
+      "streetIndex": 0.8,
+      "mods": "+1IMP,+1BAL,",
+      "bookPage": "cb2.49",
+      "rating": 0,
+      "description": "+1IMP,+1BAL,incomp. with orthoskin or Cyber armor,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0099",
+    "name": "Skin Weave[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.5,
+      "cost": 100000,
+      "availability": "8/8 days",
+      "streetIndex": 0.9,
+      "mods": "+1IMP,+2BAL,",
+      "bookPage": "cb2.49",
+      "rating": 0,
+      "description": "+1IMP,+2BAL,incomp. with orthoskin or Cyber armor,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0100",
+    "name": "Skin Weave[4]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 2,
+      "cost": 150000,
+      "availability": "9/8 days",
+      "streetIndex": 1,
+      "mods": "+2IMP,+2BAL,",
+      "bookPage": "cb2.49",
+      "rating": 0,
+      "description": "+2IMP,+2BAL,incomp. with orthoskin or Cyber armor,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0101",
+    "name": "Skin Weave[5]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 2.5,
+      "cost": 225000,
+      "availability": "10/10 days",
+      "streetIndex": 1.2,
+      "mods": "+2IMP,+3BAL,",
+      "bookPage": "cb2.49",
+      "rating": 0,
+      "description": "+2IMP,+3BAL,incomp. with orthoskin or Cyber armor,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0102",
+    "name": "Skin Weave[6]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 3,
+      "cost": 300000,
+      "availability": "12/14 days",
+      "streetIndex": 1.5,
+      "mods": "+3IMP,+3BAL,",
+      "bookPage": "cb2.49",
+      "rating": 0,
+      "description": "+3IMP,+3BAL,incomp. with orthoskin or Cyber armor,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0103",
+    "name": "PACESETTER Sport Heart",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.3,
+      "cost": 90000,
+      "availability": "10/10 days",
+      "streetIndex": 3,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": "+1BOD,+1QCK in Athletic,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0104",
+    "name": "PACESETTER 2000 Overdrv Hrt    1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.6,
+      "cost": 98500,
+      "availability": "14/10 days",
+      "streetIndex": 3.5,
+      "mods": "",
+      "bookPage": "cb1.28",
+      "rating": 0,
+      "description": "+2BOD,+2QCK in Athletic,"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0105",
+    "name": "Suprathyroid Gland",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.4,
+      "cost": 50000,
+      "availability": "8/12 days",
+      "streetIndex": 2.5,
+      "mods": "+1NCT,+1RTR,+1RCK,+1ROD,+1STG,",
+      "bookPage": "mm.069",
+      "rating": 0,
+      "description": "+1RCT,+1STR,+1QCK,+1BOD"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0106",
+    "name": "Symbiotes[1](90%)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 15000,
+      "availability": "5/10 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.069",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0107",
+    "name": "Symbiotes[2](70%)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.7,
+      "cost": 35000,
+      "availability": "5/10 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.069",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0108",
+    "name": "Symbiotes[3](50%)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1,
+      "cost": 60000,
+      "availability": "5/10 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.069",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0109",
+    "name": "Synthacardium[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 6000,
+      "availability": "4/10 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.070",
+      "rating": 0,
+      "description": "+1 die Athletics and heart resistance test"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0110",
+    "name": "Synthacardium[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 15000,
+      "availability": "4/10 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.070",
+      "rating": 0,
+      "description": "+2 die Athletics and heart resistance test"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0111",
+    "name": "Sunblocker Sunscreen",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.9,
+      "cost": 20000,
+      "availability": "3/5 days",
+      "streetIndex": 0.8,
+      "mods": "",
+      "bookPage": "pna.43",
+      "rating": 0,
+      "description": "see book"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0112",
+    "name": "Tailored Pherom.[1](NotCult.)  1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 20000,
+      "availability": "12/14 days",
+      "streetIndex": 2,
+      "mods": "+1CHA,",
+      "bookPage": "mm.070",
+      "rating": 0,
+      "description": "+1CHA,+1 Die Social Test"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0113",
+    "name": "Tailored Pherom.[2](NotCult.)  1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.6,
+      "cost": 45000,
+      "availability": "12/14 days",
+      "streetIndex": 2,
+      "mods": "+2CHA,",
+      "bookPage": "mm.070",
+      "rating": 0,
+      "description": "+2CHA,+2 Die Social Test"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0114",
+    "name": "Tail. Revol.Pherom.1 Confus.   1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 10000,
+      "availability": "12/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": "-1INT,-1RCT for anyone within 1 ]meter of user"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0115",
+    "name": "Tail. Revol.Pherom.2 Confus.   1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 22500,
+      "availability": "12/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": "-2INT,-2RCT for anyone within 1 meter of user"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0116",
+    "name": "Tail. Revol.Pherom.1 Gullib.   1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 10000,
+      "availability": "12/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": "+1dice for Negociation test"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0117",
+    "name": "Tail. Revol.Pherom.2 Gullib.   1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 22500,
+      "availability": "12/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": "+1dice for Negociation test"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0118",
+    "name": "Tail. Revol.Pherom.1 Love",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.2,
+      "cost": 10000,
+      "availability": "12/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": "+1dice for seducting people"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0119",
+    "name": "Tail. Revol.Pherom.2 Love",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.3,
+      "cost": 22500,
+      "availability": "12/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "cb4.139",
+      "rating": 0,
+      "description": "+2dice for seducting people"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0120",
+    "name": "Toxin Extractor[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 45000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.071",
+      "rating": 0,
+      "description": "Max half BOD, -1 power to blood toxins"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0121",
+    "name": "Toxin Extractor[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.8,
+      "cost": 90000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.071",
+      "rating": 0,
+      "description": "Max half BOD, -2 power to blood toxins"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0122",
+    "name": "Toxin Extractor[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.2,
+      "cost": 135000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.071",
+      "rating": 0,
+      "description": "Max half BOD, -3 power to blood toxins"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0123",
+    "name": "Toxin Extractor[4]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.6,
+      "cost": 180000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.071",
+      "rating": 0,
+      "description": "Max half BOD, -4 power to blood toxins"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0124",
+    "name": "Tracheal Filter[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.4,
+      "cost": 60000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.071",
+      "rating": 0,
+      "description": "Max half BOD, -1 power airborne toxins"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0125",
+    "name": "Tracheal Filter[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.8,
+      "cost": 120000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.071",
+      "rating": 0,
+      "description": "Max half BOD, -2 power airborne toxins"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0126",
+    "name": "Tracheal Filter[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.2,
+      "cost": 180000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.071",
+      "rating": 0,
+      "description": "Max half BOD, -3 power airborne toxins"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0127",
+    "name": "Tracheal Filter[4]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 1.6,
+      "cost": 240000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.071",
+      "rating": 0,
+      "description": "Max half BOD, -4 power airborne toxins"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0128",
+    "name": "Bodyweight Vein Clip",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.75,
+      "cost": 7000,
+      "availability": "6/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "cb4.136",
+      "rating": 0,
+      "description": "Add one extra minute beteween taking overflow damage boxes"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0129",
+    "name": "Venomous Fangs, Lethal",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.5,
+      "cost": 18000,
+      "availability": "4/7 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "tss.5",
+      "rating": 0,
+      "description": "Designed like a cobra's fangs, 1/2\" long. Includes a venom sack and poison gland that makes enough for 6 bites and takes 12 hours to refill.  8D damage from poison."
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0130",
+    "name": "Venomous Fangs, Non-Lethal",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Standard",
+      "grade": "Standard",
+      "bioIndex": 0.5,
+      "cost": 15000,
+      "availability": "4/7 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "tss.5",
+      "rating": 0,
+      "description": "Designed like a cobra's fangs, 1/2\" long. Includes a venom sack and poison gland that makes enough for 6 bites and takes 12 hours to refill.  8D STUN damage from poison."
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0131",
+    "name": "Cerebral Booster[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.4,
+      "cost": 50000,
+      "availability": "6/14 days",
+      "streetIndex": 2,
+      "mods": "+1RNT,",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "+1INT"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0132",
+    "name": "Cerebral Booster[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.8,
+      "cost": 110000,
+      "availability": "6/14 days",
+      "streetIndex": 2,
+      "mods": "+2RNT,+1TAS",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "+2INT,+1TASK"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0133",
+    "name": "Damage Comp.[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.2,
+      "cost": 25000,
+      "availability": "6/6 days",
+      "streetIndex": 2.5,
+      "mods": "",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "-1 box injury modifiers"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0134",
+    "name": "Damage Comp.[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.4,
+      "cost": 50000,
+      "availability": "6/6 days",
+      "streetIndex": 2.5,
+      "mods": "",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "-2 boxes injury modifiers"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0135",
+    "name": "Damage Comp.[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.6,
+      "cost": 150000,
+      "availability": "10/6 days",
+      "streetIndex": 2.5,
+      "mods": "",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "-3 boxes injury modifiers"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0136",
+    "name": "Damage Comp.[4]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.8,
+      "cost": 200000,
+      "availability": "10/6 days",
+      "streetIndex": 2.5,
+      "mods": "",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "-4 boxes injury modifiers"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0137",
+    "name": "Damage Comp.[5]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 1,
+      "cost": 250000,
+      "availability": "10/6 days",
+      "streetIndex": 2.5,
+      "mods": "",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "-5 boxes injury modifiers"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0138",
+    "name": "Damage Comp.[6]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 1.2,
+      "cost": 600000,
+      "availability": "12/6 days",
+      "streetIndex": 2.5,
+      "mods": "",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "-6 boxes injury modifiers"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0139",
+    "name": "Damage Comp.[7]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 1.4,
+      "cost": 700000,
+      "availability": "12/6 days",
+      "streetIndex": 2.5,
+      "mods": "",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "-7 boxes injury modifiers"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0140",
+    "name": "Damage Comp.[8]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 1.6,
+      "cost": 800000,
+      "availability": "12/6 days",
+      "streetIndex": 2.5,
+      "mods": "",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "-8 boxes injury modifiers"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0141",
+    "name": "Damage Comp.[9]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 1.8,
+      "cost": 900000,
+      "availability": "12/6 days",
+      "streetIndex": 2.5,
+      "mods": "",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "-9 boxes injury modifiers"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0142",
+    "name": "Mnemonic Enhanc.[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.2,
+      "cost": 15000,
+      "availability": "6/7 days",
+      "streetIndex": 1,
+      "mods": "+1MNE",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "+1 die Memory and Language tests, -1 Karma cost to learn/improve skills"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0143",
+    "name": "Mnemonic Enhanc.[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.4,
+      "cost": 30000,
+      "availability": "6/7 days",
+      "streetIndex": 1,
+      "mods": "+2MNE",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "+2 die Memory and Language tests, -1 Karma cost to learn/improve skills, +3 default to INT for Knowledge Skills"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0144",
+    "name": "Mnemonic Enhanc.[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.6,
+      "cost": 45000,
+      "availability": "6/7 days",
+      "streetIndex": 1,
+      "mods": "+3MNE",
+      "bookPage": "mm.072",
+      "rating": 0,
+      "description": "+3 die Memory and Language tests, +1 die Knowledge Skills, -1 Karma cost to learn/improve skills, +3 default to INT for Knowledge Skills"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0145",
+    "name": "Pain Editor",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.6,
+      "cost": 60000,
+      "availability": "6/6 days",
+      "streetIndex": 1.2,
+      "mods": "",
+      "bookPage": "mm.073",
+      "rating": 0,
+      "description": "While engaged, +1WIL, -1INT, ignore Stun Damage penalties, +4 TN tactile Perception, does not feel pain"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0146",
+    "name": "Reflex Rec. (base skill)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.25,
+      "cost": 25000,
+      "availability": "8/6 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.074",
+      "rating": 0,
+      "description": "+1 die base skill, only once per skill"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0147",
+    "name": "Reflex Rec. (spec skill)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.1,
+      "cost": 10000,
+      "availability": "5/6 days",
+      "streetIndex": 1.5,
+      "mods": "",
+      "bookPage": "mm.074",
+      "rating": 0,
+      "description": "+1 die specialized skill, only once per skill"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0148",
+    "name": "Sleep Regulator",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.3,
+      "cost": 20000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.074",
+      "rating": 0,
+      "description": "Only require 3 hours of sleep, 48 hours of wakefulness before TN modifiers occur"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0149",
+    "name": "Synaptic Accel.[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.4,
+      "cost": 75000,
+      "availability": "6/12 days",
+      "streetIndex": 2,
+      "mods": "+1NNI,",
+      "bookPage": "mm.074",
+      "rating": 0,
+      "description": "+1INI"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0150",
+    "name": "Synaptic Accel.[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 1,
+      "cost": 200000,
+      "availability": "6/12 days",
+      "streetIndex": 2,
+      "mods": "+2NNI,",
+      "bookPage": "mm.074",
+      "rating": 0,
+      "description": "+2INI"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0151",
+    "name": "Cult. Tailored Pherom.[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.3,
+      "cost": 80000,
+      "availability": "12/14 days",
+      "streetIndex": 2,
+      "mods": "+2CHA,",
+      "bookPage": "mm.070",
+      "rating": 0,
+      "description": "+2CHA,+2 Die Social Test"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0152",
+    "name": "Cult. Tailored Pherom.[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.45,
+      "cost": 180000,
+      "availability": "12/14 days",
+      "streetIndex": 2,
+      "mods": "+4CHA,",
+      "bookPage": "mm.070",
+      "rating": 0,
+      "description": "+4CHA,+4 Die Social Test"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0153",
+    "name": "Thermosense Organ",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.5,
+      "cost": 25000,
+      "availability": "10/12 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "mm.075",
+      "rating": 0,
+      "description": "Sense heat nearby, table on MM75"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0154",
+    "name": "Trauma Damper",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cultured",
+      "grade": "Cultured",
+      "bioIndex": 0.4,
+      "cost": 40000,
+      "availability": "6/8 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "mm.075",
+      "rating": 0,
+      "description": "-1 box Stun wounds, shift 1 box of Physical wounds to Stun"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0155",
+    "name": "Chloroplast Skin",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cosmetic",
+      "grade": "Exotic",
+      "bioIndex": 0.2,
+      "cost": 10000,
+      "availability": "6/8 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "mm.075",
+      "rating": 0,
+      "description": "Green skin, less need to eat"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0156",
+    "name": "Clean Metabolism",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cosmetic",
+      "grade": "Exotic",
+      "bioIndex": 0.2,
+      "cost": 10000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.076",
+      "rating": 0,
+      "description": "No BO or unpleasant gasses"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0157",
+    "name": "Dietware",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cosmetic",
+      "grade": "Exotic",
+      "bioIndex": 0.2,
+      "cost": 10000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.076",
+      "rating": 0,
+      "description": "Can't gain weight"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0158",
+    "name": "Hair Growth",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cosmetic",
+      "grade": "Exotic",
+      "bioIndex": 0.1,
+      "cost": 2000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.076",
+      "rating": 0,
+      "description": "Grow any kind of hair anywhere"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0159",
+    "name": "Scent Glands",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cosmetic",
+      "grade": "Exotic",
+      "bioIndex": 0.1,
+      "cost": 5000,
+      "availability": "4/4 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.076",
+      "rating": 0,
+      "description": "Change smell and taste of sweat, even to smell like a perfume"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0160",
+    "name": "Sensitive Skin",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cosmetic",
+      "grade": "Exotic",
+      "bioIndex": 0.2,
+      "cost": 10000,
+      "availability": "6/6 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "mm.076",
+      "rating": 0,
+      "description": "Increase sensitivity to heat, cold, pressure, pain"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0161",
+    "name": "Skin Pigmentation",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Cosmetic",
+      "grade": "Exotic",
+      "bioIndex": 0.1,
+      "cost": 5000,
+      "availability": "6/6 days",
+      "streetIndex": 1,
+      "mods": "",
+      "bookPage": "mm.076",
+      "rating": 0,
+      "description": "Skin can be any color, anywhere, even eye iris can be changed"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0162",
+    "name": "Nano Bioware Regenerator->",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Nanoware",
+      "grade": "Exotic",
+      "bioIndex": 0,
+      "cost": 0,
+      "availability": "8/2 weeks",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "mm.92",
+      "rating": 0,
+      "description": "add your own entry via DATeditor | Cost: ? 10% of implant cost"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0163",
+    "name": "Correction (small)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.2,
+      "cost": 30000,
+      "availability": "6/21 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": "Degree of change up to GM"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0164",
+    "name": "Correction (moderate)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.3,
+      "cost": 40000,
+      "availability": "6/21 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": "Degree of change up to GM"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0165",
+    "name": "Correction (significant)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.4,
+      "cost": 50000,
+      "availability": "6/21 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": "Degree of change up to GM"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0166",
+    "name": "Correction (extreme)",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.5,
+      "cost": 60000,
+      "availability": "6/21 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": "Degree of change up to GM"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0167",
+    "name": "Augmented Healing",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0,
+      "cost": 2500,
+      "availability": "6/21 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": "Cost is per week of treatment"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0168",
+    "name": "Cellular Repair",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0,
+      "cost": 50000,
+      "availability": "6/21 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": "Incompatible with Boosted Reflexes"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0169",
+    "name": "Rejuvinative Treatment",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 1,
+      "cost": 2000000,
+      "availability": "8/30 days",
+      "streetIndex": 2.5,
+      "mods": "",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": "Require Maintainence sessions every 6 months for the next 3 years"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0170",
+    "name": "Maintainance session",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0,
+      "cost": 100000,
+      "availability": "8/30 days",
+      "streetIndex": 2.5,
+      "mods": "",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0171",
+    "name": "Minor Change (eye color etc.)  1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.1,
+      "cost": 50000,
+      "availability": "5/21 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": ""
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0172",
+    "name": "Major Change",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.5,
+      "cost": 65000,
+      "availability": "5/21 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": "Includes any change not normal to metatype"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0173",
+    "name": "Bod Modified Limit Increase    1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.5,
+      "cost": 65000,
+      "availability": "5/21 days",
+      "streetIndex": 2,
+      "mods": "+1XOD",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": "+1 to Racial Modified Limit"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0174",
+    "name": "Qck Modified Limit Increase    1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.5,
+      "cost": 65000,
+      "availability": "5/21 days",
+      "streetIndex": 2,
+      "mods": "+1XCK",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": "+1 to Racial Modified Limit"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0175",
+    "name": "Str Modified Limit Increase    1",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.5,
+      "cost": 65000,
+      "availability": "5/21 days",
+      "streetIndex": 2,
+      "mods": "+1XTR",
+      "bookPage": "sota.026",
+      "rating": 0,
+      "description": "+1 to Racial Modified Limit"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0176",
+    "name": "Cold",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.4,
+      "cost": 60000,
+      "availability": "6/30 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.027",
+      "rating": 0,
+      "description": "+2 Dice Vs cold damage, -2 modifier cold survival tests"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0177",
+    "name": "Heat",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.3,
+      "cost": 60000,
+      "availability": "6/30 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.027",
+      "rating": 0,
+      "description": "+2 Dice Vs heat damage, -2 modifier heat survival tests"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0178",
+    "name": "Low Oxygen",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.3,
+      "cost": 50000,
+      "availability": "6/30 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.027",
+      "rating": 0,
+      "description": "Each success on holding breath adds 10 combat turns, normal oxygen levels cause hyperoxia (Oxygen Toxicity Pg 109 CC)"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0179",
+    "name": "Pollution",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.2,
+      "cost": 50000,
+      "availability": "6/30 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.027",
+      "rating": 0,
+      "description": "+3 body dice for resisting chemical attacks"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0180",
+    "name": "Angiotensin",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.3,
+      "cost": 40000,
+      "availability": "6/30 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.027",
+      "rating": 0,
+      "description": "After Deadly wound, additional damage accrues at Body x2 combat turns"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0181",
+    "name": "Calcitonin",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.4,
+      "cost": 60000,
+      "availability": "6/30 days",
+      "streetIndex": 2,
+      "mods": "+1BOD",
+      "bookPage": "sota.027",
+      "rating": 0,
+      "description": "+1 Body for damage resistance test barrier rating 6 for bones"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0182",
+    "name": "Erythropoitin",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.4,
+      "cost": 40000,
+      "availability": "6/30 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "+2 Dice for Athletics Tests"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0183",
+    "name": "Glucagon",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.3,
+      "cost": 40000,
+      "availability": "6/30 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "Double times when dealing with fatigue effects"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0184",
+    "name": "DNA Masking[1]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0,
+      "cost": 7500,
+      "availability": "8/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "Roll opposed test between masking rating and scanner"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0185",
+    "name": "DNA Masking[2]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0,
+      "cost": 15000,
+      "availability": "8/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "Roll opposed test between masking rating and scanner"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0186",
+    "name": "DNA Masking[3]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0,
+      "cost": 22500,
+      "availability": "8/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "Roll opposed test between masking rating and scanner"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0187",
+    "name": "DNA Masking[4]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.1,
+      "cost": 40000,
+      "availability": "10/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "Roll opposed test between masking rating and scanner"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0188",
+    "name": "DNA Masking[5]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.1,
+      "cost": 50000,
+      "availability": "10/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "Roll opposed test between masking rating and scanner"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0189",
+    "name": "DNA Masking[6]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.1,
+      "cost": 60000,
+      "availability": "10/14 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "Roll opposed test between masking rating and scanner"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0190",
+    "name": "DNA Masking[7]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.1,
+      "cost": 105000,
+      "availability": "14/21 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "Roll opposed test between masking rating and scanner"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0191",
+    "name": "DNA Masking[8]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.1,
+      "cost": 120000,
+      "availability": "14/21 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "Roll opposed test between masking rating and scanner"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0192",
+    "name": "DNA Masking[9]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.1,
+      "cost": 135000,
+      "availability": "14/21 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "Roll opposed test between masking rating and scanner"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0193",
+    "name": "DNA Masking[10]",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.2,
+      "cost": 200000,
+      "availability": "18/28 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.028",
+      "rating": 0,
+      "description": "Roll opposed test between masking rating and scanner"
+    }
+  },
+  {
+    "_id": "sr3e-bioware-0194",
+    "name": "Genetic Immunization",
+    "type": "bioware",
+    "img": "icons/svg/biohazard.svg",
+    "system": {
+      "biowareCategory": "Genetech",
+      "grade": "Exotic",
+      "bioIndex": 0.1,
+      "cost": 25000,
+      "availability": "6/18 days",
+      "streetIndex": 2,
+      "mods": "",
+      "bookPage": "sota.029",
+      "rating": 0,
+      "description": "Does not work against Neuro-toxins and fast acting compounds, that requires cellular repair"
+    }
+  }
+]

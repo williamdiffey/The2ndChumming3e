@@ -95,6 +95,36 @@
   color: var(--sr-muted);
   font-style: italic;
 }
+
+/* ── Select reset ── */
+.sr3e select {
+  background: var(--sr-card);
+  border: 1px solid var(--sr-border);
+  border-radius: var(--r);
+  color: var(--sr-text);
+  padding: 2px 6px;
+  cursor: pointer;
+  appearance: auto;
+}
+.sr3e select:focus { outline: none; border-color: var(--sr-border-hi); }
+
+/* ── Danger action button ── */
+.sr-btn-danger {
+  border-color: var(--sr-red) !important;
+  border-style: solid !important;
+  color: var(--sr-red) !important;
+  background: var(--sr-red-bg) !important;
+}
+.sr-btn-danger:hover { border-color: #e05050 !important; color: #e05050 !important; }
+
+/* ── Active astral mode button ── */
+.sr-astral-active {
+  border-style: solid !important;
+  border-color: var(--sr-accent) !important;
+  color: var(--sr-accent) !important;
+  background: rgba(58,159,214,0.1) !important;
+}
+
 /* ============================================================
    Shadowrun 3rd Edition — Foundry VTT System Stylesheet
    AppV2 build — no Handlebars templates
@@ -2713,8 +2743,6 @@
 .veh-status-disabled  { color: var(--sr-amber); }
 .veh-status-destroyed { color: var(--sr-red);   }
 /* ── Assensing result card ───────────────────────────────────────────────── */
-.sr-assen-card { }
-
 .sr-assen-tier {
   margin: 6px 0 10px;
   padding: 5px 10px;
@@ -2814,6 +2842,23 @@
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 10px;
+}
+
+.sr-alert {
+  padding: 5px 10px;
+  border-radius: var(--r);
+  font-size: 12px;
+  font-weight: 600;
+}
+.sr-alert--danger {
+  background: var(--sr-red-bg);
+  border: 1px solid var(--sr-red);
+  color: var(--sr-red);
+}
+.sr-alert--warn {
+  background: var(--sr-amber-bg);
+  border: 1px solid var(--sr-amber);
+  color: var(--sr-amber);
 }
 
 /* ── Vehicles tab ────────────────────────────────────────────────────── */

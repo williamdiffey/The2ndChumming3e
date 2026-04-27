@@ -2,7 +2,7 @@ import { CharacterData, NpcData, VehicleData } from './data/ActorDataModels.js';
 import {
   MeleeData, ProjectileData, ThrownData, FirearmData, AmmunitionData,
   ArmorData, GearData, SkillData, QualityData, CyberwareData, BiowareData,
-  SpellData, ComplexFormData, SummoningData, ProgramData, CyberdeckData,
+  SpellData, ComplexFormData, SummoningData, AdeptPowerData, VehicleWeaponData, VehicleModData, ProgramData, CyberdeckData,
 } from './data/ItemDataModels.js';
 import { SR3EActor } from './documents/SR3EActor.js';
 import { SR3EItem } from './documents/SR3EItem.js';
@@ -38,6 +38,9 @@ Hooks.once('init', () => {
   CONFIG.Item.dataModels.spell        = SpellData;
   CONFIG.Item.dataModels.complex_form = ComplexFormData;
   CONFIG.Item.dataModels.summoning    = SummoningData;
+  CONFIG.Item.dataModels.adeptpower   = AdeptPowerData;
+  CONFIG.Item.dataModels.vehicleweapon = VehicleWeaponData;
+  CONFIG.Item.dataModels.vehiclemod    = VehicleModData;
   CONFIG.Item.dataModels.program      = ProgramData;
   CONFIG.Item.dataModels.cyberdeck    = CyberdeckData;
 

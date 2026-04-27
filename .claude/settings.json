@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk 'NR<=1286 || NR>=3329' styles/sr3e.css)",
+      "Bash(mv styles/sr3e.css.tmp styles/sr3e.css)",
+      "Bash(awk '/^\\\\.sr-veh-header/,/^\\\\.sr-veh-unlink:hover/')",
+      "Bash(git checkout *)",
+      "Bash(node set-aoe-flags.js)",
+      "Bash(sort -t'\"' -k4)",
+      "Bash(uniq -f3)",
+      "Bash(node set-aoe-flags-projectiles.js)",
+      "Bash(python3 -c ' *)",
+      "Bash(node -e ' *)",
+      "Bash(node convert-drones.js)",
+      "Bash(awk 'NR%30==1')",
+      "Bash(node convert-vehicles.js)",
+      "Bash(node convert-cyberware.js)"
+    ]
+  }
+}

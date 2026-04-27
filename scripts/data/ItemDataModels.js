@@ -210,11 +210,19 @@ export class QualityData extends foundry.abstract.TypeDataModel {
 export class CyberwareData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      essenceCost: new NumberField({ initial: 0.5, min: 0 }),
-      grade:       new StringField({ initial: 'Standard' }),
-      rating:      new NumberField({ integer: true, initial: 0, min: 0 }),
-      cost:        new NumberField({ integer: true, initial: 0, min: 0 }),
-      description: new HTMLField({ initial: '', required: false }),
+      essenceCost:       new NumberField({ initial: 0.5, min: 0 }),
+      grade:             new StringField({ initial: 'Standard' }),
+      rating:            new NumberField({ integer: true, initial: 0, min: 0 }),
+      cost:              new NumberField({ integer: true, initial: 0, min: 0 }),
+      availability:      new StringField({ initial: '' }),
+      streetIndex:       new NumberField({ initial: 0, min: 0 }),
+      legalCode:         new StringField({ initial: '' }),
+      mods:              new StringField({ initial: '' }),
+      capacity:          new NumberField({ initial: 0, min: 0 }),
+      cyberwareCategory: new StringField({ initial: '' }),
+      isReplacement:     new BooleanField({ initial: false }),
+      bookPage:          new StringField({ initial: '' }),
+      description:       new HTMLField({ initial: '', required: false }),
     };
   }
 }
@@ -222,11 +230,16 @@ export class CyberwareData extends foundry.abstract.TypeDataModel {
 export class BiowareData extends foundry.abstract.TypeDataModel {
   static defineSchema() {
     return {
-      essenceCost: new NumberField({ initial: 0.25, min: 0 }),
-      grade:       new StringField({ initial: 'Standard' }),
-      rating:      new NumberField({ integer: true, initial: 0, min: 0 }),
-      cost:        new NumberField({ integer: true, initial: 0, min: 0 }),
-      description: new HTMLField({ initial: '', required: false }),
+      bioIndex:         new NumberField({ initial: 0.25, min: 0 }),
+      grade:            new StringField({ initial: 'Standard' }),
+      rating:           new NumberField({ integer: true, initial: 0, min: 0 }),
+      cost:             new NumberField({ integer: true, initial: 0, min: 0 }),
+      availability:     new StringField({ initial: '' }),
+      streetIndex:      new NumberField({ initial: 0, min: 0 }),
+      mods:             new StringField({ initial: '' }),
+      biowareCategory:  new StringField({ initial: '' }),
+      bookPage:         new StringField({ initial: '' }),
+      description:      new HTMLField({ initial: '', required: false }),
     };
   }
 }
@@ -242,6 +255,54 @@ export class SpellData extends foundry.abstract.TypeDataModel {
       damage:      new StringField({ initial: '' }),
       duration:    new StringField({ initial: 'Instant' }),
       drain:       new StringField({ initial: '' }),
+      target:      new StringField({ initial: '' }),
+      bookPage:    new StringField({ initial: '' }),
+      description: new HTMLField({ initial: '', required: false }),
+    };
+  }
+}
+
+export class VehicleWeaponData extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      weaponType:   new StringField({ initial: '' }),
+      mode:         new StringField({ initial: '' }),
+      damage:       new StringField({ initial: '' }),
+      ammunition:   new StringField({ initial: '' }),
+      weight:       new NumberField({ initial: 0, min: 0 }),
+      cost:         new NumberField({ integer: true, initial: 0, min: 0 }),
+      availability: new StringField({ initial: '' }),
+      streetIndex:  new StringField({ initial: '' }),
+      bookPage:     new StringField({ initial: '' }),
+      notes:        new HTMLField({ initial: '', required: false }),
+    };
+  }
+}
+
+export class VehicleModData extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      cost:             new NumberField({ integer: true, initial: 0, min: 0 }),
+      availability:     new StringField({ initial: '' }),
+      streetIndex:      new StringField({ initial: '' }),
+      installEquipment: new StringField({ initial: '' }),
+      installTime:      new StringField({ initial: '' }),
+      cfCost:           new StringField({ initial: '0' }),
+      load:             new StringField({ initial: '' }),
+      bookPage:         new StringField({ initial: '' }),
+      description:      new HTMLField({ initial: '', required: false }),
+    };
+  }
+}
+
+export class AdeptPowerData extends foundry.abstract.TypeDataModel {
+  static defineSchema() {
+    return {
+      powerCost:   new NumberField({ initial: 0.5, min: 0 }),
+      hasLevels:   new BooleanField({ initial: false }),
+      level:       new NumberField({ integer: true, initial: 1, min: 1 }),
+      mods:        new StringField({ initial: '' }),
+      bookPage:    new StringField({ initial: '' }),
       description: new HTMLField({ initial: '', required: false }),
     };
   }

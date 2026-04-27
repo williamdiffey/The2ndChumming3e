@@ -179,13 +179,15 @@ export class VehicleData extends foundry.abstract.TypeDataModel {
       cost:         new NumberField({ integer: true, initial: 0, min: 0 }),
       streetIndex:  new NumberField({ initial: 0, min: 0 }),
       availability: new StringField({ initial: '' }),
+      bookPage:     new StringField({ initial: '' }),
       notes:        new HTMLField({ initial: '', required: false }),
       damage: new SchemaField({
         value: new NumberField({ integer: true, initial: 0, min: 0 }),
       }),
       attributes: new SchemaField({
-        handling: _vAttr(3),
-        speed:    _vAttr(0),
+        handling:        _vAttr(3),
+        handlingOffRoad: _vAttr(3),
+        speed:           _vAttr(0),
         accel:    _vAttr(0),
         body:     _vAttr(4),
         armor:    _vAttr(0),

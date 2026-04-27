@@ -145,23 +145,37 @@ _prepareCharacter(sys, attr) {
     }
   }
 
-  // Essence (reduced by cyberware/bioware)
+  // Essence — reduced by cyberware only (M&M rules: bioware uses Bio Index, not Essence)
   if (attr.essence) {
     let essenceLoss = 0;
     for (const item of (this.items ?? [])) {
-      if (['cyberware', 'bioware'].includes(item.type)) {
+      if (item.type === 'cyberware') {
         essenceLoss += parseFloat(item.system?.essenceCost ?? 0);
       }
     }
     attr.essence.value = Math.max(0, parseFloat((6 - essenceLoss).toFixed(2)));
   }
 
-  // Magic — capped by essence, then add adept force if applicable
-  const magicBase = attr.magic?.base ?? 0;
+  // Bio Index (M&M p.XX): capacity = Essence + 3; effective magic = Essence − (totalBioIndex ÷ 2)
+  let totalBioIndex = 0;
+  for (const item of (this.items ?? [])) {
+    if (item.type === 'bioware') {
+      totalBioIndex += parseFloat(item.system?.bioIndex ?? 0);
+    }
+  }
+  totalBioIndex = Math.round(totalBioIndex * 1000) / 1000;
+  const bioIndexCapacity = Math.round(((attr.essence?.value ?? 6) + 3) * 100) / 100;
+  const bioIndexOver     = totalBioIndex > bioIndexCapacity;
+
+  // Magic — capped by effective magic (Essence − bioIndex÷2), then add adept force
+  const magicBase     = attr.magic?.base ?? 0;
+  const essenceVal    = attr.essence?.value ?? 6;
+  const effectiveMagic = Math.max(0, essenceVal - (totalBioIndex / 2));
   if (attr.magic && magicBase > 0) {
-    attr.magic.value = Math.min(magicBase, Math.floor(attr.essence?.value ?? 6))
+    attr.magic.value = Math.min(magicBase, Math.floor(effectiveMagic))
       + (isAdept ? (attr.magic.force ?? 0) : 0);
   }
+  const magicSuppressed = magicBase > 0 && effectiveMagic < magicBase;
 
   // Derived pools — all use .value so adept force benefits every relevant pool
   const combatPoolBase = Math.max(0, Math.floor(
@@ -219,6 +233,11 @@ _prepareCharacter(sys, attr) {
     hackingPool:        Math.max(0, hackingPoolBase),
     vcrRating,
     vcrActive:          vcrRating > 0,
+    totalBioIndex,
+    bioIndexCapacity,
+    bioIndexOver,
+    effectiveMagic:     Math.round(effectiveMagic * 100) / 100,
+    magicSuppressed,
   };
 }
 
@@ -603,6 +622,7 @@ _prepareCharacter(sys, attr) {
               rawDamage:          sc.rawDamage,
               isSpellSoak:        true,
               spellType:          sc.spellType,
+              spellTarget:        sc.spellTarget ?? '',
               force:              sc.force,
             }).replace(/'/g, '&#39;');
             postRollHtml += `
@@ -622,6 +642,7 @@ _prepareCharacter(sys, attr) {
                 attackerActorId: sc.attackerActorId,
                 isSpellSoak:     true,
                 spellType:       sc.spellType,
+                spellTarget:     sc.spellTarget ?? '',
                 force:           sc.force,
                 stagedPower:     staged.power,
                 stagedLevel:     staged.level,
@@ -1576,6 +1597,7 @@ _prepareCharacter(sys, attr) {
       attackerActorId: payload.attackerActorId,
       isSpellSoak:     true,
       spellType:       payload.spellType,
+      spellTarget:     payload.spellTarget ?? '',
       force:           payload.force,
       stagedPower:     payload.stagedPower,
       stagedLevel:     payload.stagedLevel,
@@ -2022,6 +2044,7 @@ _prepareCharacter(sys, attr) {
           attackerActorId: sc.attackerActorId,
           isSpellSoak:     true,
           spellType:       sc.spellType,
+          spellTarget:     sc.spellTarget ?? '',
           force,
           stagedPower:     staged.power,
           stagedLevel:     staged.level,
@@ -2156,15 +2179,26 @@ _prepareCharacter(sys, attr) {
 
   /**
    * Post a resist-spell card for this actor.
-   * Mana spells → Willpower pool; Physical spells → Body pool.
+   * Resist attribute derived from spell's target field: W(R)=Willpower, B(R)=Body, F(R)=Willpower.
    * TN = Force (no armour).
    */
   async _postSpellSoakCard(payload) {
-    const { stagedPower, stagedLevel, isStun, spellType, force, rawDamage } = payload;
-    const trackLabel  = isStun ? 'Stun' : 'Physical';
-    const isManaSpell = spellType !== 'Physical';
-    const resistAttr  = isManaSpell ? 'willpower' : 'body';
-    const resistName  = isManaSpell ? 'Willpower' : 'Body';
+    const { stagedPower, stagedLevel, isStun, spellType, spellTarget, force, rawDamage } = payload;
+    const trackLabel = isStun ? 'Stun' : 'Physical';
+
+    const t = String(spellTarget ?? '').trim().toUpperCase();
+    let resistAttr, resistName;
+    if (t === 'W(R)' || t === 'W') {
+      resistAttr = 'willpower'; resistName = 'Willpower';
+    } else if (t === 'B(R)' || t === 'B') {
+      resistAttr = 'body'; resistName = 'Body';
+    } else if (t === 'F(R)' || t === 'F') {
+      resistAttr = 'willpower'; resistName = 'Willpower';
+    } else {
+      const isManaSpell = spellType !== 'Physical';
+      resistAttr = isManaSpell ? 'willpower' : 'body';
+      resistName = isManaSpell ? 'Willpower' : 'Body';
+    }
 
     this.prepareDerivedData();
     const attrVal = this.system.attributes?.[resistAttr]?.value

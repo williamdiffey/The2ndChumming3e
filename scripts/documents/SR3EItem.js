@@ -285,6 +285,8 @@ export class SR3EItem extends Item {
   }
 
   async rollWeapon(options = {}) {
+  if (this.type === 'vehicleweapon') return this.rollVehicleWeapon(options);
+
   const actor = this.actor;
   if (!actor) {
     ui.notifications.warn('No actor for this weapon.');
@@ -466,6 +468,184 @@ export class SR3EItem extends Item {
 
   return actor.rollPool(pool, tn, label, options);
 }
+
+  /**
+   * Vehicle / drone weapon attack flow.
+   *
+   * Pool:
+   *   VCR / RCR mode (controlledBy set): pilot actor's Gunnery skill + wound mod
+   *   Autonomous (no controlledBy):      vehicle's Pilot rating
+   *
+   * TN: target Sig + range modifier (editable)
+   * Fire Control: bonus dice added to pool (vehicle mod)
+   */
+  async rollVehicleWeapon(options = {}) {
+    const actor = this.actor;
+    if (!actor) { ui.notifications.warn('No actor for this weapon.'); return null; }
+
+    const rawDamage = this.system.damage || '';
+
+    // Step 1: Target
+    const targetActor = await SR3EItem._promptTarget(actor);
+    if (!targetActor) return null;
+
+    // Step 2: Resolve attacker pool
+    const pilotName = actor.system.controlledBy?.trim() ?? '';
+    const vcrMode   = actor.system.vcrMode ?? false;
+    let   pilotActor    = pilotName ? (game.actors.find(a => a.name === pilotName) ?? null) : null;
+    let   pool          = 0;
+    let   poolLabel     = '';
+    let   pilotWoundMod = 0;
+
+    if (pilotActor) {
+      const modeLabel  = vcrMode ? 'VCR' : 'RCR';
+      const gunnery    = pilotActor.items.find(i => i.type === 'skill' && /gunnery/i.test(i.name));
+      if (gunnery) {
+        const base = gunnery.system.skillRating ?? gunnery.system.rating ?? 0;
+        const spec  = gunnery.system.specialisation ?? '';
+        const specMatch = spec && (
+          this.name.toLowerCase().includes(spec.toLowerCase()) ||
+          (this.system.weaponType ?? '').toLowerCase().includes(spec.toLowerCase())
+        );
+        pool      = specMatch ? base + 2 : base;
+        poolLabel = specMatch
+          ? `${pilotActor.name} (${modeLabel}): Gunnery ${base} (${pool}) — ${spec}`
+          : `${pilotActor.name} (${modeLabel}): Gunnery ${base}`;
+      } else {
+        const int = pilotActor.system.attributes?.intelligence?.value
+                 ?? pilotActor.system.attributes?.intelligence?.base ?? 1;
+        pool      = Math.max(1, int - 2);
+        poolLabel = `${pilotActor.name} (${modeLabel}): Defaulting — INT ${int} − 2`;
+      }
+      const stunVal = pilotActor.system.wounds?.stun?.value     ?? 0;
+      const physVal = pilotActor.system.wounds?.physical?.value ?? 0;
+      pilotWoundMod = -(Math.floor(stunVal / 3) + Math.floor(physVal / 3));
+      pool += pilotWoundMod;
+    } else {
+      const pilotRating = actor.system.attributes?.pilot?.base ?? 0;
+      pool      = pilotRating;
+      poolLabel = `Autonomous: Pilot ${pilotRating}`;
+    }
+
+    // Step 3: Roll options dialog
+    const baseSig  = targetActor.type === 'vehicle'
+      ? (targetActor.system.attributes?.sig?.base ?? 4)
+      : 4;
+    const weaponOpts = await SR3EItem._promptVehicleWeaponRollOptions(
+      this, targetActor, pool, poolLabel, baseSig, rawDamage
+    );
+    if (!weaponOpts) return null;
+
+    const finalPool = Math.max(1, pool + weaponOpts.fireControl);
+    const tn        = weaponOpts.tn;
+    const fcNote    = weaponOpts.fireControl > 0 ? ` + FC${weaponOpts.fireControl}` : '';
+    const label     = `🚗 ${this.name} [${weaponOpts.damageCode}] vs ${targetActor.name} — ${poolLabel}${fcNote}`;
+
+    // Step 4: Vehicle damage modifier (unless AV munition)
+    let effectiveRawDamage = weaponOpts.damageCode;
+    let damageBase = SR3EItem.parseDamageCode(effectiveRawDamage, actor);
+    if (!damageBase) {
+      ui.notifications.warn(`${this.name} has no damage code set.`);
+    }
+    if (targetActor.type === 'vehicle' && !weaponOpts.avMunition && damageBase) {
+      const levelDown = { D: 'S', S: 'M', M: 'L', L: 'L' };
+      const newPower  = Math.ceil(damageBase.power / 2);
+      const newLevel  = levelDown[damageBase.level] ?? damageBase.level;
+      damageBase = { ...damageBase, power: newPower, level: newLevel };
+      effectiveRawDamage = `${newPower}${newLevel}${damageBase.isStun ? ' Stun' : ''}`;
+    }
+
+    options.weaponItemId       = this.id;
+    options.actorId            = actor.id;
+    options.targetActorId      = targetActor.id;
+    options.rawDamage          = effectiveRawDamage;
+    options.damageBase         = damageBase;
+    options.isWeaponRoll       = true;
+    options.isMelee            = false;
+    options.committedDodgeDice = 0;
+
+    return actor.rollPool(finalPool, tn, label, options);
+  }
+
+  /**
+   * Roll options dialog for vehicle weapon attacks.
+   */
+  static async _promptVehicleWeaponRollOptions(weapon, targetActor, pool, poolLabel, baseSig, rawDamage) {
+    const isVehicleTarget = targetActor.type === 'vehicle';
+    const sensorRating    = weapon.actor?.system.attributes?.sensor?.base ?? 0;
+
+    let result = null;
+    await foundry.applications.api.DialogV2.wait({
+      window: { title: `${weapon.name} — Attack Options` },
+      content: `
+        <style>
+          .vw-info { background:var(--sr-surface);border:1px solid var(--sr-border);border-radius:var(--r);padding:8px;font-size:12px;margin-bottom:10px; }
+          .vw-info-row { display:flex;justify-content:space-between;margin:2px 0;color:var(--sr-muted); }
+          .vw-info-row span:last-child { color:var(--sr-text);font-weight:bold; }
+          .vw-grid { display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12px; }
+          .vw-full { grid-column:1/-1; }
+          label.vw-field { display:flex;flex-direction:column;gap:3px;color:var(--sr-muted); }
+          label.vw-field select, label.vw-field input {
+            background:var(--sr-surface);color:var(--sr-text);border:1px solid var(--sr-accent);
+            border-radius:var(--r);padding:2px 5px;width:100%;box-sizing:border-box;
+          }
+        </style>
+        <div class="vw-info">
+          <div class="vw-info-row"><span>Pool</span><span>${poolLabel}</span></div>
+          <div class="vw-info-row"><span>Sensor</span><span>${sensorRating}</span></div>
+          <div class="vw-info-row"><span>Target</span><span>${targetActor.name}${isVehicleTarget ? ` (Sig ${baseSig})` : ''}</span></div>
+        </div>
+        <div class="vw-grid">
+          <label class="vw-field">Base TN (Sig)
+            <input type="number" id="vw-sig" value="${baseSig}" min="2" max="30"/>
+          </label>
+          <label class="vw-field">Range modifier
+            <select id="vw-range">
+              <option value="0">Short (+0)</option>
+              <option value="2">Medium (+2)</option>
+              <option value="4">Long (+4)</option>
+              <option value="8">Extreme (+8)</option>
+            </select>
+          </label>
+          <label class="vw-field">Fire Control dice
+            <input type="number" id="vw-fc" value="0" min="0" max="20"/>
+          </label>
+          <label class="vw-field">Damage Code
+            <input type="text" id="vw-damage" value="${rawDamage}"/>
+          </label>
+          ${isVehicleTarget ? `
+            <div class="vw-full" style="padding:6px 8px;background:var(--sr-surface);border:1px solid var(--sr-accent);border-radius:var(--r);font-size:11px">
+              <div style="color:var(--sr-accent);margin-bottom:4px">⚠ Vehicle target: Power ÷2 (round up), Stage −1</div>
+              <label style="display:flex;align-items:center;gap:6px;cursor:pointer">
+                <input type="checkbox" id="vw-av"/>
+                AV munition <span style="color:var(--sr-muted)">(removes vehicle modifier)</span>
+              </label>
+            </div>
+          ` : ''}
+        </div>
+      `,
+      buttons: [
+        {
+          label: 'Roll',
+          action: 'roll',
+          default: true,
+          callback: (_e, _b, dialog) => {
+            const el  = dialog.element;
+            const sig = Math.max(2, parseInt(el.querySelector('#vw-sig')?.value)   || baseSig);
+            const rng = parseInt(el.querySelector('#vw-range')?.value) || 0;
+            result = {
+              tn:          Math.max(2, sig + rng),
+              fireControl: Math.max(0, parseInt(el.querySelector('#vw-fc')?.value)     || 0),
+              damageCode:  el.querySelector('#vw-damage')?.value.trim() || rawDamage,
+              avMunition:  el.querySelector('#vw-av')?.checked ?? false,
+            };
+          }
+        },
+        { label: 'Cancel', action: 'cancel' },
+      ],
+    });
+    return result;
+  }
 
   /**
    * Multi-select target dialog for AoE weapons.
@@ -903,14 +1083,37 @@ _getDefaultAttribute() {
   }
 
   /**
-   * Spell attack TN: Mana spells → target Essence, Physical → target Body.
+   * Resolve spell attack TN and resist attribute from the spell's target field.
+   * W(R) → Willpower, B(R) → Body, F(R) → Force, numeric → fixed TN.
+   * Falls back to Mana=Essence / Physical=Body if target field is absent.
    */
-  static _spellTN(spellType, targetActor) {
-    if (spellType === 'Physical') {
-      return Math.max(2, targetActor.system.attributes?.body?.value
-                      ?? targetActor.system.attributes?.body?.base ?? 3);
+  static _parseSpellTarget(spellTarget, targetActor, force, spellType) {
+    const t = String(spellTarget ?? '').trim().toUpperCase();
+    if (t === 'W(R)' || t === 'W') {
+      const val = targetActor.system.attributes?.willpower?.value
+               ?? targetActor.system.attributes?.willpower?.base ?? 3;
+      return { tn: Math.max(2, val), resistAttr: 'willpower', resistName: 'Willpower', attrLabel: 'Willpower' };
     }
-    return Math.max(2, targetActor.system.attributes?.essence?.value ?? 6);
+    if (t === 'B(R)' || t === 'B') {
+      const val = targetActor.system.attributes?.body?.value
+               ?? targetActor.system.attributes?.body?.base ?? 3;
+      return { tn: Math.max(2, val), resistAttr: 'body', resistName: 'Body', attrLabel: 'Body' };
+    }
+    if (t === 'F(R)' || t === 'F') {
+      return { tn: Math.max(2, force ?? 1), resistAttr: 'willpower', resistName: 'Willpower', attrLabel: 'Force' };
+    }
+    const numeric = parseInt(t);
+    if (!isNaN(numeric) && t !== '') {
+      return { tn: Math.max(2, numeric), resistAttr: 'willpower', resistName: 'Willpower', attrLabel: 'Fixed' };
+    }
+    // Fallback: original Mana→Essence / Physical→Body logic
+    if (spellType === 'Physical') {
+      const val = targetActor.system.attributes?.body?.value
+               ?? targetActor.system.attributes?.body?.base ?? 3;
+      return { tn: Math.max(2, val), resistAttr: 'body', resistName: 'Body', attrLabel: 'Body' };
+    }
+    const essVal = targetActor.system.attributes?.essence?.value ?? 6;
+    return { tn: Math.max(2, essVal), resistAttr: 'willpower', resistName: 'Willpower', attrLabel: 'Essence' };
   }
 
   /**
@@ -918,7 +1121,7 @@ _getDefaultAttribute() {
    * Shows each candidate's relevant TN (Essence or Body).
    * Returns array of Actor objects, or null if cancelled / nothing selected.
    */
-  static async _promptTargetsMulti(attacker, spellType) {
+  static async _promptTargetsMulti(attacker, spellType, spellTarget, force) {
     const candidates = game.actors.contents
       .filter(a => a.id !== attacker.id && a.type !== 'vehicle');
     if (candidates.length === 0) {
@@ -926,14 +1129,13 @@ _getDefaultAttribute() {
       return null;
     }
 
-    const attrLabel = spellType === 'Physical' ? 'Body' : 'Essence';
-    const choices   = candidates.map(a => {
-      const tn = SR3EItem._spellTN(spellType, a);
+    const choices = candidates.map(a => {
+      const parsed = SR3EItem._parseSpellTarget(spellTarget, a, force, spellType);
       return `
         <label style="display:flex;align-items:center;gap:6px;margin:3px 0">
           <input type="checkbox" name="target-actor" value="${a.id}"/>
           ${a.name}
-          <span style="font-size:11px;color:var(--sr-muted)">(${attrLabel} → TN ${tn})</span>
+          <span style="font-size:11px;color:var(--sr-muted)">(${parsed.attrLabel} → TN ${parsed.tn})</span>
         </label>`;
     }).join('');
 
@@ -1063,14 +1265,15 @@ _getDefaultAttribute() {
     const drainIsPhysical = sorceryRating > 0 && force > sorceryRating;
 
     // Step 2: Select target(s)
-    const spellType = this.system.type ?? 'Mana';
-    const isAoE     = (this.system.range ?? 'LOS') === 'LOS (A)';
+    const spellType   = this.system.type ?? 'Mana';
+    const spellTarget = this.system.target ?? '';
+    const isAoE       = (this.system.range ?? 'LOS') === 'LOS (A)';
 
     let targetActors;
     let committedDodgeDice = 0;
 
     if (isAoE) {
-      targetActors = await SR3EItem._promptTargetsMulti(actor, spellType);
+      targetActors = await SR3EItem._promptTargetsMulti(actor, spellType, spellTarget, force);
       if (!targetActors || targetActors.length === 0) return null;
     } else {
       const targetActor = await SR3EItem._promptTarget(actor);
@@ -1109,8 +1312,9 @@ _getDefaultAttribute() {
     const spellPoolForDrain = Math.max(0, spTotal2 - (actor.system.spellPoolSpent ?? 0));
 
     // Step 4: TN from primary target
-    const primaryTarget = targetActors[0];
-    const tn            = SR3EItem._spellTN(spellType, primaryTarget);
+    const primaryTarget  = targetActors[0];
+    const parsedTarget   = SR3EItem._parseSpellTarget(spellTarget, primaryTarget, force, spellType);
+    const tn             = parsedTarget.tn;
 
     // Build damage context — power = Force, level from spell's damage field
     const level      = SR3EItem._parseSpellDamageLevel(this.system.damage);
@@ -1132,6 +1336,7 @@ _getDefaultAttribute() {
       spellName:         this.name,
       force,
       spellType,
+      spellTarget,
       isAoE,
       rawDamage,
       damageBase,

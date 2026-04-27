@@ -1,0 +1,3606 @@
+[
+  {
+    "_id": "sr3e-drone-0000",
+    "name": "Mesametric Kodiak",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 75500,
+      "streetIndex": 2,
+      "availability": "4/4days",
+      "seating": 0,
+      "bookPage": "r3.163",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Off-Road Suspension 2(factored in), Improved Suspension 2(factored in), Crane(Scoop 1000kg), Dozer Blade",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 5,
+          "base": 5
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 20,
+          "base": 20
+        },
+        "accel": {
+          "value": 2,
+          "base": 2
+        },
+        "body": {
+          "value": 4,
+          "base": 4
+        },
+        "armor": {
+          "value": 12,
+          "base": 12
+        },
+        "sig": {
+          "value": 3,
+          "base": 3
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 3,
+          "base": 3
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 1025,
+          "base": 1025
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0001",
+    "name": "Mazda Dust Devil",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 1500,
+      "streetIndex": 0.5,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "ssg.122",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Special Machinery (vacuum/wetvac/brushes/sprayer), Special Storage Area (liquid tanks-2l total)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 10,
+          "base": 10
+        },
+        "accel": {
+          "value": 2,
+          "base": 2
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 0,
+          "base": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0002",
+    "name": "IFMU Mr. Green 3500",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 3500,
+      "streetIndex": 0.5,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "ssg.122",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Autosoft Interpreter, Autosoft (Gardening 1), Special Machinery (lawnmower/sprinkler/shears/sprayer), Special Storage Area (liquid tanks/5l)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 10,
+          "base": 10
+        },
+        "accel": {
+          "value": 2,
+          "base": 2
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 0,
+          "base": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0003",
+    "name": "IFMU Mr. Fireman 3500",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 11000,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "ssg.122",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Autosoft Interpreter, Autosoft (Firefighting 2), Special Machinery (smoke/fire detector/sprayer), Special Storage Area (10l fire extinguisher)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 10,
+          "base": 10
+        },
+        "accel": {
+          "value": 2,
+          "base": 2
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 4,
+          "base": 4
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 4,
+          "base": 4
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0004",
+    "name": "Renraku StreetCleaner",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 7000,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "ssg.122",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Special Machinery (sweep and brush system), Special Storage Area (10 liter water tank)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 6,
+          "base": 6
+        },
+        "speed": {
+          "value": 10,
+          "base": 10
+        },
+        "accel": {
+          "value": 2,
+          "base": 2
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 7,
+          "base": 7
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 2,
+          "base": 2
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 5,
+          "base": 5
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0005",
+    "name": "V.R. House Helper",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 1500,
+      "streetIndex": 0.5,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "ssg.122",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Special Machinery (vacuum/wetvac/brushes/sprayer), Special Storage Area (liquid tanks-2l total)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 10,
+          "base": 10
+        },
+        "accel": {
+          "value": 2,
+          "base": 2
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 0,
+          "base": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0006",
+    "name": "Mitsuhama Butlerbot",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 25000,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "ssg.122",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Robotic Pilot, Adaptation Pool 2, Fuzzy Logic Augmentation, Mechanical Arm (Strength 4), Special Machinery (cleaning items), Special Storage Area (beverage/water/cleaning tanks/5l total)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 10,
+          "base": 10
+        },
+        "accel": {
+          "value": 2,
+          "base": 2
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 7,
+          "base": 7
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 2,
+          "base": 2
+        },
+        "cargo": {
+          "value": 5,
+          "base": 5
+        },
+        "load": {
+          "value": 50,
+          "base": 50
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0007",
+    "name": "GM Mr Fix-It",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 27000,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "ssg.122",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Autosoft Interpreter, Autosoft (any B/R skill at rating 3), Special Machinery (toolkit), 2 Mechanical Arms (Strength 4)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 10,
+          "base": 10
+        },
+        "accel": {
+          "value": 2,
+          "base": 2
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 3,
+          "base": 3
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 3,
+          "base": 3
+        },
+        "load": {
+          "value": 170,
+          "base": 170
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0008",
+    "name": "IFMU Mr. Bright 3000",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 6500,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "ssg.122",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Special Machinery (window cleaning gear/foot suction system), Special Storage Area (5 liter water tank), Winch (25 kg)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 2,
+          "base": 2
+        },
+        "accel": {
+          "value": 0,
+          "base": 0
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 4,
+          "base": 4
+        },
+        "load": {
+          "value": 2,
+          "base": 2
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0009",
+    "name": "IFMU Mr. Bright (household)",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 6000,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "ssg.122",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Special Machinery (window cleaning gear/foot suction system), Special Storage Area (5 liter water tank)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 2,
+          "base": 2
+        },
+        "accel": {
+          "value": 0,
+          "base": 0
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 4,
+          "base": 4
+        },
+        "load": {
+          "value": 5,
+          "base": 5
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0010",
+    "name": "Renraku Barback",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 44000,
+      "streetIndex": 1,
+      "availability": "3/72hrs",
+      "seating": 0,
+      "bookPage": "ssg.122",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Robotic Pilot, Adaptation Pool 2, Fuzzy Logic Augmentation, 2 Mechanical Arms (Strength 6)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 10,
+          "base": 10
+        },
+        "accel": {
+          "value": 0,
+          "base": 0
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 6,
+          "base": 6
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 2,
+          "base": 2
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 20,
+          "base": 20
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0011",
+    "name": "Ares Felix the SynthCat",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 9500,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "ssg.122",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Robotic Pilot, Improved Neural Network 1, Adaptation Pool 2",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 15,
+          "base": 15
+        },
+        "accel": {
+          "value": 0,
+          "base": 0
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 5,
+          "base": 5
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0012",
+    "name": "Ares Sentinel",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 32000,
+      "streetIndex": 2,
+      "availability": "8/8 days",
+      "seating": 0,
+      "bookPage": "r3.172",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Gridlink, Micro-turret(1 CF Ammo Bin)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 25,
+          "base": 25
+        },
+        "accel": {
+          "value": 2,
+          "base": 2
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 12,
+          "base": 12
+        },
+        "sig": {
+          "value": 7,
+          "base": 7
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 3,
+          "base": 3
+        },
+        "sensor": {
+          "value": 4,
+          "base": 4
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 25,
+          "base": 25
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0013",
+    "name": "Aztech GCR-23C Crawler",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 3750,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "r3.172",
+      "notes": "Remote-Control Interface, Rigger Adaptation",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 15,
+          "base": 15
+        },
+        "accel": {
+          "value": 3,
+          "base": 3
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 15,
+          "base": 15
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0014",
+    "name": "Aztech Hedgehog",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 200000,
+      "streetIndex": 2,
+      "availability": "16/16 days",
+      "seating": 0,
+      "bookPage": "r3.172",
+      "notes": "Remote-control interface, Rigger Adaption, 2 Electronics Ports (Rigger Decryption 4 Rigger Protocol Emulation 4 0.2 CF total), Autosoft Interpretation System, Autosoft: Electronic Warfare 5",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 15,
+          "base": 15
+        },
+        "accel": {
+          "value": 3,
+          "base": 3
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 5,
+          "base": 5
+        },
+        "sensor": {
+          "value": 4,
+          "base": 4
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 16,
+          "base": 16
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0015",
+    "name": "Citroen Brouillard Smoke Gen.",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 10000,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "r3.172",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Smoke Generator, Fog Oil(5 CF), Graphite Smoke(1 CF)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 50,
+          "base": 50
+        },
+        "accel": {
+          "value": 5,
+          "base": 5
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 4,
+          "base": 4
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 250,
+          "base": 250
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0016",
+    "name": "Ferret RPD-VI Perimeter Drone",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 18500,
+      "streetIndex": 2,
+      "availability": "9/9 days",
+      "seating": 0,
+      "bookPage": "r3.172",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Spotlight(white light)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 30,
+          "base": 30
+        },
+        "accel": {
+          "value": 2,
+          "base": 2
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 3,
+          "base": 3
+        },
+        "sensor": {
+          "value": 4,
+          "base": 4
+        },
+        "cargo": {
+          "value": 4,
+          "base": 4
+        },
+        "load": {
+          "value": 50,
+          "base": 50
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0017",
+    "name": "FMC TADS Salamander",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 24500,
+      "streetIndex": 2,
+      "availability": "2/48 hrs",
+      "seating": 0,
+      "bookPage": "r3.172",
+      "notes": "Remote-Control Interface, Rigger Adaptation, BattleTac FDDM Receiver",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 60,
+          "base": 60
+        },
+        "accel": {
+          "value": 6,
+          "base": 6
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 4,
+          "base": 4
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 3,
+          "base": 3
+        },
+        "cargo": {
+          "value": 4,
+          "base": 4
+        },
+        "load": {
+          "value": 125,
+          "base": 125
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0018",
+    "name": "Gaz-Niki GNRD-71 BIS Snooper",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 8500,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "sr3.312,r3.172",
+      "notes": "Remote-Control Interface, Rigger Adaptation",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 75,
+          "base": 75
+        },
+        "accel": {
+          "value": 3,
+          "base": 3
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 2,
+          "base": 2
+        },
+        "load": {
+          "value": 30,
+          "base": 30
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0019",
+    "name": "GM-Nissan Doberman",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 25000,
+      "streetIndex": 2,
+      "availability": "8/8 days",
+      "seating": 0,
+      "bookPage": "sr3.311,r3.173",
+      "notes": "Remote-Control Interface, Rigger Adaptation, External Fixed Firmpoint(0.4 CF Ammo Bin), Remote Micro-turret(1 CF Ammo Bin)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 5,
+          "base": 5
+        },
+        "speed": {
+          "value": 70,
+          "base": 70
+        },
+        "accel": {
+          "value": 8,
+          "base": 8
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 6,
+          "base": 6
+        },
+        "sig": {
+          "value": 2,
+          "base": 2
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 2.5,
+          "base": 2.5
+        },
+        "load": {
+          "value": 50,
+          "base": 50
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0020",
+    "name": "IWS DLK MK 6",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 21000,
+      "streetIndex": 1,
+      "availability": "2/48hrs",
+      "seating": 0,
+      "bookPage": "r3.173",
+      "notes": "Remote-Control Interface, Rigger Adaptation, 2 Mechanical Arms(STR 6)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 35,
+          "base": 35
+        },
+        "accel": {
+          "value": 3,
+          "base": 3
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 7,
+          "base": 7
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 3,
+          "base": 3
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 350,
+          "base": 350
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0021",
+    "name": "IWS DLK MK 6(Armed)",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 22000,
+      "streetIndex": 2,
+      "availability": "8/8 days",
+      "seating": 0,
+      "bookPage": "r3.173",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Mechanical Arm(STR 6), External Fixed Firmpoint(1 CF Ammo Bin)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 35,
+          "base": 35
+        },
+        "accel": {
+          "value": 3,
+          "base": 3
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 4,
+          "base": 4
+        },
+        "sig": {
+          "value": 6,
+          "base": 6
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 3,
+          "base": 3
+        },
+        "cargo": {
+          "value": 1.5,
+          "base": 1.5
+        },
+        "load": {
+          "value": 280,
+          "base": 280
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0022",
+    "name": "Saab-Thyssen Bloodhound",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 23500,
+      "streetIndex": 2,
+      "availability": "2/48hrs",
+      "seating": 0,
+      "bookPage": "r3.173",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Amphibious Operation 1, Mechanical Arm(STR 6 Cybersquirt Implant), Special Storage Area(Liquid Tank 10 liters 1 CF), Special Machinery(HAZMAT Sensors)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 90,
+          "base": 90
+        },
+        "accel": {
+          "value": 6,
+          "base": 6
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 4,
+          "base": 4
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 4,
+          "base": 4
+        },
+        "cargo": {
+          "value": 2,
+          "base": 2
+        },
+        "load": {
+          "value": 5,
+          "base": 5
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0023",
+    "name": "Steel Lynx Ground Combat Drone",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 34500,
+      "streetIndex": 2,
+      "availability": "8/8 days",
+      "seating": 0,
+      "bookPage": "r3.173",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Remote Mini-Turret(1 CF Ammo Bin)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 6,
+          "base": 6
+        },
+        "speed": {
+          "value": 80,
+          "base": 80
+        },
+        "accel": {
+          "value": 6,
+          "base": 6
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 9,
+          "base": 9
+        },
+        "sig": {
+          "value": 6,
+          "base": 6
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 3,
+          "base": 3
+        },
+        "load": {
+          "value": 225,
+          "base": 225
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0024",
+    "name": "A.S. Condor LDSD-23",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 9000,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "r3.174",
+      "notes": "Remote-Control Interface, Rigger Adaptation, SunCell Power",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 60,
+          "base": 60
+        },
+        "accel": {
+          "value": 3,
+          "base": 3
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 10,
+          "base": 10
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 50,
+          "base": 50
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0025",
+    "name": "A.S. Condor LDSD-41",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 33650,
+      "streetIndex": 1,
+      "availability": "2/48hrs",
+      "seating": 0,
+      "bookPage": "r3.174",
+      "notes": "Remote-Control Interface, Rigger Adaptation, SunCell Power",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 75,
+          "base": 75
+        },
+        "accel": {
+          "value": 5,
+          "base": 5
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 3,
+          "base": 3
+        },
+        "sig": {
+          "value": 10,
+          "base": 10
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 3,
+          "base": 3
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 4,
+          "base": 4
+        },
+        "load": {
+          "value": 28,
+          "base": 28
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0026",
+    "name": "LS Sherlock Crime Analysis",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 180000,
+      "streetIndex": 2,
+      "availability": "12/3 wks",
+      "seating": 0,
+      "bookPage": "sta2.98",
+      "notes": "Remote-Control Interface, Rigger Adaptation, chem sniffer 6, mads 6, mechanical arm (str 2), camera, trideo recorder",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 75,
+          "base": 75
+        },
+        "accel": {
+          "value": 8,
+          "base": 8
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 8,
+          "base": 8
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 6,
+          "base": 6
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 25,
+          "base": 25
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0027",
+    "name": "Sikorsky-Bell Microskimmer I",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 7500,
+      "streetIndex": 0.5,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "r3.174",
+      "notes": "Remote-Control Interface, Rigger Adaptation",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 90,
+          "base": 90
+        },
+        "accel": {
+          "value": 6,
+          "base": 6
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 7,
+          "base": 7
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 5,
+          "base": 5
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0028",
+    "name": "Sikorsky-Bell Microskimmer II",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 18300,
+      "streetIndex": 0.5,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "r3.174",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Ballast Tanks, Engine Enviroseal, Auxiliary Engine(Electric Battery) | Alt-mode Speed/Accel: 90(45)/5(3) | Alt-mode Sig/Autonav: 7(7)/0",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 90,
+          "base": 90
+        },
+        "accel": {
+          "value": 5,
+          "base": 5
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 7,
+          "base": 7
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 5,
+          "base": 5
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0029",
+    "name": "Ares Arms Sentry II",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 43500,
+      "streetIndex": 2,
+      "availability": "9/9 days",
+      "seating": 0,
+      "bookPage": "r3.175",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Micro-Turret(Anti-Aircraft Capability; 1 CF Ammo Bin), Generator(12hrs of power)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 0,
+          "base": 0
+        },
+        "handlingOffRoad": {
+          "value": 0,
+          "base": 0
+        },
+        "speed": {
+          "value": 0,
+          "base": 0
+        },
+        "accel": {
+          "value": 0,
+          "base": 0
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 7,
+          "base": 7
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 4,
+          "base": 4
+        },
+        "sensor": {
+          "value": 4,
+          "base": 4
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 145,
+          "base": 145
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0030",
+    "name": "Aztech Liebre RPV",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 195000,
+      "streetIndex": 2,
+      "availability": "16/16days",
+      "seating": 0,
+      "bookPage": "r3.175",
+      "notes": "Remote-Control Interface, Rigger Adaptation, External Fixed Hardpoint, Vindicator Minigun | Alt-mode Speed/Accel: 60(1620)/75",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 60,
+          "base": 60
+        },
+        "accel": {
+          "value": 75,
+          "base": 75
+        },
+        "body": {
+          "value": 3,
+          "base": 3
+        },
+        "armor": {
+          "value": 4,
+          "base": 4
+        },
+        "sig": {
+          "value": 5,
+          "base": 5
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 4,
+          "base": 4
+        },
+        "sensor": {
+          "value": 4,
+          "base": 4
+        },
+        "cargo": {
+          "value": 5,
+          "base": 5
+        },
+        "load": {
+          "value": 25,
+          "base": 25
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0031",
+    "name": "CAS Wandjina RPV",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 119000,
+      "streetIndex": 2,
+      "availability": "12/12days",
+      "seating": 0,
+      "bookPage": "r3.175",
+      "notes": "Remote-Control Interface, Rigger Adaptation, External Fixed Hardpoint, External Missle Mount | Alt-mode Speed/Accel: 60(500)/40",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 5,
+          "base": 5
+        },
+        "handlingOffRoad": {
+          "value": 5,
+          "base": 5
+        },
+        "speed": {
+          "value": 60,
+          "base": 60
+        },
+        "accel": {
+          "value": 40,
+          "base": 40
+        },
+        "body": {
+          "value": 3,
+          "base": 3
+        },
+        "armor": {
+          "value": 6,
+          "base": 6
+        },
+        "sig": {
+          "value": 5,
+          "base": 5
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 4,
+          "base": 4
+        },
+        "sensor": {
+          "value": 3,
+          "base": 3
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 325,
+          "base": 325
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0032",
+    "name": "FMC-Stonebrooke TADS Firebird",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 52000,
+      "streetIndex": 2,
+      "availability": "9/9 days",
+      "seating": 0,
+      "bookPage": "r3.175",
+      "notes": "Remote-Control Interface, Rigger Adaptation, BattleTac FDDM | Alt-mode Speed/Accel: 40(105)/30",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 40,
+          "base": 40
+        },
+        "accel": {
+          "value": 30,
+          "base": 30
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 6,
+          "base": 6
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 3,
+          "base": 3
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 5,
+          "base": 5
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0033",
+    "name": "GM-Nissan Spotter",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 45250,
+      "streetIndex": 1,
+      "availability": "3/72hrs",
+      "seating": 0,
+      "bookPage": "r3.175",
+      "notes": "Remote-Control Interface, Rigger Adaptation | Alt-mode Speed/Accel: 40(200)/35",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 40,
+          "base": 40
+        },
+        "accel": {
+          "value": 35,
+          "base": 35
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 6,
+          "base": 6
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 10,
+          "base": 10
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0034",
+    "name": "GTE-Ford Retrans Unit",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 40300,
+      "streetIndex": 1,
+      "availability": "2/48hrs",
+      "seating": 0,
+      "bookPage": "r3.175",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Retrans Mission Unit | Alt-mode Speed/Accel: 40(105)/30",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 40,
+          "base": 40
+        },
+        "accel": {
+          "value": 30,
+          "base": 30
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 6,
+          "base": 6
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 4,
+          "base": 4
+        },
+        "load": {
+          "value": 115,
+          "base": 115
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0035",
+    "name": "MCT Indrahar O-5P Surv. Drone",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 108825,
+      "streetIndex": 1.5,
+      "availability": "6/6 days",
+      "seating": 0,
+      "bookPage": "sta2.39",
+      "notes": "Remote-Control Interface, Rigger Adaptation, ECCM 6, Enhanced Sensors 6 | Alt-mode Speed/Accel: 60(300)/20",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 60,
+          "base": 60
+        },
+        "accel": {
+          "value": 20,
+          "base": 20
+        },
+        "body": {
+          "value": 3,
+          "base": 3
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 6,
+          "base": 6
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 3,
+          "base": 3
+        },
+        "sensor": {
+          "value": 6,
+          "base": 6
+        },
+        "cargo": {
+          "value": 2,
+          "base": 2
+        },
+        "load": {
+          "value": 100,
+          "base": 100
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0036",
+    "name": "P",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 34250,
+      "streetIndex": 1,
+      "availability": "2/48hrs",
+      "seating": 0,
+      "bookPage": "r3.176",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Special Machinery(Sprayer) | Alt-mode Speed/Accel: 40(105)/30",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 40,
+          "base": 40
+        },
+        "accel": {
+          "value": 30,
+          "base": 30
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 6,
+          "base": 6
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 120,
+          "base": 120
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0037",
+    "name": "Cyberspace Designs Dalmation",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 15800,
+      "streetIndex": 0.75,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "sr3.312",
+      "notes": "Remote-Control Interface, Rigger Adaptation",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 108,
+          "base": 108
+        },
+        "accel": {
+          "value": 8,
+          "base": 8
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 5,
+          "base": 5
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 3,
+          "base": 3
+        },
+        "load": {
+          "value": 80,
+          "base": 80
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0038",
+    "name": "Eireann-Tir Prospero",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 8125,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "r3.176",
+      "notes": "Remote-Control Interface, Rigger Adaptation",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 70,
+          "base": 70
+        },
+        "accel": {
+          "value": 9,
+          "base": 9
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 5,
+          "base": 5
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 10,
+          "base": 10
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0039",
+    "name": "Lone Star Strato-9 Surv. Drone",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 34500,
+      "streetIndex": 2,
+      "availability": "8/8 days",
+      "seating": 0,
+      "bookPage": "r3.176",
+      "notes": "ECM 2, External Fixed Hardpoint w/MMG(w/GasVent-III and 500 rds. ammo), Remote-Control Interface, Rigger Adaptation",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 100,
+          "base": 100
+        },
+        "accel": {
+          "value": 9,
+          "base": 9
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 4,
+          "base": 4
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 5,
+          "base": 5
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 20,
+          "base": 20
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0040",
+    "name": "MCT-Nissan Roto-Drone",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 10500,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "sr3.312,r3.176",
+      "notes": "Remote-Control Interface, Rigger Adaptation",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 70,
+          "base": 70
+        },
+        "accel": {
+          "value": 6,
+          "base": 6
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 4,
+          "base": 4
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 4,
+          "base": 4
+        },
+        "load": {
+          "value": 150,
+          "base": 150
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0041",
+    "name": "Aeroquip",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 85000,
+      "streetIndex": 1,
+      "availability": "4/4days",
+      "seating": 0,
+      "bookPage": "r3.177",
+      "notes": "Remote-Control Interface, Rigger Adaptation",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 300,
+          "base": 300
+        },
+        "accel": {
+          "value": 35,
+          "base": 35
+        },
+        "body": {
+          "value": 3,
+          "base": 3
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 5,
+          "base": 5
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 3,
+          "base": 3
+        },
+        "cargo": {
+          "value": 16,
+          "base": 16
+        },
+        "load": {
+          "value": 155,
+          "base": 155
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0042",
+    "name": "Ares Guardian Drone",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 99000,
+      "streetIndex": 2,
+      "availability": "11/11days",
+      "seating": 0,
+      "bookPage": "r3.177",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Remote Mini-turret(1 CF Ammo Bin)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 60,
+          "base": 60
+        },
+        "accel": {
+          "value": 6,
+          "base": 6
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 12,
+          "base": 12
+        },
+        "sig": {
+          "value": 7,
+          "base": 7
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 3,
+          "base": 3
+        },
+        "sensor": {
+          "value": 4,
+          "base": 4
+        },
+        "cargo": {
+          "value": 1,
+          "base": 1
+        },
+        "load": {
+          "value": 25,
+          "base": 25
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0043",
+    "name": "Cyberspace Designs Dalmatian",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 16000,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "sr3.312,r3.177",
+      "notes": "Remote-Control Interface, Rigger Adaptation",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 105,
+          "base": 105
+        },
+        "accel": {
+          "value": 8,
+          "base": 8
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 6,
+          "base": 6
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 3,
+          "base": 3
+        },
+        "load": {
+          "value": 80,
+          "base": 80
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0044",
+    "name": "Cyberspace Designs Wolfhound",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 60000,
+      "streetIndex": 1,
+      "availability": "3/72hrs",
+      "seating": 0,
+      "bookPage": "r3.177",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Robotic Pilot, Adaptation Pool 2",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 210,
+          "base": 210
+        },
+        "accel": {
+          "value": 12,
+          "base": 12
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 6,
+          "base": 6
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 3,
+          "base": 3
+        },
+        "load": {
+          "value": 80,
+          "base": 80
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0045",
+    "name": "Generic Surv. Drone VTOL",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 6250,
+      "streetIndex": 0.75,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "sr3.312",
+      "notes": "Remote Control Interface,Rigger Adaptation,Lowlight & Thermographic Cam.",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 70,
+          "base": 70
+        },
+        "accel": {
+          "value": 9,
+          "base": 9
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 5,
+          "base": 5
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 10,
+          "base": 10
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0046",
+    "name": "Moonlight Aerospace Gossamer",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 120000,
+      "streetIndex": 1,
+      "availability": "3/72hrs",
+      "seating": 0,
+      "bookPage": "tss.6",
+      "notes": "Speed and Accel depend on windspeed, Remote Control Interface, Rigger Adaptation, Electroncs Bay, Optional Monofilament reels and Multicore fibre controls",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 5,
+          "base": 5
+        },
+        "handlingOffRoad": {
+          "value": 5,
+          "base": 5
+        },
+        "speed": {
+          "value": 0,
+          "base": 0
+        },
+        "accel": {
+          "value": 0,
+          "base": 0
+        },
+        "body": {
+          "value": 1,
+          "base": 1
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 16,
+          "base": 16
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 3,
+          "base": 3
+        },
+        "sensor": {
+          "value": 3,
+          "base": 3
+        },
+        "cargo": {
+          "value": 2,
+          "base": 2
+        },
+        "load": {
+          "value": 5,
+          "base": 5
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0047",
+    "name": "Renraku Scorpion",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 25000,
+      "streetIndex": 3,
+      "availability": "4/24hrs",
+      "seating": 0,
+      "bookPage": "tss.6",
+      "notes": "Alternate stats while in ground mode, micro-turret (weapon n/i), 6CF reserved for more electronics and 4CF for ammo",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 180,
+          "base": 180
+        },
+        "accel": {
+          "value": 18,
+          "base": 18
+        },
+        "body": {
+          "value": 3,
+          "base": 3
+        },
+        "armor": {
+          "value": 9,
+          "base": 9
+        },
+        "sig": {
+          "value": 2,
+          "base": 2
+        },
+        "autonav": {
+          "value": 3,
+          "base": 3
+        },
+        "pilot": {
+          "value": 2,
+          "base": 2
+        },
+        "sensor": {
+          "value": 4,
+          "base": 4
+        },
+        "cargo": {
+          "value": 10,
+          "base": 10
+        },
+        "load": {
+          "value": 75,
+          "base": 75
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0048",
+    "name": "Renraku Arachnoid Mini-drone",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 12375,
+      "streetIndex": 1,
+      "availability": "2/24hrs",
+      "seating": 0,
+      "bookPage": "r3.177",
+      "notes": "Remote-Control Interface, Rigger Adaptation",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 2,
+          "base": 2
+        },
+        "accel": {
+          "value": 0,
+          "base": 0
+        },
+        "body": {
+          "value": 0,
+          "base": 0
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 12,
+          "base": 12
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 0,
+          "base": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0049",
+    "name": "Shiawase Kanmushi Crawler",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 9350,
+      "streetIndex": 1,
+      "availability": "2/24 hrs",
+      "seating": 0,
+      "bookPage": "r3.178",
+      "notes": "Remote-Control Interface, Rigger Adaptation",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 3,
+          "base": 3
+        },
+        "speed": {
+          "value": 2,
+          "base": 2
+        },
+        "accel": {
+          "value": 0,
+          "base": 0
+        },
+        "body": {
+          "value": 0,
+          "base": 0
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 12,
+          "base": 12
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 0,
+          "base": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0050",
+    "name": "Toyota MK-Guyver S",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 95375,
+      "streetIndex": 2,
+      "availability": "5/5days",
+      "seating": 0,
+      "bookPage": "r3.178",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Robotic Pilot, Adaptation Pool 2, 2 Mechanical Arms(STR 10), Autosoft Interpretation System, Autosoft: Demolitions 3",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 10,
+          "base": 10
+        },
+        "accel": {
+          "value": 0,
+          "base": 0
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 3,
+          "base": 3
+        },
+        "sig": {
+          "value": 5,
+          "base": 5
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 3,
+          "base": 3
+        },
+        "sensor": {
+          "value": 1,
+          "base": 1
+        },
+        "cargo": {
+          "value": 5,
+          "base": 5
+        },
+        "load": {
+          "value": 1025,
+          "base": 1025
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0051",
+    "name": "LS Spectator Surv. Drone",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 67000,
+      "streetIndex": 2,
+      "availability": "14/1 month",
+      "seating": 0,
+      "bookPage": "sta2.98",
+      "notes": "Remote-Control Interface, Rigger Adaptation, Micro-Recorder 6, micro-camcorder, universal receiver 4",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 4,
+          "base": 4
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 30,
+          "base": 30
+        },
+        "accel": {
+          "value": 4,
+          "base": 4
+        },
+        "body": {
+          "value": 0,
+          "base": 0
+        },
+        "armor": {
+          "value": 0,
+          "base": 0
+        },
+        "sig": {
+          "value": 12,
+          "base": 12
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 1,
+          "base": 1
+        },
+        "sensor": {
+          "value": 0,
+          "base": 0
+        },
+        "cargo": {
+          "value": 0,
+          "base": 0
+        },
+        "load": {
+          "value": 0,
+          "base": 0
+        }
+      }
+    }
+  },
+  {
+    "_id": "sr3e-drone-0052",
+    "name": "MCT Hachiman",
+    "type": "vehicle",
+    "img": "icons/svg/drone.svg",
+    "system": {
+      "vehicleType": "drone",
+      "cost": 70000,
+      "streetIndex": 2,
+      "availability": "NA",
+      "seating": 0,
+      "bookPage": "r3.173",
+      "notes": "Ablative Armor 1, Robot-Pilot Advanced Programming, Adaptation Pool 3, Robotic Reflexes 3, Remote-Control Gear, Remote Mini-turret w/Ultimax MMG, Rigger Interface, Spotlight | Alt-mode Body/Armor: 2/5(7)",
+      "damage": {
+        "value": 0
+      },
+      "attributes": {
+        "handling": {
+          "value": 3,
+          "base": 3
+        },
+        "handlingOffRoad": {
+          "value": 4,
+          "base": 4
+        },
+        "speed": {
+          "value": 10,
+          "base": 10
+        },
+        "accel": {
+          "value": 2,
+          "base": 2
+        },
+        "body": {
+          "value": 2,
+          "base": 2
+        },
+        "armor": {
+          "value": 5,
+          "base": 5
+        },
+        "sig": {
+          "value": 7,
+          "base": 7
+        },
+        "autonav": {
+          "value": 0,
+          "base": 0
+        },
+        "pilot": {
+          "value": 3,
+          "base": 3
+        },
+        "sensor": {
+          "value": 5,
+          "base": 5
+        },
+        "cargo": {
+          "value": 4,
+          "base": 4
+        },
+        "load": {
+          "value": 125,
+          "base": 125
+        }
+      }
+    }
+  }
+]

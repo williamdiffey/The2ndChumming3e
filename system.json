@@ -94,6 +94,21 @@
           "description"
         ]
       },
+      "adeptpower": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "vehiclemod": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "vehicleweapon": {
+        "htmlFields": [
+          "notes"
+        ]
+      },
       "spell": {
         "htmlFields": [
           "description"

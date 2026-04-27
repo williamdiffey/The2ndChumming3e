@@ -204,7 +204,7 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
         }
 
         if (totemWrap)   totemWrap.style.display   = trad === 'Shamanic' ? 'flex' : 'none';
-        if (elementWrap) elementWrap.style.display  = (trad === 'Hermetic' && typeSel?.value === 'Elementalist') ? 'flex' : 'none';
+        if (elementWrap) elementWrap.style.display  = typeSel?.value === 'Elementalist' ? 'flex' : 'none';
       };
 
       traditionSel.addEventListener('change', updateMagicUI);
@@ -890,16 +890,43 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
       <div class="item-row" data-item-id="${b.id}">
         <span class="item-name">${b.name}</span>
         <span class="item-cell">${b.system.grade ?? '—'}</span>
-        <span class="item-cell">${b.system.essenceCost ?? 0}</span>
+        <span class="item-cell">${b.system.bioIndex ?? 0}</span>
         <span class="item-cell">${b.system.rating ?? 0}</span>
         ${this._itemControls(b.id, false, 'rollWeapon', false)}
       </div>`).join('') : '<p class="empty-list">No bioware.</p>';
 
-    const vcrRating = sys.derived?.vcrRating ?? 0;
+    const vcrRating  = sys.derived?.vcrRating  ?? 0;
+    const totalBio   = sys.derived?.totalBioIndex   ?? 0;
+    const bioCap     = sys.derived?.bioIndexCapacity ?? 0;
+    const bioOver    = sys.derived?.bioIndexOver     ?? false;
+    const magicSupp  = sys.derived?.magicSuppressed  ?? false;
+    const effMagic   = sys.derived?.effectiveMagic   ?? 0;
+    const magicBase  = actor.system.attributes?.magic?.base ?? 0;
+
     const vcrBanner = vcrRating > 0 ? `
       <div class="sr-vcr-banner">
         ⚡ VCR Rating ${vcrRating} active — rigging TN reduced by ${vcrRating * 2}
       </div>` : '';
+
+    const bioAlert = bioOver ? `
+      <div class="sr-alert sr-alert--danger" style="margin-top:6px">
+        ⚠ Bio Index ${totalBio} exceeds capacity ${bioCap} — character is taking damage
+      </div>` : '';
+
+    const magicAlert = magicSupp ? `
+      <div class="sr-alert sr-alert--warn" style="margin-top:4px">
+        ⚠ Magic suppressed by bioware — effective Magic ${Math.floor(effMagic)} (base ${magicBase})
+      </div>` : '';
+
+    const bioSummary = bioware.length ? `
+      <div style="display:flex;align-items:center;gap:8px;margin:6px 0 2px;font-size:11px;color:var(--sr-muted)">
+        <span>Bio Index:</span>
+        <span style="color:${bioOver ? 'var(--sr-red)' : 'var(--sr-text)'};font-weight:600">${totalBio}</span>
+        <span>/</span>
+        <span>${bioCap}</span>
+      </div>
+      ${bioAlert}
+      ${magicAlert}` : '';
 
     return `<div class="tab ${this._activeTab === 'cyber' ? 'active' : ''}" data-tab="cyber" style="overflow-y:auto">
       ${vcrBanner}
@@ -908,8 +935,9 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
       ${cwRows}
       <button type="button" class="btn-add" data-action="itemCreate" data-type="cyberware">+ Cyberware</button>
       <h3 class="section-hdr" style="margin-top:1rem">Bioware</h3>
-      <div class="list-header"><span>Name</span><span>Grade</span><span>Essence</span><span>Rating</span><span></span></div>
+      <div class="list-header"><span>Name</span><span>Grade</span><span>Bio Index</span><span>Rating</span><span></span></div>
       ${bwRows}
+      ${bioSummary}
       <button type="button" class="btn-add" data-action="itemCreate" data-type="bioware">+ Bioware</button>
     </div>`;
   }
@@ -1211,7 +1239,7 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
               </select>
             </label>
           </div>
-          <div class="sr-magic-element-wrap" style="display:${tradition === 'Hermetic' && magicType === 'Elementalist' ? 'flex' : 'none'};align-items:center">
+          <div class="sr-magic-element-wrap" style="display:${magicType === 'Elementalist' ? 'flex' : 'none'};align-items:center">
             <label style="display:flex;align-items:center;gap:6px;font-size:12px">Element
               <select name="system.magicElement" id="sr-magic-element" style="font-size:12px">
                 <option value="">—</option>
@@ -1231,9 +1259,14 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
     const astralModeButtons = astralModes
       .filter(m => m.show)
       .map(m =>
-        `<button type="button" class="sr-veh-mode-btn${astralMode === m.value ? ' sr-veh-vcr-active' : ''}"
-          data-action="setAstralMode" data-mode="${m.value}" title="${m.title}">${m.label}</button>`
+        `<button type="button" class="btn-add${astralMode === m.value ? ' sr-astral-active' : ''}"
+          data-action="setAstralMode" data-mode="${m.value}" title="${m.title}"
+          style="width:auto;margin:0">${m.label}</button>`
       ).join('');
+
+    const isConjurer = magicType === 'Conjurer';
+    const isSorcerer = magicType === 'Sorcerer';
+    const isAdept    = magicType === 'Adept';
 
     const _spellRow = s => `
       <div class="item-row" data-item-id="${s.id}">
@@ -1264,16 +1297,62 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
           <button type="button" class="btn-xs" data-action="summonSpirit" data-item-id="${s.id}">Summon</button>
         </span>
         ${this._itemControls(s.id, false)}
-      </div>`).join('') : '<p class="empty-list">No summoning entries.</p>';
+      </div>`).join('') : '<p class="empty-list">No conjuring entries.</p>';
 
     return `<div class="tab ${this._activeTab === 'magic' ? 'active' : ''}" data-tab="magic" style="overflow-y:auto">
       ${magicIdentityBlock}
       <div style="margin-bottom:10px">
-        <div style="font-size:11px;color:var(--sr-muted);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.05em">Astral State</div>
-        <div style="display:flex;gap:4px">${astralModeButtons}</div>
+        <div style="font-size:11px;color:var(--sr-muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:0.05em">Astral</div>
+        <div style="display:flex;gap:4px;align-items:center">
+          ${astralModeButtons}
+          <div style="margin-left:auto;display:flex;gap:4px">
+            <button type="button" class="btn-add sr-btn-danger" data-action="rollAstralCombat"
+                    style="width:auto;margin:0">Astral Combat</button>
+            <button type="button" class="btn-add" data-action="rollAssensing"
+                    style="width:auto;margin:0;border-style:solid;border-color:var(--sr-accent);color:var(--sr-accent)">Assensing</button>
+          </div>
+        </div>
       </div>
+      ${isAdept ? (() => {
+        const powers  = actor.items.filter(i => i.type === 'adeptpower')
+          .sort((a, b) => a.name.localeCompare(b.name));
+        const ppUsed  = Math.round(powers.reduce((sum, p) => {
+          const cost  = p.system.powerCost ?? 0;
+          const lvl   = p.system.hasLevels ? (p.system.level ?? 1) : 1;
+          return sum + cost * lvl;
+        }, 0) * 100) / 100;
+        const ppTotal = actor.system.attributes?.magic?.value ?? 0;
+        const ppOver  = ppUsed > ppTotal;
+        const pwRows  = powers.length ? powers.map(p => {
+          const lvl      = p.system.hasLevels ? (p.system.level ?? 1) : '—';
+          const cost     = p.system.powerCost ?? 0;
+          const totalCost = p.system.hasLevels ? Math.round(cost * (p.system.level ?? 1) * 100) / 100 : cost;
+          return `
+          <div class="item-row" data-item-id="${p.id}">
+            <span class="item-name">${p.name}</span>
+            <span class="item-cell">${cost}</span>
+            <span class="item-cell">${lvl}</span>
+            <span class="item-cell">${totalCost}</span>
+            ${this._itemControls(p.id, false)}
+          </div>`;
+        }).join('') : '<p class="empty-list">No adept powers.</p>';
+        return `
+        <div style="display:flex;align-items:center;gap:16px;margin-bottom:8px">
+          <h3 class="section-hdr" style="margin:0">Adept Powers</h3>
+          <span style="font-size:12px;color:${ppOver ? 'var(--sr-red)' : 'var(--sr-muted)'}">
+            Power Points: <strong>${ppUsed} / ${ppTotal}</strong>
+          </span>
+        </div>
+        ${ppOver ? `<div class="sr-alert sr-alert--danger" style="margin-bottom:6px">⚠ Power points exceed Magic rating</div>` : ''}
+        <div class="list-header">
+          <span>Power</span><span>Cost/Lvl</span><span>Level</span><span>Total</span><span></span>
+        </div>
+        ${pwRows}
+        <button type="button" class="btn-add" data-action="itemCreate" data-type="adeptpower">+ Add Power</button>`;
+      })() : `
+      ${!isConjurer ? `
       <div style="display:flex;align-items:center;gap:16px;margin-bottom:8px">
-        <h3 class="section-hdr" style="margin:0">Spells</h3>
+        <h3 class="section-hdr" style="margin:0">Sorcery</h3>
         <span style="font-size:12px;color:var(--sr-muted)">
           Spell Pool: <strong>${mpAvail} / ${mpTotal}</strong>
         </span>
@@ -1292,21 +1371,42 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
         ${incompleteSpellRows}
       ` : ''}
       <button type="button" class="btn-add" data-action="itemCreate" data-type="spell">+ Add Spell</button>
-      <button type="button" class="btn-add" data-action="dispelSpell" style="margin-top:4px;background:var(--sr-amber-bg);color:var(--sr-amber)">✦ Dispel Spell</button>
-
-      <h3 class="section-hdr" style="margin-top:1.2rem">Summoning</h3>
+      <button type="button" class="btn-add" data-action="dispelSpell" style="margin-top:4px">✦ Dispel Spell</button>
+      ` : ''}
+      ${!isSorcerer ? `
+      <h3 class="section-hdr" style="margin-top:1.2rem">Conjuring</h3>
       <div class="list-header">
         <span>Name</span><span>Spirit Type</span><span>Summon</span><span></span>
       </div>
       ${summonRows}
-      <button type="button" class="btn-add" data-action="itemCreate" data-type="summoning">+ Add Summoning</button>
-
-      <h3 class="section-hdr" style="margin-top:1.2rem">Astral</h3>
-      <button type="button" class="btn-add" data-action="rollAstralCombat"
-              style="background:var(--sr-amber-bg);color:var(--sr-amber)">✦ Astral Combat</button>
-      <button type="button" class="btn-add" data-action="rollAssensing"
-              style="margin-top:4px;background:var(--sr-surface);color:var(--sr-accent);border:1px solid var(--sr-accent)">👁 Assensing</button>
+      <button type="button" class="btn-add" data-action="itemCreate" data-type="summoning">+ Add Conjuring</button>
+      ` : ''}
+      `}
+      ${this._magicNotesCard(magicType, magicTotem, magicElement)}
     </div>`;
+  }
+
+  _magicNotesCard(magicType, totem, element) {
+    let entry = null;
+    let label = '';
+
+    if (totem) {
+      entry = SR3E.magicLoaData[totem] ?? SR3E.magicTotemData[totem] ?? null;
+      label = totem;
+    } else if (magicType === 'Elementalist' && element) {
+      entry = SR3E.magicElementData[element] ?? null;
+      label = `${element} Elementalist`;
+    }
+
+    if (!entry) return '';
+
+    return `
+      <div style="margin-top:1.2rem;padding:10px 12px;background:var(--sr-surface);border:1px solid var(--sr-border);border-radius:var(--r);font-size:12px">
+        <div style="font-size:11px;color:var(--sr-muted);text-transform:uppercase;letter-spacing:0.05em;margin-bottom:6px">${label}</div>
+        <div style="color:var(--sr-dim);margin-bottom:4px"><span style="color:var(--sr-muted)">Environment: </span>${entry.environment}</div>
+        <div style="color:var(--sr-green);margin-bottom:4px"><span style="color:var(--sr-muted)">Advantages: </span>${entry.advantages}</div>
+        <div style="color:var(--sr-red)"><span style="color:var(--sr-muted)">Disadvantages: </span>${entry.disadvantages}</div>
+      </div>`;
   }
 
   _tabVehicles(actor, sys) {

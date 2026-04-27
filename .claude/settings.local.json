@@ -5,7 +5,15 @@
       "WebSearch",
       "WebFetch(domain:foundryvtt.wiki)",
       "Bash(node _replace_tabMatrix.js)",
-      "Bash(node _patch_slots.js)"
+      "Bash(node _patch_slots.js)",
+      "Bash(node -e ' *)",
+      "Bash(node convert-bioware.js)",
+      "Bash(node -e \"const d=JSON.parse\\(require\\('fs'\\).readFileSync\\('sr3e-bioware-compendium.json'\\)\\);const e=d.find\\(x=>x.name==='Nano Bioware Regenerator->'\\);console.log\\(e.system.cost, e.system.description\\);\")",
+      "Bash(node convert-spells.js)",
+      "Bash(node convert-adept-powers.js)",
+      "Bash(grep -n \"_magicNotesCard\\\\|</div>\\\\`\" \"c:/Users/willi/AppData/Local/FoundryVTT/Data/systems/The2ndChumming3e/scripts/sheets/SR3EActorSheet.js\")",
+      "Bash(node convert-vehicle-mods.js)",
+      "Bash(node convert-vehicle-weapons.js)"
     ]
   }
 }
