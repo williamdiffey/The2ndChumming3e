@@ -1,6 +1,6 @@
 // ════════════════════════════════════════════════════════════════════════════
-//  SR3 Character Creator JSON → The 3rd Chumming Importer
-//  Paste this entire file into a Foundry VTT macro (Type: Script) and run it.
+//  Nullsheen.com SR3 Character JSON → The 2nd Chumming 3e Importer
+//  Run this macro, then paste the JSON exported from nullsheen.com.
 //  Supports: attributes, skills, gear, weapons, armor, ammo, cyberware,
 //            bioware, spells, adept powers.
 //  Vehicles are noted but not imported (create them manually).
@@ -180,10 +180,11 @@ function _weaponItems(weapons) {
 
 let jsonText = '';
 await foundry.applications.api.DialogV2.wait({
-  window: { title: 'Import SR3 Character Creator JSON' },
+  window: { title: 'Import Nullsheen 3e Character' },
   content: `
-    <p style="margin:0 0 6px;font-size:13px">
-      Paste the exported JSON from the SR3 character creator:
+    <p style="margin:0 0 4px;font-size:13px">
+      Go to <strong>nullsheen.com</strong>, build your character, then use
+      <em>Export → JSON</em>. Paste the result below:
     </p>
     <textarea id="sr3json"
       style="width:100%;height:280px;font-size:11px;font-family:monospace;

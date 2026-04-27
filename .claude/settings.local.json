@@ -14,7 +14,9 @@
       "Bash(grep -n \"_magicNotesCard\\\\|</div>\\\\`\" \"c:/Users/willi/AppData/Local/FoundryVTT/Data/systems/The2ndChumming3e/scripts/sheets/SR3EActorSheet.js\")",
       "Bash(node convert-vehicle-mods.js)",
       "Bash(node convert-vehicle-weapons.js)",
-      "PowerShell(Get-Content \"c:\\\\Users\\\\willi\\\\AppData\\\\Local\\\\FoundryVTT\\\\Data\\\\systems\\\\The2ndChumming3e\\\\system.json\" -Raw | ConvertFrom-Json | Select-Object id, title, version, @{n='packCount';e={$_.packs.Count}} | Format-List)"
+      "PowerShell(Get-Content \"c:\\\\Users\\\\willi\\\\AppData\\\\Local\\\\FoundryVTT\\\\Data\\\\systems\\\\The2ndChumming3e\\\\system.json\" -Raw | ConvertFrom-Json | Select-Object id, title, version, @{n='packCount';e={$_.packs.Count}} | Format-List)",
+      "Read(//c/Users/willi/AppData/Local/FoundryVTT/**)",
+      "Read(//c/Users/willi/AppData/Local/**)"
     ]
   }
 }

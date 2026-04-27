@@ -1,16 +1,100 @@
 # The 2nd Chumming (3e): Shadowrun 3rd Edition — Foundry VTT System
-
-Unofficial Foundry VTT **v14** system for **Shadowrun 3rd Edition**.
-Built with **ApplicationV2** — zero Handlebars template files.
-All sheet HTML is rendered directly from JavaScript using tagged template literals.
+Unofficial Foundry VTT **v14** system for **Shadowrun 3rd Edition** and Matrix Defragged. 
 
 ## Installation
-
+Under 'Game Systems', click Install System and past the URL below into the Manifest URL field. This will install the setting and associated compendiums. 
 https://raw.githubusercontent.com/williamdiffey/The2ndChumming3e/main/system.json
-  
-Restart Foundry, create a World, select **Shadowrun 3rd Edition**.
+Create a new world, select **The 2nd Chumming** as your system. 
 
+## What to expect
+- This is not a fully automated Foundry system, it will prompt, poke and nudge you, it will track wounds and modifiers, it will deal with initiative, it will reduce your - book-keeping and it will make it much easier to do the horrible bits like car chases and tracking a character's carry load. It is designed to show you what it is doing at - each stage so if you are looking to learn or brush up, this may help but you will need to know the basics. 
+- Everything is editable at every stage, if you want to change the attribute, skill or TN used, you can.
+- It definitely won't help you build your character but you can import one that you have made at Null Sheen dot com if you look in the macros section.
 ---
+
+## Dice rolling — Rule of Six
+All rolls use SR3e success-counting (d6 ≥ TN = success).
+- **Exploding dice** require an extra click per die — getting 15 successes in one click is boring and kills one of the most exciting moments in SR. Each die showing 6 gets a button; click to roll it again and add to its running total.
+- **Glitch** triggers when more than half the first-wave dice show 1s.
+- **Critical Glitch** = glitch + zero successes.
+- Rolls prompt for TN and optional combat pool allocation before rolling.
+---
+
+## Physical Dice Support
+- Shift-Clicking on dice icons / roll buttons will ask you to enter the number of successes, perfect if somone wants to use real dice. 
+
+## Initiative tracking
+- **SR3 mode** (default): Pass-based. Everyone acts once per pass in init order; subtract 10 after each pass. Repeat until all initiatives ≤ 0.
+- **SR2 mode**: Flat queue. All action slots pre-built and sorted descending. Walk the queue top to bottom. (change in the setting menu).
+- Wounds automatically modify initiative rolls.
+- Reaction is manually editable on the actor sheet to reflect cyberware, drugs, etc.
+- Initiative results can be manually adjusted in the combat tracker for situational bonuses/penalties.
+---
+
+## Magic Users 
+- Select the school, type, element or totem to hide/show relevant section in the magic tab. For totem users, advantages/disadvantages will be shown in the magic notes field.
+- Spell dispelling button for quick dispell actions.
+- Spell casting direct automatically triggers auto-filled drain tests.
+- AoE spells allow multiple targets to resist damage. 
+- Conjuring automatically triggers auto-filled drain tests and notes number of acts owed to the conjurer. 
+Correct damage is reported.
+---
+
+## Astral state (Awakened characters)
+- Astral state is tracked in the magic tab, initiative modifiers automatically applied.
+- Weapon focus can be applied to any melee weapon toggled active/inactive for when you need to stay unseen.
+- Astral combat button automatically uses the correct skills and report damage.
+- Assensing button allow for quick assensing tests. 
+---
+
+## Riggers
+- Select VCR, RCB and Autopilot control for your vehicles and drones, automatically modifying initiative and attacks.
+- Add and use weapons with the appropriate skills selected automatically.
+- Driving test button allows for quick vehicle maneuver tests.
+- Chase Scene works out maneuver scores from km/h speeds and vehicle stats - no more km per combat turn. 
+- Chase scene calculates TNs and dice pools for accel/dec, position etc. No more handwaving getaway chases.
+---
+
+## Deckers
+- Use the Matrix Unfragged system.
+- Track slot damage.
+- Attack using programs.
+- Drag/drop and eject programs with automatic updates to memory.
+- When making a new program, the program size will be automatically reported. 
+- 4 matrix modes are selectable. Hot VR mode modifies initiative rolls. 
+- Degradable programs are tracked.
+---
+
+## Ranged combat
+- Attacks show appropriate damage code and TN, target rolls auto-completed resistance tests. 
+- Dodge prompts allow defender to allocate dodge dice at the appropriate time. 
+- If hit, the defender rolls auto-completed soak test.
+- AoE weapons allow multiple targets to resist damage. 
+- Correct damage is reported.
+---
+
+### Melee combat
+- Select your target and complete a contested roll. 
+- Loser completes auto-completed soak roll.
+- Correct damage is reported.
+---
+
+## Vehicles
+- Vehicle actors track all standard SR3 attributes (Handling, Speed, Accel, Body, Armour, Sig, Autonav, Pilot, Sensor, Cargo, Load).
+- Damage track is a single box (Condition Monitor derived from Body).
+- Weapons can be added to vehicles.
+- Characters can be linked to vehicles; VCR/rigger mode tracked per-actor.
+- VCR mode modifies initiative rolls and gives pilot +8 penalty to physical rolls. 
+---
+
+## Armour
+- Equip one armour item via the actor sheet. Only the equipped piece contributes to soak (helmets do not stack at present). 
+- Armour type (Ballistic/Impact) is selectable at soak time.
+---
+
+## Storage
+- Weight is tracked so leave anything you don't need in storage but clicking on the home icon.
+
 
 ## Architecture
 
@@ -37,14 +121,6 @@ sr3e/
         ├── SR3EVehicleSheet.js      ← ApplicationV2 item sheet
         └── SR3EItemSheet.js      ← ApplicationV2 item sheet
         
-
-```
-
-**No `templates/` directory, no `template.json`.** All default field values are defined as
-`TypeDataModel` subclasses in `scripts/data/`. All markup is built in `_renderHTML()` via
-tagged template literals. Tab switching, wound boxes, and all interactivity are handled with
-`data-action` attributes and AppV2's static action system.
-
 ---
 
 ## Key design decisions
@@ -71,178 +147,6 @@ tagged template literals. Tab switching, wound boxes, and all interactivity are 
 | Interactive exploding dice | Getting 15 successes in one click is boring. Clicking to explode each die is one of the most exciting moments in SR — it stays manual. |
 | Shift-click to bypass digital dice | Physical dice are more fun, VTTs aren't only for the terminally online |
 | Matrix Defragged for Matrix | A modern, AR enabling system that keeps enough crunch and gear lust from the original but integrates it with the rest of the game, but mainly it's the system that I like. |
-
-
----
-
-## Actor types
-
-| Type | Description |
-|------|-------------|
-| `character` | Full PC sheet: Attributes, Skills, Combat, Gear, Magic, Matrix, Bio, Storage, tabs |
-| `npc` | Simplified sheet — same roll mechanics, lighter UI |
-| `vehicle` | Vehicle stats (Handling, Speed, Accel, Body, Armour, Sig, Autonav, Pilot, Sensor), damage track, linked weapons; supports VCR/rigger control |
-
----
-
-## Item types
-
-| Type | Key fields |
-|------|-----------|
-| `melee` | Damage code, reach, concealability, category (EDG/CLB/POL etc.), isFocus flag |
-| `thrown` | Damage code, STR minimum, concealability, category |
-| `projectile` | Damage code, STR minimum (bows/crossbows) |
-| `firearm` | Damage code, fire mode, ammunition type, accessories, concealability, category |
-| `ammunition` | Damage modifier, availability, cost |
-| `armor` | Ballistic rating, Impact rating, concealability |
-| `skill` | Rating, linked attribute, category, specialisation |
-| `quality` | Positive/Negative, karma cost |
-| `cyberware` | Essence cost, grade (Standard/Alpha/Beta/Delta), rating |
-| `bioware` | Essence cost (BioIndex), grade, rating |
-| `spell` | Category, type (Mana/Physical), range, damage level, drain formula, duration |
-| `summoning` | Spirit type |
-| `complex_form` | Rating, duration, fade value |
-| `program` | Type, category, rating, size (Mp), multiplier, degradable flag, associated prompt |
-| `cyberdeck` | Full attribute block (MPCP, Firewall, Response, Memory, Utility Slots, DTR, Flux Rating), matrix condition monitor, burned slots, derived stats |
-| `gear` | Quantity, cost, weight |
-
----
-
-## Auto-derived values
-
-| Value | Formula |
-|-------|---------|
-| Reaction | ⌊(Quickness + Intelligence) / 2⌋ + reaction bonus |
-| Essence | 6 − Σ(cyberware + bioware essence costs) |
-| Combat Pool | ⌊(QUI + INT + WIL) / 2⌋ + wound modifier |
-| Magic Pool | ⌊(INT + WIL + MAG) / 2⌋ + wound modifier (Awakened only) |
-| Wound Modifier | −⌊Stun/3⌋ − ⌊Physical/3⌋ |
-| Initiative (default) | Reaction + wound modifier (base) + initiative dice d6 |
-| Initiative (Matrix VR-Hot) | Reaction + (Response × 2) base + (1 + Response) d6 |
-| Initiative (Astral Projection) | Intelligence + 20 base + 1d6 |
-
----
-
-## Dice rolling — Rule of Six
-
-All rolls use SR3e success-counting (d6 ≥ TN = success).
-
-- **Exploding dice** require an extra click per die — getting 15 successes in one click is boring and kills one of the most exciting moments in SR. Each die showing 6 gets a button; click to roll it again and add to its running total.
-- **Glitch** triggers when more than half the first-wave dice show 1s.
-- **Critical Glitch** = glitch + zero successes.
-- Rolls prompt for TN and optional combat pool allocation before rolling.
-
----
-
-## Initiative tracking
-
-- **SR3 mode** (default): Pass-based. Everyone acts once per pass in init order; subtract 10 after each pass. Repeat until all initiatives ≤ 0.
-- **SR2 mode**: Flat queue. All action slots pre-built and sorted descending. Walk the queue top to bottom.
-- Mode selectable in game settings at any time.
-- Wounds automatically modify initiative rolls.
-- Reaction is manually editable on the actor sheet to reflect cyberware, drugs, etc.
-- Initiative results can be manually adjusted in the combat tracker for situational bonuses/penalties.
-- **Shift-click** on any initiative roll button opens a physical dice dialog — shows the formula, lets the user type in the result directly (for when real dice are used at the table).
-
----
-
-## Astral state (Awakened characters)
-
-Toggled on the Magic tab. Three mutually exclusive states — clicking the active state deactivates it:
-
-| State | Badge colour | Initiative formula |
-|-------|--------------|--------------------|
-| Physical Plane | Grey | Default (Reaction-based) |
-| Dual Natured | Amber | Default (Reaction-based) |
-| Astral Projection | Purple | INT + 20 + 1d6 |
-
-Active state is shown as a coloured badge next to the combatant's name in the combat tracker.
-
----
-
-## Combat flows
-
-### Ranged combat
-1. Attacker clicks weapon on sheet → select target
-2. Defender declares dodge or commits combat pool dice to dodge
-3. Attacker allocates combat pool to attack → rolls (interactive Rule of Six)
-4. If dodge committed: dodge roll button appears on final wave; otherwise soak card auto-posts
-5. Dodge is binary — hits ≥ attack hits = complete miss; otherwise full staged damage proceeds
-6. Soak card: editable Body pool, TN = Power − Armour, armour type dropdown (Ballistic/Impact)
-7. GM applies damage manually via wound track buttons
-
-### Melee combat
-1. Attacker clicks melee weapon → select target
-2. Defender auto-uses their equipped melee weapon (fallback: unarmed/cyber, then bare hands)
-3. Boxing card shows both sides: skill, weapon, damage code, reach, dice pool, editable TN
-4. TN = 4 − reach + wound modifier
-5. Both roll simultaneously; winner = most successes; ties = no damage
-6. Winner's damage stages up by net successes; loser gets a Resist Damage button → soak flow
-
-### Spellcasting
-1. Caster clicks Cast on a spell row → choose Force → select targets
-2. Allocate Magic Pool dice → roll Sorcery + Magic Pool vs TN (Essence for Mana / Body for Physical)
-3. 0 successes = fizzle; 1+ successes = staged damage (Force + level, every 2 hits = +1 stage)
-4. Each target gets a Resist Spell button; caster always gets a Resist Drain button
-5. Drain: Willpower vs TN from drain formula — Stun if Force ≤ Sorcery; Physical if Force > Sorcery
-
-### Conjuring
-1. All works fine, trust me bro. 
-
-### Astral Combat
-1. Weapons focus can be added and activated for any melee weapon (adds bonus to melee combat)
-
-### Matrix
-1. 4 matrix modes are selectable. Hot VR mode modifies initiative rolls. 
-2. Slots show if burnt and loaded programs. 
-3. Programs can be loaded by dragging and dropping or ejected. 
-4. Degradable programs are tracked.
-
-### Damage staging
-Power (number) + Level (L/M/S/D) + optional Stun flag.
-Each 2 net successes = +1 stage (L→M→S→D). At D, each additional 2 successes = +1 power.
-
----
-
-## Vehicles & Chase Scenes
-
-- Vehicle actors track all standard SR3 attributes (Handling, Speed, Accel, Body, Armour, Sig, Autonav, Pilot, Sensor, Cargo, Load).
-- Damage track is a single box (Condition Monitor derived from Body).
-- Weapons can be added to vehicles.
-- Characters can be linked to vehicles; VCR/rigger mode tracked per-actor.
-- VCR mode modifies initiative rolls and gives pilot +8 penalty to physical rolls. 
-- **Chase Scene** button in the combat tracker opens the vehicle chase interface.
-
-- Driving test button on vehicle sheet can be used as per CRB pages 134-135
----
-
-## Weapons & Skills
-
-Weapons carry a `category` code that maps to the correct active skill automatically:
-
-| Codes | Skill |
-|-------|-------|
-| HOPist / LPist / MPist / HPist / VHP | Pistols |
-| MaPist / SMG | SMGs |
-| Carb / AsRf / SptR / Snip / LCarb | Rifles |
-| LMG / MMG / HMG / MinG | LMG |
-| ShtG | Shotguns |
-| GrLn | Grenade Launchers |
-| EDG | Edged Weapons |
-| CLB | Clubs |
-| POL | Pole Arms/Staff |
-| WHP | Whips/Flails |
-| CYB / UNA | Unarmed Combat |
-
-Weapon compendiums (melee, firearms, armour, projectile) ship with the system. JSON data sourced from Critical Glitch / Null Sheen and converted to include `category` codes for automatic skill resolution. All item data is fully editable on the item sheet.
-
----
-
-## Armour
-
-Equip one armour item via the actor sheet. Only the equipped piece contributes to soak (helmets do not stack at present). Armour type (Ballistic/Impact) is selectable at soak time.
-
----
 
 
 ## What is not yet implemented

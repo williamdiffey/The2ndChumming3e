@@ -1,0 +1,18 @@
+2026/04/27-21:13:00.599 2568 Recovering log #9
+2026/04/27-21:13:00.599 2568 Level-0 table #11: started
+2026/04/27-21:13:00.602 2568 Level-0 table #11: 23480 bytes OK
+2026/04/27-21:13:00.613 2568 Delete type=0 #9
+2026/04/27-21:13:00.613 2568 Delete type=3 #7
+2026/04/27-21:22:35.059 38ec Level-0 table #14: started
+2026/04/27-21:22:35.063 38ec Level-0 table #14: 23477 bytes OK
+2026/04/27-21:22:35.065 38ec Delete type=0 #12
+2026/04/27-21:22:35.088 38ec Manual compaction at level-0 from '!items!null' @ 72057594037927935 : 1 .. '!items!sr3e-melee-0166' @ 0 : 0; will stop at '!items!sr3e-melee-0166' @ 167 : 1
+2026/04/27-21:22:35.088 38ec Compacting 4@0 + 0@1 files
+2026/04/27-21:22:35.092 38ec Generated table #15@0: 168 keys, 14448 bytes
+2026/04/27-21:22:35.092 38ec Compacted 4@0 + 0@1 files => 14448 bytes
+2026/04/27-21:22:35.095 38ec compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/04/27-21:22:35.095 38ec Delete type=2 #5
+2026/04/27-21:22:35.095 38ec Delete type=2 #8
+2026/04/27-21:22:35.095 38ec Delete type=2 #11
+2026/04/27-21:22:35.095 38ec Delete type=2 #14
+2026/04/27-21:22:35.122 38ec Manual compaction at level-0 from '!items!sr3e-melee-0166' @ 167 : 1 .. '!items!sr3e-melee-0166' @ 0 : 0; will stop at (end)

@@ -216,6 +216,13 @@
       "path": "packs/sr3e-programs.db",
       "type": "Item",
       "system": "The2ndChumming3e"
+    },
+    {
+      "name": "sr3e-sample-characters",
+      "label": "Sample Characters",
+      "path": "packs/sr3e-sample-characters.db",
+      "type": "Actor",
+      "system": "The2ndChumming3e"
     }
   ],
       "url": "https://github.com/williamdiffey/The2ndChumming3e",

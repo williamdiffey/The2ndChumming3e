@@ -1,5 +1,36 @@
 export class SR3EItem extends Item {
 
+  /**
+   * Foundry v13/v14: DocumentStatsField._shimData() installs a deprecated getter on
+   * source.flags.exportSource before migrateData runs. When _addDataFieldMigration
+   * then calls hasProperty(source, "flags.exportSource"), that getter fires and logs
+   * a compatibility warning — even for fresh documents that never had exportSource data.
+   * We pre-empt this by removing the shim getter (or migrating real data) ourselves
+   * on the raw source object before super can trigger it.
+   * @override
+   */
+  static migrateData(source) {
+    if ( source.flags ) {
+      const desc = Object.getOwnPropertyDescriptor(source.flags, "exportSource");
+      if ( desc?.get ) {
+        // Shim getter installed by _shimData — remove it so hasProperty returns false cleanly.
+        delete source.flags.exportSource;
+      } else if ( desc?.value !== undefined ) {
+        // Real pre-v13 data: migrate to _stats ourselves on the plain object.
+        source._stats ??= {};
+        source._stats.exportSource = {
+          worldId:       source.flags.exportSource?.world ?? null,
+          uuid:          null,
+          coreVersion:   source.flags.exportSource?.coreVersion ?? null,
+          systemId:      source.flags.exportSource?.system ?? null,
+          systemVersion: source.flags.exportSource?.systemVersion ?? null,
+        };
+        delete source.flags.exportSource;
+      }
+    }
+    return super.migrateData(source);
+  }
+
   /** @override */
   prepareData() {
     super.prepareData();

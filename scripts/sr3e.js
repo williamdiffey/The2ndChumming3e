@@ -44,6 +44,29 @@ Hooks.once('init', () => {
   CONFIG.Item.dataModels.program      = ProgramData;
   CONFIG.Item.dataModels.cyberdeck    = CyberdeckData;
 
+  // Default icons for each item type (must reference paths that exist in Foundry v14)
+  CONFIG.Item.typeIcons = {
+    melee:        'icons/svg/sword.svg',
+    projectile:   'icons/svg/thrust.svg',
+    thrown:       'icons/svg/target.svg',
+    firearm:      'icons/svg/combat.svg',
+    ammunition:   'icons/svg/skull.svg',
+    armor:        'icons/svg/shield.svg',
+    gear:         'icons/svg/chest.svg',
+    skill:        'icons/svg/book.svg',
+    quality:      'icons/svg/aura.svg',
+    cyberware:    'icons/svg/upgrade.svg',
+    bioware:      'icons/svg/biohazard.svg',
+    spell:        'icons/svg/fire.svg',
+    complex_form: 'icons/svg/net.svg',
+    summoning:    'icons/svg/angel.svg',
+    adeptpower:   'icons/svg/lightning.svg',
+    vehicleweapon:'icons/svg/explosion.svg',
+    vehiclemod:   'icons/svg/clockwork.svg',
+    program:      'icons/svg/net.svg',
+    cyberdeck:    'icons/svg/portal.svg',
+  };
+
   CONFIG.Actor.documentClass = SR3EActor;
   CONFIG.Item.documentClass = SR3EItem;
   CONFIG.Combat.documentClass = SR3ECombat;
@@ -85,23 +108,37 @@ Hooks.once('init', () => {
   console.log('SR3E | Ready');
 });
 
-// Auto-create the SR3 character importer macro for the GM
+// Auto-create GM utility macros on first load
 Hooks.once('ready', async () => {
   if (!game.user.isGM) return;
-  const MACRO_NAME = 'Import SR3 Character Creator JSON';
-  if (game.macros.find(m => m.name === MACRO_NAME)) return;
-  try {
-    const src = await fetch('systems/The2ndChumming3e/scripts/macros/import-sr3-character.js')
-      .then(r => r.text());
-    await Macro.create({
-      name: MACRO_NAME,
-      type: 'script',
-      command: src,
-      img: 'icons/svg/mystery-man.svg',
-    });
-    ui.notifications.info('SR3E: "Import SR3 Character Creator JSON" macro added to your macro library.');
-  } catch (err) {
-    console.warn('SR3E | Could not auto-create import macro:', err);
+
+  const macros = [
+    {
+      name: 'Import Nullsheen 3e Character json',
+      path: 'scripts/macros/import-sr3-character.js',
+      img:  'icons/svg/mystery-man.svg',
+    },
+    {
+      name: 'Populate SR3E Sample Characters (1–5)',
+      path: 'scripts/macros/populate-sample-characters.js',
+      img:  'icons/svg/mystery-man.svg',
+    },
+    {
+      name: 'Populate SR3E Sample Characters (6–14)',
+      path: 'scripts/macros/populate-sample-characters-2.js',
+      img:  'icons/svg/mystery-man.svg',
+    },
+  ];
+
+  for (const def of macros) {
+    if (game.macros.find(m => m.name === def.name)) continue;
+    try {
+      const src = await fetch(`systems/The2ndChumming3e/${def.path}`).then(r => r.text());
+      await Macro.create({ name: def.name, type: 'script', command: src, img: def.img });
+      ui.notifications.info(`SR3E: "${def.name}" macro added to your macro library.`);
+    } catch (err) {
+      console.warn(`SR3E | Could not auto-create macro "${def.name}":`, err);
+    }
   }
 });
 

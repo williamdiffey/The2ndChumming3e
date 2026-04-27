@@ -2,6 +2,27 @@ import { SR3EItem } from './SR3EItem.js';
 
 export class SR3EActor extends Actor {
 
+  /** @inheritdoc — see SR3EItem.migrateData for explanation */
+  static migrateData(source) {
+    if ( source.flags ) {
+      const desc = Object.getOwnPropertyDescriptor(source.flags, "exportSource");
+      if ( desc?.get ) {
+        delete source.flags.exportSource;
+      } else if ( desc?.value !== undefined ) {
+        source._stats ??= {};
+        source._stats.exportSource = {
+          worldId:       source.flags.exportSource?.world ?? null,
+          uuid:          null,
+          coreVersion:   source.flags.exportSource?.coreVersion ?? null,
+          systemId:      source.flags.exportSource?.system ?? null,
+          systemVersion: source.flags.exportSource?.systemVersion ?? null,
+        };
+        delete source.flags.exportSource;
+      }
+    }
+    return super.migrateData(source);
+  }
+
   // /** @override */
   // constructor(data, context) {
   //   super(data, context);
