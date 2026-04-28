@@ -25,7 +25,7 @@ All rolls use SR3e success-counting (d6 ≥ TN = success).
 
 ## Initiative tracking
 - **SR3 mode** (default): Pass-based. Everyone acts once per pass in init order; subtract 10 after each pass. Repeat until all initiatives ≤ 0.
-- **SR2 mode**: Flat queue. All action slots pre-built and sorted descending. Walk the queue top to bottom. (change in the setting menu).
+- **SR2 mode**: Flat queue. All action slots pre-built and sorted descending. Walk the queue top to bottom. (change in the setgting menu).
 - Wounds automatically modify initiative rolls.
 - Reaction is manually editable on the actor sheet to reflect cyberware, drugs, etc.
 - Initiative results can be manually adjusted in the combat tracker for situational bonuses/penalties.

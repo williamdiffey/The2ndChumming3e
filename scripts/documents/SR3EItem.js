@@ -528,6 +528,7 @@ export class SR3EItem extends Item {
     let   poolLabel     = '';
     let   pilotWoundMod = 0;
 
+    let vcrLevel = 0;
     if (pilotActor) {
       const modeLabel  = vcrMode ? 'VCR' : 'RCR';
       const gunnery    = pilotActor.items.find(i => i.type === 'skill' && /gunnery/i.test(i.name));
@@ -552,6 +553,14 @@ export class SR3EItem extends Item {
       const physVal = pilotActor.system.wounds?.physical?.value ?? 0;
       pilotWoundMod = -(Math.floor(stunVal / 3) + Math.floor(physVal / 3));
       pool += pilotWoundMod;
+
+      if (vcrMode) {
+        const activeVCRId = pilotActor.system.activeVCRItemId ?? '';
+        const vcrItem = activeVCRId
+          ? pilotActor.items.get(activeVCRId)
+          : pilotActor.items.find(i => i.type === 'cyberware' && /vcr|vehicle\s*control\s*rig/i.test(i.name));
+        if (vcrItem) vcrLevel = vcrItem.system.rating ?? 1;
+      }
     } else {
       const pilotRating = actor.system.attributes?.pilot?.base ?? 0;
       pool      = pilotRating;
@@ -563,7 +572,7 @@ export class SR3EItem extends Item {
       ? (targetActor.system.attributes?.sig?.base ?? 4)
       : 4;
     const weaponOpts = await SR3EItem._promptVehicleWeaponRollOptions(
-      this, targetActor, pool, poolLabel, baseSig, rawDamage
+      this, targetActor, pool, poolLabel, baseSig, rawDamage, vcrLevel
     );
     if (!weaponOpts) return null;
 
@@ -601,9 +610,12 @@ export class SR3EItem extends Item {
   /**
    * Roll options dialog for vehicle weapon attacks.
    */
-  static async _promptVehicleWeaponRollOptions(weapon, targetActor, pool, poolLabel, baseSig, rawDamage) {
+  static async _promptVehicleWeaponRollOptions(weapon, targetActor, pool, poolLabel, baseSig, rawDamage, vcrLevel = 0) {
     const isVehicleTarget = targetActor.type === 'vehicle';
     const sensorRating    = weapon.actor?.system.attributes?.sensor?.base ?? 0;
+    const tnReduction     = vcrLevel > 0 ? vcrLevel : sensorRating;
+    const tnReductionLabel = vcrLevel > 0 ? `VCR Lv${vcrLevel}` : `Sensor ${sensorRating}`;
+    const defaultTN       = Math.max(2, baseSig - tnReduction);
 
     let result = null;
     await foundry.applications.api.DialogV2.wait({
@@ -625,10 +637,14 @@ export class SR3EItem extends Item {
           <div class="vw-info-row"><span>Pool</span><span>${poolLabel}</span></div>
           <div class="vw-info-row"><span>Sensor</span><span>${sensorRating}</span></div>
           <div class="vw-info-row"><span>Target</span><span>${targetActor.name}${isVehicleTarget ? ` (Sig ${baseSig})` : ''}</span></div>
+          ${tnReduction ? `<div class="vw-info-row">
+            <span style="color:var(--sr-accent)">${tnReductionLabel} TN reduction</span>
+            <span style="color:var(--sr-accent)">−${tnReduction} (${baseSig} → ${defaultTN})</span>
+          </div>` : ''}
         </div>
         <div class="vw-grid">
           <label class="vw-field">Base TN (Sig)
-            <input type="number" id="vw-sig" value="${baseSig}" min="2" max="30"/>
+            <input type="number" id="vw-sig" value="${defaultTN}" min="2" max="30"/>
           </label>
           <label class="vw-field">Range modifier
             <select id="vw-range">
@@ -692,10 +708,10 @@ export class SR3EItem extends Item {
     const choices = candidates.map(a => {
       const body = a.system.attributes?.body?.value ?? a.system.attributes?.body?.base ?? '?';
       return `
-        <label style="display:flex;align-items:center;gap:6px;margin:3px 0">
-          <input type="checkbox" name="target-actor" value="${a.id}"/>
-          ${a.name}
-          <span style="font-size:11px;color:var(--sr-muted)">(Body ${body})</span>
+        <label class="sr-target-row">
+          <input type="checkbox" name="target-actor" value="${a.id}"
+                 style="width:13px;height:13px;margin:0;accent-color:var(--sr-accent);flex-shrink:0;appearance:auto;-webkit-appearance:checkbox"/>
+          <span>${a.name} <span style="font-size:11px;color:var(--sr-muted)">(Body ${body})</span></span>
         </label>`;
     }).join('');
 
@@ -703,10 +719,7 @@ export class SR3EItem extends Item {
     let cancelled = true;
     await foundry.applications.api.DialogV2.wait({
       window: { title: `${attacker.name} — Who's in the blast?` },
-      content: `
-        <p style="margin-bottom:8px">Select all targets caught in the blast radius:</p>
-        ${choices}
-      `,
+      content: `<div class="sr-target-list">${choices}</div>`,
       buttons: [
         {
           label: 'Throw / Fire',
@@ -899,32 +912,28 @@ export class SR3EItem extends Item {
    */
   static async _promptTarget(attacker) {
     const _typeBadge = type => {
-      if (type === 'npc')     return `<span style="font-size:10px;color:var(--sr-amber)">[NPC]</span>`;
-      if (type === 'vehicle') return `<span style="font-size:10px;color:var(--sr-accent)">[Vehicle]</span>`;
+      if (type === 'npc')     return `<span style="font-size:10px;color:var(--sr-amber)"> [NPC]</span>`;
+      if (type === 'vehicle') return `<span style="font-size:10px;color:var(--sr-accent)"> [Vehicle]</span>`;
       return '';
     };
-    const choices = game.actors.contents
-      .filter(a => a.id !== attacker.id)
-      .map(a => `<label style="display:flex;align-items:center;gap:6px;margin:3px 0">
-          <input type="radio" name="target-actor" value="${a.id}"/>
-          ${a.name} ${_typeBadge(a.type)}
-        </label>`)
-      .join('');
+    const candidates = game.actors.contents.filter(a => a.id !== attacker.id);
 
-    if (!choices) {
+    if (!candidates.length) {
       ui.notifications.warn('No valid targets found.');
       return null;
     }
 
-    let targetId = null;
+    const choices = candidates.map((a, i) => `
+      <label class="sr-target-row">
+        <input type="radio" name="target-actor" value="${a.id}" ${i === 0 ? 'checked' : ''}
+               style="width:13px;height:13px;margin:0;accent-color:var(--sr-accent);flex-shrink:0;appearance:auto;-webkit-appearance:radio"/>
+        <span>${a.name}${_typeBadge(a.type)}</span>
+      </label>`).join('');
+
+    let targetId = candidates[0].id;
     await foundry.applications.api.DialogV2.wait({
       window: { title: `${attacker.name} — Select Target` },
-      content: `
-        <p style="margin-bottom:8px">
-          <strong>${attacker.name}</strong>, who are you attacking?
-        </p>
-        ${choices}
-      `,
+      content: `<div class="sr-target-list">${choices}</div>`,
       buttons: [
         {
           label: 'Confirm',
@@ -1163,10 +1172,10 @@ _getDefaultAttribute() {
     const choices = candidates.map(a => {
       const parsed = SR3EItem._parseSpellTarget(spellTarget, a, force, spellType);
       return `
-        <label style="display:flex;align-items:center;gap:6px;margin:3px 0">
-          <input type="checkbox" name="target-actor" value="${a.id}"/>
-          ${a.name}
-          <span style="font-size:11px;color:var(--sr-muted)">(${parsed.attrLabel} → TN ${parsed.tn})</span>
+        <label class="sr-target-row">
+          <input type="checkbox" name="target-actor" value="${a.id}"
+                 style="width:13px;height:13px;margin:0;accent-color:var(--sr-accent);flex-shrink:0;appearance:auto;-webkit-appearance:checkbox"/>
+          <span>${a.name} <span style="font-size:11px;color:var(--sr-muted)">(${parsed.attrLabel} → TN ${parsed.tn})</span></span>
         </label>`;
     }).join('');
 
@@ -1174,10 +1183,7 @@ _getDefaultAttribute() {
     let cancelled = true;
     await foundry.applications.api.DialogV2.wait({
       window: { title: `${attacker.name} — Select Target(s)` },
-      content: `
-        <p style="margin-bottom:8px">Who is <strong>${attacker.name}</strong> casting at?</p>
-        ${choices}
-      `,
+      content: `<div class="sr-target-list">${choices}</div>`,
       buttons: [
         {
           label: 'Cast',

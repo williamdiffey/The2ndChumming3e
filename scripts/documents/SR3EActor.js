@@ -1343,18 +1343,18 @@ _prepareCharacter(sys, attr) {
           <div class="sr-melee-weapon">${weaponName}
             ${reach > 0 ? `<span class="sr-melee-reach"> Reach ${reach}</span>` : ''}
           </div>
-          <div style="display:flex;align-items:center;gap:4px;margin-top:4px;font-size:11px;color:var(--sr-muted);white-space:nowrap">
+          <div style="display:flex;align-items:center;gap:4px;margin-top:4px;font-size:11px;color:var(--sr-muted)">
             Damage: <input type="text" class="${damageClass}" value="${displayDamage}"
                      style="width:55px;flex-shrink:0"/>
           </div>
           <div style="font-size:11px;color:var(--sr-text);margin-top:4px">
             Skill dice: <strong>${skillDice}</strong>${woundMod < 0 ? ` <span style="color:var(--sr-red)">(${woundMod})</span>` : ''}
           </div>
-          <div style="display:flex;align-items:center;gap:4px;margin-top:4px;font-size:11px;color:var(--sr-muted);white-space:nowrap">
+          <div style="display:flex;align-items:center;gap:4px;margin-top:4px;font-size:11px;color:var(--sr-muted)">
             Pool: <input type="number" class="${poolClass}" value="0"
                    min="0" max="${availPool}" style="width:40px;flex-shrink:0"/> / ${availPool}
           </div>
-          <div style="display:flex;align-items:center;gap:4px;margin-top:4px;font-size:11px;color:var(--sr-muted);white-space:nowrap">
+          <div style="display:flex;align-items:center;gap:4px;margin-top:4px;font-size:11px;color:var(--sr-muted)">
             TN: <input type="number" class="${tnClass}" value="${tn}"
                    min="2" max="30" style="width:40px;flex-shrink:0"/>
             <span style="font-size:10px;color:var(--sr-muted)">(${tnCalc})</span>
@@ -1926,67 +1926,59 @@ _prepareCharacter(sys, attr) {
       const specNote     = hasSDSpec ? ` <span style="color:var(--sr-accent)">(${sorRating}+2 spec)</span>` : '';
       const spellAvail   = actor.system.derived?.availableSpellPool ?? 0;
       return `
-        <tr>
-          <td style="padding:4px 8px;font-weight:bold">${actor.name}</td>
-          <td style="padding:4px 8px;text-align:center">
-            <span style="color:var(--sr-muted);font-size:11px">Sorcery ${sorEffective}${specNote}</span>
-            <input type="number" class="sd-sor" data-actor-id="${actor.id}"
-                   value="0" min="0" max="${sorEffective}" style="width:45px;margin-left:4px"/>
-          </td>
-          <td style="padding:4px 8px;text-align:center">
-            <span style="color:var(--sr-muted);font-size:11px">Spell Pool ${spellAvail}</span>
-            <input type="number" class="sd-sp" data-actor-id="${actor.id}"
-                   value="0" min="0" max="${spellAvail}" style="width:45px;margin-left:4px"/>
-          </td>
-        </tr>`;
+        <div class="sr-sd-row">
+          <span class="sr-sd-name">${actor.name}</span>
+          <div class="sr-sd-fields">
+            <div class="sr-sd-field">
+              <span class="sr-sd-label">Sorcery ${sorEffective}${specNote}</span>
+              <input type="number" class="sd-sor" data-actor-id="${actor.id}"
+                     value="0" min="0" max="${sorEffective}"/>
+            </div>
+            <div class="sr-sd-field">
+              <span class="sr-sd-label">Spell Pool ${spellAvail}</span>
+              <input type="number" class="sd-sp" data-actor-id="${actor.id}"
+                     value="0" min="0" max="${spellAvail}"/>
+            </div>
+          </div>
+        </div>`;
     }).join('');
 
-    const alloc = {};
-    await foundry.applications.api.DialogV2.wait({
-      window: { title: 'Declare Spell Defense' },
+    await ChatMessage.create({
+      speaker: { alias: 'Spell Defense' },
       content: `
-        <p style="margin-bottom:8px;font-size:12px;color:var(--sr-muted)">
-          Allocate Sorcery and/or Spell Pool dice to Spell Defense.
-          These dice are locked for this round. Spell Pool dice are spent immediately;
-          Sorcery dice return at round end.
-        </p>
-        <table style="width:100%;border-collapse:collapse">
-          <thead>
-            <tr style="border-bottom:1px solid var(--sr-border);font-size:11px;color:var(--sr-muted)">
-              <th style="text-align:left;padding:4px 8px">Actor</th>
-              <th style="padding:4px 8px">Sorcery dice</th>
-              <th style="padding:4px 8px">Spell Pool dice</th>
-            </tr>
-          </thead>
-          <tbody>${rows}</tbody>
-        </table>`,
-      buttons: [
-        {
-          label: 'Commit',
-          action: 'commit',
-          default: true,
-          callback: (_e, _b, dialog) => {
-            dialog.element.querySelectorAll('.sd-sor').forEach(inp => {
-              const id = inp.dataset.actorId;
-              if (!alloc[id]) alloc[id] = {};
-              alloc[id].sorcery = parseInt(inp.value) || 0;
-            });
-            dialog.element.querySelectorAll('.sd-sp').forEach(inp => {
-              const id = inp.dataset.actorId;
-              if (!alloc[id]) alloc[id] = {};
-              alloc[id].spell = parseInt(inp.value) || 0;
-            });
-          },
-        },
-        { label: 'Skip', action: 'skip' },
-      ],
+        <div class="sr-roll-card sr-sd-declare-card">
+          <div class="sr-roll-header">🛡 Declare Spell Defense</div>
+          <div class="sr-roll-meta">Allocate Sorcery and/or Spell Pool dice for this round. Spell Pool dice are spent immediately; Sorcery dice return at round end.</div>
+          ${rows}
+          <div class="sr-sd-declare-actions">
+            <button class="sr-sd-declare-commit-btn">Commit</button>
+            <button class="sr-sd-declare-skip-btn">Skip</button>
+          </div>
+        </div>`,
     });
+  }
 
+  static async handleSpellDefenseDeclareCommit(btn) {
+    const card = btn.closest('.sr-sd-declare-card');
+    const alloc = {};
+    card.querySelectorAll('.sd-sor').forEach(inp => {
+      const id = inp.dataset.actorId;
+      if (!alloc[id]) alloc[id] = {};
+      alloc[id].sorcery = parseInt(inp.value) || 0;
+    });
+    card.querySelectorAll('.sd-sp').forEach(inp => {
+      const id = inp.dataset.actorId;
+      if (!alloc[id]) alloc[id] = {};
+      alloc[id].spell = parseInt(inp.value) || 0;
+    });
     for (const [actorId, a] of Object.entries(alloc)) {
       if ((a.sorcery ?? 0) + (a.spell ?? 0) === 0) continue;
       const actor = game.actors.get(actorId);
       if (actor) await actor.commitSpellDefense(a.sorcery ?? 0, a.spell ?? 0);
     }
+    const msgEl = btn.closest('[data-message-id]');
+    const msg = msgEl ? game.messages.get(msgEl.dataset.messageId) : null;
+    if (msg) await msg.delete();
   }
 
   /**

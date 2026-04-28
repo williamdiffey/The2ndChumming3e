@@ -160,7 +160,11 @@ Hooks.on('renderCombatTracker', (_app, html) => {
         const pilotName = cbt.actor.system.controlledBy?.trim() ?? '';
         const tag = document.createElement('span');
         tag.style.cssText = 'font-size:10px;font-weight:bold;padding:1px 5px;border-radius:3px;margin-left:4px;';
-        if (vcrMode && pilotName) {
+        if (!pilotName) {
+          tag.textContent  = 'Auto';
+          tag.style.background = '#2a2010';
+          tag.style.color      = '#c8a040';
+        } else if (vcrMode) {
           tag.textContent  = `VCR: ${pilotName}`;
           tag.style.background = '#1a3a5c';
           tag.style.color      = '#5ab4f5';
@@ -381,6 +385,26 @@ Hooks.on('renderChatMessageHTML', (_message, html, _data) => {
       event.preventDefault();
       event.stopPropagation();
       await SR3EActor.handleDrainRollClick(btn, event.shiftKey);
+    });
+  });
+
+  // Spell Defense declaration card — Commit
+  html.querySelectorAll('.sr-sd-declare-commit-btn').forEach(btn => {
+    btn.addEventListener('click', async event => {
+      event.preventDefault();
+      event.stopPropagation();
+      await SR3EActor.handleSpellDefenseDeclareCommit(btn);
+    });
+  });
+
+  // Spell Defense declaration card — Skip (delete card without committing)
+  html.querySelectorAll('.sr-sd-declare-skip-btn').forEach(btn => {
+    btn.addEventListener('click', async event => {
+      event.preventDefault();
+      event.stopPropagation();
+      const msgEl = btn.closest('[data-message-id]');
+      const msg = msgEl ? game.messages.get(msgEl.dataset.messageId) : null;
+      if (msg) await msg.delete();
     });
   });
 

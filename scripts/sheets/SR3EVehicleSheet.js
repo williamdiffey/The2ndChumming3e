@@ -25,6 +25,9 @@ export class SR3EVehicleSheet extends foundry.applications.sheets.ActorSheetV2 {
       openPilot:      SR3EVehicleSheet._onOpenPilot,
       rollWeapon:     SR3EVehicleSheet._onRollWeapon,
       rollMelee:      SR3EVehicleSheet._onRollMelee,
+      setVcrMode:     SR3EVehicleSheet._onSetVcrMode,
+      setRcdMode:     SR3EVehicleSheet._onSetRcdMode,
+      setAutoMode:    SR3EVehicleSheet._onSetAutoMode,
     }
   };
 
@@ -118,12 +121,23 @@ export class SR3EVehicleSheet extends foundry.applications.sheets.ActorSheetV2 {
                  </a>`
               : ''}
           </div>
-          <div style="display:flex;align-items:center;gap:8px;font-size:12px;color:var(--sr-muted);margin-top:4px;">
-            <label style="display:flex;align-items:center;gap:4px;cursor:pointer;color:${sys.vcrMode ? 'var(--sr-accent)' : 'var(--sr-muted)'};">
-              <input type="checkbox" name="system.vcrMode" ${sys.vcrMode ? 'checked' : ''}
-                style="accent-color:var(--sr-accent);width:14px;height:14px;"/>
-              VCR Mode ${sys.vcrMode ? `<span style="color:var(--sr-accent);font-weight:bold;">(${sys.controlledBy || 'no pilot'})</span>` : '(RCD)'}
-            </label>
+          <div style="display:flex;align-items:center;gap:6px;font-size:12px;margin-top:4px;">
+            <span style="color:var(--sr-muted);">Mode:</span>
+            ${(() => {
+              const hasPilot = sys.controlledBy?.trim();
+              const isVcr  = hasPilot && sys.vcrMode;
+              const isRcd  = hasPilot && !sys.vcrMode;
+              const isAuto = !hasPilot;
+              const btn = (action, label, active, color) =>
+                `<button type="button" data-action="${action}"
+                   style="padding:2px 10px;font-size:11px;font-weight:bold;border-radius:var(--r);cursor:pointer;
+                          border:1px solid ${active ? color : 'var(--sr-border)'};
+                          background:${active ? `color-mix(in srgb,${color} 15%,transparent)` : 'transparent'};
+                          color:${active ? color : 'var(--sr-muted)'};">${label}</button>`;
+              return btn('setVcrMode', 'VCR',  isVcr,  'var(--sr-accent)')
+                   + btn('setRcdMode', 'RCD',  isRcd,  'var(--sr-green)')
+                   + btn('setAutoMode','Auto', isAuto, 'var(--sr-gold)');
+            })()}
           </div>
           <div class="wound-tracks">
             <div class="wound-track-container">
@@ -652,5 +666,17 @@ export class SR3EVehicleSheet extends foundry.applications.sheets.ActorSheetV2 {
     const item = this.actor.items.get(target.dataset.itemId);
     if (!item) return;
     await item.rollMelee({ physicalDice: ev.shiftKey ?? false });
+  }
+
+  static async _onSetVcrMode(_ev, _target) {
+    await this.actor.update({ 'system.vcrMode': true });
+  }
+
+  static async _onSetRcdMode(_ev, _target) {
+    await this.actor.update({ 'system.vcrMode': false });
+  }
+
+  static async _onSetAutoMode(_ev, _target) {
+    await this.actor.update({ 'system.vcrMode': false, 'system.controlledBy': '' });
   }
 }
