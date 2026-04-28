@@ -94,7 +94,14 @@ Correct damage is reported.
 
 ## Storage
 - Weight is tracked so leave anything you don't need in storage but clicking on the home icon.
-
+---
+## Compendiums
+- Compendiums for all sorts of weapons, gear, spells, cyberware etc are all installed. Just import them into your items. 
+---
+## Nullsheen importer macro
+- if you use nullsheen dot com's chargen app you can import the resulting json download directly into this system using the suitably named macro. Just click it and follow the prompts.
+- vehicles will be imported as gear as a vehicle is it's own actor type. You'll need to copy them over manually or just grab one from the compendium and mod it. 
+---
 
 ## Architecture
 
