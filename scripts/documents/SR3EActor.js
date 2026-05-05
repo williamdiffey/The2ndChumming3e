@@ -305,10 +305,7 @@ _prepareCharacter(sys, attr) {
       return null;
     }
 
-    // If this actor is jumped into a vehicle via VCR, apply the stored TN modifier
-    const vcrCombatant = game.combat?.combatants.find(c => c.actorId === this.id);
-    const vcrTnMod     = vcrCombatant?.flags?.The2ndChumming3e?.vcrTnMod ?? 0;
-    const effectiveTN  = Math.max(2, tn + vcrTnMod);
+    const effectiveTN = Math.max(2, tn);
 
     if (options.physicalDice) {
       const successes = await SR3EActor._promptPhysicalSuccesses(pool, effectiveTN, label);
@@ -2431,78 +2428,108 @@ _prepareCharacter(sys, attr) {
   }
 
   async rollInitiative(options = {}) {
-    // --- Vehicle: RCD or VCR initiative ---
+    // --- Vehicle: VCR, RCD, or Auto initiative ---
     if (this.type === 'vehicle') {
-      const vcrMode   = this.system.vcrMode ?? false;
-      const pilotName = this.system.controlledBy?.trim() ?? '';
+      const vcrMode     = this.system.vcrMode ?? false;
+      const pilotName   = this.system.controlledBy?.trim() ?? '';
       const pilotRating = this.system.attributes?.pilot?.base ?? 0;
 
-      if (vcrMode && pilotName) {
+      if (pilotName) {
         const rigger = game.actors.find(a => a.name === pilotName);
         if (rigger) {
-          const d    = rigger.system.derived ?? {};
+          const d = rigger.system.derived ?? {};
 
-          // VCR level from the rigger's active VCR cyberware item
-          let vcrLevel = 0;
-          const activeVCRId = rigger.system.activeVCRItemId ?? '';
-          if (activeVCRId) {
-            const vcrItem = rigger.items.get(activeVCRId);
-            if (vcrItem) vcrLevel = vcrItem.system.rating ?? 0;
+          if (vcrMode) {
+            // VCR: Rigger's Reaction + vcrLevel base, (1 + vcrLevel)d6
+            let vcrLevel = 0;
+            const activeVCRId = rigger.system.activeVCRItemId ?? '';
+            if (activeVCRId) {
+              const vcrItem = rigger.items.get(activeVCRId);
+              if (vcrItem) vcrLevel = vcrItem.system.rating ?? 0;
+            }
+            if (!vcrLevel) {
+              const vcrItem = rigger.items.find(i =>
+                i.type === 'cyberware' && /vcr|vehicle\s*control\s*rig/i.test(i.name)
+              );
+              if (vcrItem) vcrLevel = vcrItem.system.rating ?? 1;
+            }
+
+            // VCR bonus: +1 Reaction per level, +1d6 per level
+            const base = (d.initiative ?? 0) + vcrLevel;
+            const dice = (d.initiativeDice ?? 1) + vcrLevel;
+
+            const rolls    = Array.from({ length: dice }, () => Math.floor(Math.random() * 6) + 1);
+            const rolled   = rolls.reduce((s, r) => s + r, 0);
+            const score    = base + rolled;
+            const diceHtml = rolls.map(r => `<span class="sr-die ${r === 6 ? 'sr-hit' : ''}">${r}</span>`).join('');
+            const bonusNote = vcrLevel
+              ? `<div class="sr-roll-meta" style="color:var(--sr-accent)">VCR Lv${vcrLevel}: +${vcrLevel} Reaction, +${vcrLevel}d6</div>`
+              : '';
+            await ChatMessage.create({
+              speaker: ChatMessage.getSpeaker({ actor: this }),
+              content: `
+                <div class="sr-roll-card">
+                  <div class="sr-roll-header">⚡ Initiative — ${this.name}
+                    <span style="font-size:11px;font-weight:normal;color:var(--sr-accent)"> VCR: ${rigger.name}</span>
+                  </div>
+                  <div class="sr-roll-meta">${base} base (${rigger.name}) + ${dice}d6</div>
+                  ${bonusNote}
+                  <div class="sr-roll-dice">${diceHtml}</div>
+                  <div class="sr-roll-result">Score: <strong>${score}</strong>
+                    <span style="font-size:11px;color:var(--sr-muted)">(${base} + ${rolled})</span>
+                  </div>
+                </div>`,
+              type: CONST.CHAT_MESSAGE_STYLES.ROLL,
+            });
+            return score;
+          } else {
+            // RCD: Rigger's Reaction + normal dice, no modifiers
+            const base = d.initiative ?? 0;
+            const dice = d.initiativeDice ?? 1;
+
+            const rolls    = Array.from({ length: dice }, () => Math.floor(Math.random() * 6) + 1);
+            const rolled   = rolls.reduce((s, r) => s + r, 0);
+            const score    = base + rolled;
+            const diceHtml = rolls.map(r => `<span class="sr-die ${r === 6 ? 'sr-hit' : ''}">${r}</span>`).join('');
+            await ChatMessage.create({
+              speaker: ChatMessage.getSpeaker({ actor: this }),
+              content: `
+                <div class="sr-roll-card">
+                  <div class="sr-roll-header">⚡ Initiative — ${this.name}
+                    <span style="font-size:11px;font-weight:normal;color:var(--sr-green)"> RCD: ${rigger.name}</span>
+                  </div>
+                  <div class="sr-roll-meta">${base} base (${rigger.name}) + ${dice}d6</div>
+                  <div class="sr-roll-dice">${diceHtml}</div>
+                  <div class="sr-roll-result">Score: <strong>${score}</strong>
+                    <span style="font-size:11px;color:var(--sr-muted)">(${base} + ${rolled})</span>
+                  </div>
+                </div>`,
+              type: CONST.CHAT_MESSAGE_STYLES.ROLL,
+            });
+            return score;
           }
-          if (!vcrLevel) {
-            // Fallback: search cyberware items for VCR by name
-            const vcrItem = rigger.items.find(i =>
-              i.type === 'cyberware' && /vcr|vehicle\s*control\s*rig/i.test(i.name)
-            );
-            if (vcrItem) vcrLevel = vcrItem.system.rating ?? 1;
-          }
-
-          // VCR bonus: +2 Reaction per level (adds to initiative base), +1d6 per level
-          const base = (d.initiative ?? 0) + (vcrLevel * 2);
-          const dice = (d.initiativeDice ?? 1) + vcrLevel;
-
-          const rolls = Array.from({ length: dice }, () => Math.floor(Math.random() * 6) + 1);
-          const rolled = rolls.reduce((s, r) => s + r, 0);
-          const score  = base + rolled;
-          const diceHtml = rolls.map(r => `<span class="sr-die ${r === 6 ? 'sr-hit' : ''}">${r}</span>`).join('');
-          const bonusNote = vcrLevel
-            ? `<div class="sr-roll-meta" style="color:var(--sr-accent)">VCR Lv${vcrLevel}: +${vcrLevel * 2} Reaction, +${vcrLevel}d6</div>`
-            : '';
-          await ChatMessage.create({
-            speaker: ChatMessage.getSpeaker({ actor: this }),
-            content: `
-              <div class="sr-roll-card">
-                <div class="sr-roll-header">⚡ Initiative — ${this.name}
-                  <span style="font-size:11px;font-weight:normal;color:var(--sr-accent)"> VCR: ${rigger.name}</span>
-                </div>
-                <div class="sr-roll-meta">${base} base (${rigger.name}) + ${dice}d6</div>
-                ${bonusNote}
-                <div class="sr-roll-dice">${diceHtml}</div>
-                <div class="sr-roll-result">Score: <strong>${score}</strong>
-                  <span style="font-size:11px;color:var(--sr-muted)">(${base} + ${rolled})</span>
-                </div>
-              </div>`,
-            type: CONST.CHAT_MESSAGE_STYLES.ROLL,
-          });
-          return score;
+        } else {
+          ui.notifications.warn(`${this.name}: driver "${pilotName}" not found — rolling Auto instead.`);
         }
       }
 
-      // RCD mode: (Pilot × 2) + 1d6
-      const base = pilotRating * 2;
-      const roll = Math.floor(Math.random() * 6) + 1;
-      const score = base + roll;
+      // Auto: Pilot rating base + 2d6
+      const base     = pilotRating;
+      const rolls    = [Math.floor(Math.random() * 6) + 1, Math.floor(Math.random() * 6) + 1];
+      const rolled   = rolls[0] + rolls[1];
+      const score    = base + rolled;
+      const diceHtml = rolls.map(r => `<span class="sr-die ${r === 6 ? 'sr-hit' : ''}">${r}</span>`).join('');
       await ChatMessage.create({
         speaker: ChatMessage.getSpeaker({ actor: this }),
         content: `
           <div class="sr-roll-card">
             <div class="sr-roll-header">⚡ Initiative — ${this.name}
-              <span style="font-size:11px;font-weight:normal;color:var(--sr-muted)"> RCD</span>
+              <span style="font-size:11px;font-weight:normal;color:var(--sr-gold)"> Auto</span>
             </div>
-            <div class="sr-roll-meta">Pilot ${pilotRating} × 2 = ${base} + 1d6</div>
-            <div class="sr-roll-dice"><span class="sr-die ${roll === 6 ? 'sr-hit' : ''}">${roll}</span></div>
+            <div class="sr-roll-meta">Pilot ${pilotRating} base + 2d6</div>
+            <div class="sr-roll-dice">${diceHtml}</div>
             <div class="sr-roll-result">Score: <strong>${score}</strong>
-              <span style="font-size:11px;color:var(--sr-muted)">(${base} + ${roll})</span>
+              <span style="font-size:11px;color:var(--sr-muted)">(${base} + ${rolled})</span>
             </div>
           </div>`,
         type: CONST.CHAT_MESSAGE_STYLES.ROLL,

@@ -2062,8 +2062,8 @@ static async _onHealDamage(ev, target) {
     const newMode = entry.mode === mode ? '' : mode; // toggle off if already selected
 
     if (newMode === 'vcr') {
-      // Only one vehicle may have VCR active
-      vehicles.forEach(v => { if (v.actorId !== actorId) v.mode = v.mode === 'vcr' ? '' : v.mode; });
+      // VCR exclusive: other vehicles (VCR or RCD) default to Auto
+      vehicles.forEach(v => { if (v.actorId !== actorId) v.mode = ''; });
     }
     entry.mode = newMode;
 

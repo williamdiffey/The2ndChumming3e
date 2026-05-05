@@ -195,6 +195,12 @@ physical dice dialog — shows the formula, lets the user type in the result dir
 - Astral Projection: `Intelligence + 20` base + `1d6`
 - Physical Plane / Dual Natured: use default formula
 
+**Vehicle initiative (read from `system.vcrMode` and `system.controlledBy`):**
+- VCR (jumped-in): Rigger's `Reaction + vcrLevel + woundMod` base + `(1 + vcrLevel)` d6; TN −2 per VCR level on all skill tests
+- RCD (remote): Rigger's `Reaction + woundMod` base + `initiativeDice` d6 (no modifiers)
+- Auto (no pilot or pilot not found): `Pilot rating` base + `2d6`
+- VCR is exclusive: activating VCR sets all other linked vehicles to Auto (not locked — editable after)
+
 ### Astral state (Awakened characters)
 Toggled on the Magic tab. Stored as `system.astralMode` (persisted):
 - `''` — no state set (default)

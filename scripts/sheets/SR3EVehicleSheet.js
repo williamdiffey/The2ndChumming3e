@@ -490,7 +490,7 @@ export class SR3EVehicleSheet extends foundry.applications.sheets.ActorSheetV2 {
       <label class="drv-field drv-full">Rigger — VCR Rating ${vcrRating}
         <select id="drv-rigger">
           <option value="0">Not using VCR (0)</option>
-          <option value="${-vcrRating}">Using VCR (−${vcrRating} TN)</option>
+          <option value="${-vcrRating * 2}">Using VCR (−${vcrRating * 2} TN)</option>
         </select>
       </label>` : '';
 

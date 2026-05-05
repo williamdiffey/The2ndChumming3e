@@ -211,18 +211,15 @@ Hooks.on('renderCombatTracker', (_app, html) => {
         if (nameEl) nameEl.appendChild(tag);
       }
 
-      // VCR rigger: show badge with editable TN modifier
+      // VCR rigger: reminder badge — vehicle bonus and non-vehicle penalty
       const jumpedInto = cbt.flags?.The2ndChumming3e?.jumpedInto;
       if (jumpedInto) {
-        const vcrTnMod = cbt.flags?.The2ndChumming3e?.vcrTnMod ?? 8;
+        const vcrRating = cbt.actor?.system?.derived?.vcrRating ?? 0;
+        const tnBonus   = vcrRating * 2;
         const tag = document.createElement('span');
-        tag.style.cssText = 'font-size:10px;color:var(--sr-accent);margin-left:6px;display:inline-flex;align-items:center;gap:3px;';
-        tag.innerHTML = `VCR: ${jumpedInto} <span style="color:var(--sr-muted)">TN+</span><input type="number" value="${vcrTnMod}" min="0" max="30" style="width:34px;background:var(--sr-surface);color:var(--sr-text);border:1px solid var(--sr-border);border-radius:2px;padding:0 2px;font-size:10px;"/>`;
-        tag.querySelector('input').addEventListener('change', async ev => {
-          ev.stopPropagation();
-          const newMod = parseInt(ev.target.value) || 0;
-          await cbt.setFlag('The2ndChumming3e', 'vcrTnMod', newMod);
-        });
+        tag.style.cssText = 'font-size:10px;color:var(--sr-accent);margin-left:6px;';
+        const bonusPart = tnBonus ? ` veh TN−${tnBonus}` : '';
+        tag.textContent = `VCR: ${jumpedInto} |${bonusPart} non-veh TN+8`;
         const nameEl = row.querySelector('.combatant-name, .token-name, h4');
         if (nameEl) nameEl.appendChild(tag);
       }

@@ -610,7 +610,7 @@ export class SR3EVehicleChase extends foundry.applications.api.ApplicationV2 {
 
       // VCR bonus applies to the driver only when VCR is active
       const vcrLevel = (isDriver && p.vcrActive) ? (p.vcrRating ?? 0) : 0;
-      const base = (actor.system.derived?.initiative ?? 0) + (vcrLevel * 2);
+      const base = (actor.system.derived?.initiative ?? 0) + vcrLevel;
       const dice = (actor.system.derived?.initiativeDice ?? 1) + vcrLevel;
 
       const rolls  = Array.from({ length: dice }, () => Math.ceil(Math.random() * 6));
@@ -618,7 +618,7 @@ export class SR3EVehicleChase extends foundry.applications.api.ApplicationV2 {
       p.initiatives[aid] = total;
       const role = isDriver ? 'Driver' : 'Passenger';
       const vcrNote = vcrLevel
-        ? `<small style="color:var(--sr-accent)"> VCR Lv${vcrLevel}: +${vcrLevel * 2} REA, +${vcrLevel}d6</small>`
+        ? `<small style="color:var(--sr-accent)"> VCR Lv${vcrLevel}: +${vcrLevel} REA, +${vcrLevel}d6</small>`
         : '';
       lines.push(`
         <div class="chase-init-row">

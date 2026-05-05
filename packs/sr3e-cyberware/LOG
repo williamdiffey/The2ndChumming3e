@@ -1,5 +1,5 @@
-2026/05/05-07:44:18.934 ab4 Recovering log #52
-2026/05/05-07:44:18.937 ab4 Level-0 table #55: started
-2026/05/05-07:44:18.943 ab4 Level-0 table #55: 157474 bytes OK
-2026/05/05-07:44:18.950 ab4 Delete type=0 #52
-2026/05/05-07:44:18.951 ab4 Delete type=3 #50
+2026/05/05-17:08:31.149 53d4 Recovering log #56
+2026/05/05-17:08:31.150 53d4 Level-0 table #58: started
+2026/05/05-17:08:31.159 53d4 Level-0 table #58: 157476 bytes OK
+2026/05/05-17:08:31.165 53d4 Delete type=0 #56
+2026/05/05-17:08:31.165 53d4 Delete type=3 #54

@@ -43,7 +43,7 @@ export class SR3ECombat extends Combat {
       const riggerCombatant = this.combatants.find(rc => rc.actor?.name === pilotName);
       if (riggerCombatant) {
         await riggerCombatant.update({
-          flags: { The2ndChumming3e: { jumpedInto: c.actor.name, vcrTnMod: 8 } },
+          flags: { The2ndChumming3e: { jumpedInto: c.actor.name } },
         });
       }
     }
