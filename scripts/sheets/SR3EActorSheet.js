@@ -877,7 +877,7 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
           <span class="item-cell">${c.system.essenceCost ?? 0}</span>
           <span class="item-cell">${rating}</span>
           <span class="item-cell">
-            <button type="button" class="sr-vcr-btn${isVCRActive ? ' sr-vcr-active' : ''}"
+            <button type="button" class="sr-veh-mode-btn${isVCRActive ? ' sr-veh-vcr-active' : ''}"
                     data-action="activateVCR" data-item-id="${c.id}"
                     title="${isVCRActive ? 'VCR active — click to deactivate' : 'Activate as VCR'}">
               VCR${isVCRActive ? ' ✓' : ''}
@@ -906,7 +906,7 @@ export class SR3EActorSheet extends foundry.applications.sheets.ActorSheetV2 {
 
     const vcrBanner = vcrRating > 0 ? `
       <div class="sr-vcr-banner">
-        ⚡ VCR Rating ${vcrRating} active — rigging TN reduced by ${vcrRating * 2}
+        ⚡ VCR Rating ${vcrRating} active
       </div>` : '';
 
     const bioAlert = bioOver ? `

@@ -267,6 +267,113 @@ Hooks.on('renderCombatTracker', (_app, html) => {
     }, true); // capture phase so we intercept before Foundry's bubble handler
   });
 
+  // Intercept "Begin Encounter" → show multi-actor initiative selector
+  const startBtn = el.querySelector('[data-action="startCombat"]');
+  if (startBtn && combat) {
+    startBtn.addEventListener('click', async event => {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+
+      let combatants = combat.combatants.contents;
+
+      // No combatants yet — let the GM pick tokens from the scene first
+      if (!combatants.length) {
+        const sceneTokens = (canvas.tokens?.placeables ?? []).filter(t => t.actor);
+
+        if (!sceneTokens.length) {
+          ui.notifications.warn('No actors selected for combat.');
+          return;
+        }
+
+        const addRows = sceneTokens.map(t => `
+          <label style="display:flex;align-items:center;gap:8px;margin:4px 0;cursor:pointer;">
+            <input type="checkbox" data-token-id="${t.id}" data-actor-id="${t.actorId ?? ''}"/>
+            <span>${t.name}</span>
+          </label>
+        `).join('');
+
+        let toAdd = [];
+        let addProceed = false;
+        await foundry.applications.api.DialogV2.wait({
+          window: { title: 'Add Actors to Encounter' },
+          content: `
+            <p style="margin:0 0 8px;color:var(--sr-muted);font-size:11px;">
+              No actors are in the encounter. Select tokens to add.
+            </p>
+            <div>${addRows}</div>
+          `,
+          buttons: [
+            {
+              label: 'Add & Continue',
+              action: 'add',
+              default: true,
+              callback: (_e, _b, dialog) => {
+                addProceed = true;
+                toAdd = [...dialog.element.querySelectorAll('[data-token-id]:checked')]
+                  .map(cb => ({ tokenId: cb.dataset.tokenId, actorId: cb.dataset.actorId || undefined, sceneId: canvas.scene?.id }));
+              }
+            },
+            { label: 'Cancel', action: 'cancel' },
+          ],
+        });
+
+        if (!addProceed) return;
+        if (!toAdd.length) {
+          ui.notifications.warn('No actors selected for combat.');
+          return;
+        }
+
+        await combat.createEmbeddedDocuments('Combatant', toAdd);
+        combatants = combat.combatants.contents;
+      }
+
+      const rows = combatants.map(c => `
+        <label style="display:flex;align-items:center;gap:8px;margin:4px 0;cursor:pointer;">
+          <input type="checkbox" data-cbt-id="${c.id}" checked/>
+          <span>${c.actor?.name ?? c.name}</span>
+        </label>
+      `).join('');
+
+      let selectedIds = [];
+      let proceed = false;
+      await foundry.applications.api.DialogV2.wait({
+        window: { title: 'Roll Initiative & Begin Encounter' },
+        content: `
+          <p style="margin:0 0 8px;color:var(--sr-muted);font-size:11px;">
+            Select combatants to roll initiative for before starting the encounter.
+          </p>
+          <div>${rows}</div>
+        `,
+        buttons: [
+          {
+            label: 'Auto-roll Initiative',
+            action: 'roll',
+            default: true,
+            callback: (_e, _b, dialog) => {
+              proceed = true;
+              selectedIds = [...dialog.element.querySelectorAll('[data-cbt-id]:checked')]
+                .map(cb => cb.dataset.cbtId);
+              if (!selectedIds.length) {
+                const random = combatants[Math.floor(Math.random() * combatants.length)];
+                selectedIds = [random.id];
+              }
+            }
+          },
+          {
+            label: 'Roll Initiative',
+            action: 'skip',
+            callback: () => { proceed = true; }
+          },
+          { label: 'Cancel', action: 'cancel' },
+        ],
+      });
+
+      if (!proceed) return;
+      if (selectedIds.length) await combat.rollInitiative(selectedIds);
+      await combat.startCombat();
+    }, true); // capture phase — intercepts before Foundry's bubble handler
+  }
+
   if (!el.querySelector('.sr3e-chase-btn')) {
     const footer = el.querySelector('footer') ?? el.querySelector('.combat-controls');
     const btn = document.createElement('button');
@@ -277,6 +384,16 @@ Hooks.on('renderCombatTracker', (_app, html) => {
     btn.addEventListener('click', () => game.sr3e.SR3EVehicleChase.open());
     if (footer) footer.insertAdjacentElement('afterend', btn);
     else el.appendChild(btn);
+  }
+});
+
+// Re-render combat tracker when a vehicle actor's control mode changes so the
+// VCR / RCD / Auto badge in the sidebar stays current without needing a turn advance.
+Hooks.on('updateActor', (actor, changes) => {
+  if (actor.type !== 'vehicle') return;
+  const sys = changes?.system ?? {};
+  if ('vcrMode' in sys || 'controlledBy' in sys) {
+    ui.combat?.render();
   }
 });
 
